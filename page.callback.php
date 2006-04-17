@@ -1,0 +1,146 @@
+<?php /* $Id */
+//Copyright (C) 2004 Coalescent Systems Inc. (info@coalescentsystems.ca)
+//
+//This program is free software; you can redistribute it and/or
+//modify it under the terms of the GNU General Public License
+//as published by the Free Software Foundation; either version 2
+//of the License, or (at your option) any later version.
+//
+//This program is distributed in the hope that it will be useful,
+//but WITHOUT ANY WARRANTY; without even the implied warranty of
+//MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//GNU General Public License for more details.
+
+
+isset($_REQUEST['action'])?$action = $_REQUEST['action']:$action='';
+
+//the item we are currently displaying
+isset($_REQUEST['itemid'])?$itemid=$_REQUEST['itemid']:$itemid='';
+
+$dispnum = "callback"; //used for switch on config.php
+
+//if submitting form, update database
+if(isset($_POST['action'])) {
+	switch ($action) {
+		case "add":
+			callback_add($_POST);
+			needreload();
+		break;
+		case "delete":
+			callback_del($itemid);
+			needreload();
+		break;
+		case "edit":
+			callback_edit($itemid,$_POST);
+			needreload();
+		break;
+	}
+}
+
+//get list of time conditions
+$callbacks = callback_list();
+?>
+
+</div> <!-- end content div so we can display rnav properly-->
+
+<!-- right side menu -->
+<div class="rnav">
+    <li><a id="<?php echo ($itemid=='' ? 'current':'') ?>" href="config.php?display=<?php echo urlencode($dispnum)?>"><?php echo _("Add Callback")?></a></li>
+<?php
+if (isset($callbacks)) {
+	foreach ($callbacks as $callback) {
+		echo "<li><a id=\"".($itemid==$callback['callback_id'] ? 'current':'')."\" href=\"config.php?display=".urlencode($dispnum)."&itemid=".urlencode($callback['callback_id'])."\">{$callback['description']}</a></li>";
+	}
+}
+?>
+</div>
+
+<div class="content">
+<?php
+if ($action == 'delete') {
+	echo '<br><h3>'._("Callback ").' '.$itemid.' '._("deleted").'!</h3>';
+} else {
+	if ($itemid){ 
+		//get details for this time condition
+		$thisItem = callback_get($itemid);
+	}
+
+	$delURL = $_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING'].'&action=delete';
+	$delButton = "
+			<form name=delete action=\"{$_SERVER['PHP_SELF']}\" method=POST>
+				<input type=\"hidden\" name=\"display\" value=\"{$dispnum}\">
+				<input type=\"hidden\" name=\"itemid\" value=\"{$itemid}\">
+				<input type=\"hidden\" name=\"action\" value=\"delete\">
+				<input type=submit value=\""._("Delete Callback")."\">
+			</form>";
+	
+?>
+
+	<h2><?php echo ($itemid ? _("Callback:")." ". $itemid : _("Add Callback")); ?></h2>
+	
+	<p><?php echo _("A callback will hang up on the caller and then call him/her back.  This is useful for reducing mobile phone charges and other applications.  Outbound calls will proceed according to the dial patterns in Outbound Routes."); ?></p>
+
+<?php		if ($itemid){  echo $delButton; 	} ?>
+
+<form autocomplete="off" name="edit" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return edit_onsubmit();">
+	<input type="hidden" name="display" value="<?php echo $dispnum?>">
+	<input type="hidden" name="action" value="<?php echo ($itemid ? 'edit' : 'add') ?>">
+	<input type="hidden" name="deptname" value="<?php echo $_SESSION["AMP_user"]->_deptname ?>">
+	<table>
+	<tr><td colspan="2"><h5><?php echo ($itemid ? _("Edit Callback") : _("Add Callback")) ?><hr></h5></td></tr>
+
+<?php		if ($itemid){ ?>
+		<input type="hidden" name="account" value="<?php echo $itemid; ?>">
+<?php		}?>
+
+	<tr>
+		<td><a href="#" class="info"><?php echo _("Callback Description:")?><span><?php echo _("Enter a description for this callback.")?></span></a></td>
+		<td><input type="text" name="description" value="<?php echo (isset($thisItem['description']) ? $thisItem['description'] : ''); ?>"></td>
+	</tr>
+	<tr>
+		<td><a href="#" class="info"><?php echo _("Override Caller ID:")?><span><?php echo _("Optional: Enter the number to dial for the callback.  Leave this blank to just dial the incoming Caller ID Number")?></span></a></td>
+		<td><input type="text" name="callbacknum" value="<?php echo (isset($thisItem['callbacknum']) ? $thisItem['callbacknum'] : ''); ?>"></td>
+	</tr>
+	<tr><td colspan="2"><br><h5><?php echo _("Destination after Callback")?>:<hr></h5></td></tr>
+
+<?php 
+//draw goto selects
+if (isset($thisItem)) {
+	echo drawselects($thisItem['destination'],0);
+} else { 
+	echo drawselects(null, 0);
+}
+?>
+
+	<tr>
+		<td colspan="2"><br><h6><input name="submit" type="submit" value="<?php echo _("Submit Changes")?>"></h6></td>		
+	</tr>
+	</table>
+<script language="javascript">
+<!--
+
+var theForm = document.edit;
+theForm.description.focus();
+
+function edit_onsubmit() {
+	setDestinations(edit,1);
+	
+	defaultEmptyOK = false;
+	if (!isAlphanumeric(theForm.description.value))
+		return warnInvalid(theForm.description, "Please enter a valid Description");
+		
+	if (!validateDestinations(edit,1,true))
+		return false;
+	
+	return true;
+}
+
+
+-->
+</script>
+
+
+	</form>
+<?php		
+} //end if action == delete
+?>
