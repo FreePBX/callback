@@ -7,6 +7,5 @@
 	<menuitems>
 		<callback>Callback</callback>
 	</menuitems>
-	<location>release/callback-1.0.tgz</location>
 	<info>http://freepbx.org/wiki/CallBack</info>
 </module>
