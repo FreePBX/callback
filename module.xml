@@ -8,4 +8,6 @@
 		<callback>Callback</callback>
 	</menuitems>
 	<info>http://freepbx.org/wiki/CallBack</info>
+	<location></location>
+	<md5sum></md5sum>
 </module>
