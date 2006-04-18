@@ -78,7 +78,7 @@ if ($action == 'delete') {
 
 	<h2><?php echo ($itemid ? _("Callback:")." ". $itemid : _("Add Callback")); ?></h2>
 	
-	<p><?php echo _("A callback will hang up on the caller and then call him/her back.  This is useful for reducing mobile phone charges and other applications.  Outbound calls will proceed according to the dial patterns in Outbound Routes."); ?></p>
+	<p><?php echo ($itemid ? '' : _("A callback will call back the caller after hangup. This is useful for reducing mobile phone charges as well as other applications. Outbound calls will proceed according to the dial patterns in Outbound Routes.")); ?></p>
 
 <?php		if ($itemid){  echo $delButton; 	} ?>
 
@@ -98,7 +98,7 @@ if ($action == 'delete') {
 		<td><input type="text" name="description" value="<?php echo (isset($thisItem['description']) ? $thisItem['description'] : ''); ?>"></td>
 	</tr>
 	<tr>
-		<td><a href="#" class="info"><?php echo _("Override Caller ID:")?><span><?php echo _("Optional: Enter the number to dial for the callback.  Leave this blank to just dial the incoming Caller ID Number")?></span></a></td>
+		<td><a href="#" class="info"><?php echo _("Callback Number:")?><span><?php echo _("Optional: Enter the number to dial for the callback.  Leave this blank to just dial the incoming Caller ID Number")?></span></a></td>
 		<td><input type="text" name="callbacknum" value="<?php echo (isset($thisItem['callbacknum']) ? $thisItem['callbacknum'] : ''); ?>"></td>
 	</tr>
 	<tr><td colspan="2"><br><h5><?php echo _("Destination after Callback")?>:<hr></h5></td></tr>
