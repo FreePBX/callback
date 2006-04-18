@@ -1,13 +1,13 @@
 <module>
 	<rawname>callback</rawname>
 	<name>Callback</name>
-	<version>1.0</version>
+	<version>1.0.1</version>
 	<type>setup</type>
 	<category>Module</category>
 	<menuitems>
 		<callback>Callback</callback>
 	</menuitems>
 	<info>http://freepbx.org/wiki/CallBack</info>
-	<location>release/callback-1.0.tgz</location>
-	<md5sum>caa5c475051f3761a40fe493ed2281d6</md5sum>
+	<location>release/callback-1.0.1.tgz</location>
+	<md5sum>57bc196a3c3c4b5636917173c36b8a9d</md5sum>
 </module>
