@@ -8,6 +8,6 @@
 		<callback>Callback</callback>
 	</menuitems>
 	<info>http://freepbx.org/wiki/CallBack</info>
-	<location>release/callback-1.0.1.tgz</location>
-	<md5sum>57bc196a3c3c4b5636917173c36b8a9d</md5sum>
+	<location>release/callback-1.1.tgz</location>
+	<md5sum>7350238f777e01b8ed8fb50409519a74</md5sum>
 </module>
