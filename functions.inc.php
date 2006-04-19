@@ -38,13 +38,17 @@ function callback_get_config($engine) {
 					$callback_destination = str_replace(",",".",$item['destination']);
 					$ext->add('callback', $item['callback_id'], '', new ext_setvar("DESTINATION",$callback_destination));
 					
-					//give the caller 10 seconds to hangup
-					$ext->add('callback', $item['callback_id'], '', new ext_wait(10));
+					// set sleep time
+					$sleep = (empty($item['sleep']) ? '0' : $item['sleep']);
+					$ext->add('callback', $item['callback_id'], '', new ext_setvar("SLEEP",$sleep));
+					
+					// kick off the callback script - run in background (&) so we can hangup
+					$ext->add('callback', $item['callback_id'], '', new ext_system((empty($asterisk_conf['astvarlib']) ? '/var/lib/asterisk' : $asterisk_conf['astvarlib']).'/bin/callback ${CALL} ${DESTINATION} ${SLEEP} &'));
+					
+					//hangup
+					$ext->add('callback', $item['callback_id'], '', new ext_hangup(''));
 				}
 				
-				// after caller hangs up, call back according to callback rules
-				$ext->add('callback', 'h', '', new ext_system((empty($asterisk_conf['astvarlib']) ? '/var/lib/asterisk' : $asterisk_conf['astvarlib']).'/bin/callback ${CALL} ${DESTINATION}'));
-				$ext->add('callback', 'h', '', new ext_hangup(''));
 			}
 		break;
 	}
@@ -84,7 +88,7 @@ function callback_add($post){
 		return false;
 	extract($post);
 	if(empty($description)) $description = ${$goto0.'0'};
-	$results = sql("INSERT INTO callback (description,callbacknum,destination,deptname) values (\"$description\",\"$callbacknum\",\"${$goto0.'0'}\",\"$deptname\")");
+	$results = sql("INSERT INTO callback (description,callbacknum,destination,deptname,sleep) values (\"$description\",\"$callbacknum\",\"${$goto0.'0'}\",\"$deptname\",\"$sleep\")");
 }
 
 function callback_edit($id,$post){
@@ -92,7 +96,7 @@ function callback_edit($id,$post){
 		return false;
 	extract($post);
 	if(empty($description)) $description = ${$goto0.'0'};
-	$results = sql("UPDATE callback SET description = \"$description\", callbacknum = \"$callbacknum\", destination = \"${$goto0.'0'}\", deptname = \"$deptname\" WHERE callback_id = \"$id\"");
+	$results = sql("UPDATE callback SET description = \"$description\", callbacknum = \"$callbacknum\", destination = \"${$goto0.'0'}\", deptname = \"$deptname\", sleep = \"$sleep\" WHERE callback_id = \"$id\"");
 }
 
 // ensures post vars is valid

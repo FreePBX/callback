@@ -11,7 +11,6 @@
 //MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 //GNU General Public License for more details.
 
-
 isset($_REQUEST['action'])?$action = $_REQUEST['action']:$action='';
 
 //the item we are currently displaying
@@ -78,7 +77,7 @@ if ($action == 'delete') {
 
 	<h2><?php echo ($itemid ? _("Callback:")." ". $itemid : _("Add Callback")); ?></h2>
 	
-	<p><?php echo ($itemid ? '' : _("A callback will call back the caller after hangup. This is useful for reducing mobile phone charges as well as other applications. Outbound calls will proceed according to the dial patterns in Outbound Routes.")); ?></p>
+	<p><?php echo ($itemid ? '' : _("A callback will hang up on the caller and then call them back, directing them to the selected destination. This is useful for reducing mobile phone charges as well as other applications. Outbound calls will proceed according to the dial patterns in Outbound Routes.")); ?></p>
 
 <?php		if ($itemid){  echo $delButton; 	} ?>
 
@@ -100,6 +99,10 @@ if ($action == 'delete') {
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Callback Number:")?><span><?php echo _("Optional: Enter the number to dial for the callback.  Leave this blank to just dial the incoming Caller ID Number")?></span></a></td>
 		<td><input type="text" name="callbacknum" value="<?php echo (isset($thisItem['callbacknum']) ? $thisItem['callbacknum'] : ''); ?>"></td>
+	</tr>
+	<tr>
+		<td><a href="#" class="info"><?php echo _("Delay Before Callback:")?><span><?php echo _("Optional: Enter the number of seconds the system should wait before calling back.")?></span></a></td>
+		<td><input size="3" type="text" name="sleep" value="<?php echo (isset($thisItem['sleep']) ? $thisItem['sleep'] : ''); ?>"></td>
 	</tr>
 	<tr><td colspan="2"><br><h5><?php echo _("Destination after Callback")?>:<hr></h5></td></tr>
 
