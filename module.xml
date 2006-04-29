@@ -7,7 +7,7 @@
 	<menuitems>
 		<callback>Callback</callback>
 	</menuitems>
-	<info>http://freepbx.org/wiki/CallBack</info>
+	<info>http://aussievoip.com.au/wiki/freePBX-Callback</info>
 	<location>release/callback-1.1.tgz</location>
 	<md5sum>bd806dafc98bf86f30dbaa897871bdbd</md5sum>
 </module>
