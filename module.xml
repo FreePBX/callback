@@ -8,6 +8,6 @@
 		<callback>Callback</callback>
 	</menuitems>
 	<info>http://aussievoip.com.au/wiki/freePBX-Callback</info>
-	<location>release/callback-1.1.1.tgz</location>
-	<md5sum>b3c319de264927dec131808f98de12a6</md5sum>
+	<location>release//2.2/callback-1.1.1.tgz</location>
+	<md5sum>1b88c37eec2917d91990c70e516ac58c</md5sum>
 </module>
