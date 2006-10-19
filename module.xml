@@ -1,12 +1,15 @@
 <module>
 	<rawname>callback</rawname>
 	<name>Callback</name>
-	<version>1.1.1</version>
+	<version>1.2</version>
 	<type>setup</type>
-	<category>Module</category>
+	<category>Remote Access</category>
 	<menuitems>
 		<callback>Callback</callback>
 	</menuitems>
+	<changelog>
+	*1.2* First 2.2 release
+	</changelog>
 	<info>http://aussievoip.com.au/wiki/freePBX-Callback</info>
 	<location>release//2.2/callback-1.1.1.tgz</location>
 	<md5sum>1b88c37eec2917d91990c70e516ac58c</md5sum>
