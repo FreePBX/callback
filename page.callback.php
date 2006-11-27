@@ -24,14 +24,17 @@ if(isset($_POST['action'])) {
 		case "add":
 			callback_add($_POST);
 			needreload();
+			redirect_standard('itemid');
 		break;
 		case "delete":
 			callback_del($itemid);
 			needreload();
+			redirect_standard('itemid');
 		break;
 		case "edit":
 			callback_edit($itemid,$_POST);
 			needreload();
+			redirect_standard('itemid');
 		break;
 	}
 }
