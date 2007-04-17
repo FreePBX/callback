@@ -1,13 +1,14 @@
 <module>
 	<rawname>callback</rawname>
 	<name>Callback</name>
-	<version>1.3.1</version>
+	<version>1.4.0</version>
 	<type>setup</type>
 	<category>Remote Access</category>
 	<menuitems>
 		<callback>Callback</callback>
 	</menuitems>
 	<changelog>
+	*1.4.0* SQLite3 support, fixes ticket:1793 (only for freePBX 2.3)
 	*1.3.1* Add he_IL translation
 	*1.3* Fixed UI errors for new 2.2 look.
 	*1.2* First 2.2 release
