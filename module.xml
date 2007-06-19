@@ -15,6 +15,6 @@
 	*1.2* First 2.2 release
 	</changelog>
 	<info>http://aussievoip.com.au/wiki/freePBX-Callback</info>
-	<location>release/2.3/callback-1.4.0.tgz</location>
-	<md5sum>4aba532d9aec75d4da9d792d31981f13</md5sum>
+	<location>release/2.3/callback-1.4.1.tgz</location>
+	<md5sum>7d39bdb237d548652c7c3a4fc85c9762</md5sum>
 </module>
