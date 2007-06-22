@@ -28,4 +28,23 @@ if(DB::IsError($check)) {
 	sql('ALTER TABLE callback ADD COLUMN sleep INT DEFAULT 0');
 	}
 
+$results = array();
+$sql = "SELECT callback_id, destination FROM callback";
+$results = $db->getAll($sql, DB_FETCHMODE_ASSOC);
+if (!DB::IsError($results)) { // error - table must not be there
+	foreach ($results as $result) {
+		$old_dest  = $result['destination'];
+		$callback_id    = $result['callback_id'];
+
+		$new_dest = merge_ext_followme(trim($old_dest));
+		if ($new_dest != $old_dest) {
+			$sql = "UPDATE callback SET destination = '$new_dest' WHERE callback_id = $callback_id  AND destination = '$old_dest'";
+			$results = $db->query($sql);
+			if(DB::IsError($results)) {
+				die($results->getMessage());
+			}
+		}
+	}
+}
+
 ?>
