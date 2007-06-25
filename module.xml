@@ -1,13 +1,14 @@
 <module>
 	<rawname>callback</rawname>
 	<name>Callback</name>
-	<version>1.4.2</version>
+	<version>1.4.2.1</version>
 	<type>setup</type>
 	<category>Remote Access</category>
 	<menuitems>
 		<callback>Callback</callback>
 	</menuitems>
 	<changelog>
+	*1.4.2.1* changed freePBX to FreePBX
 	*1.4.2* merge findmefollow/core extension destinations if any
 	*1.4.1* Moved callback agi script from core to module
 	*1.4.0* SQLite3 support, fixes ticket:1793 (only for FreePBX 2.3)
@@ -16,6 +17,6 @@
 	*1.2* First 2.2 release
 	</changelog>
 	<info>http://aussievoip.com.au/wiki/freePBX-Callback</info>
-	<location>release/2.3/callback-1.4.2.tgz</location>
-	<md5sum>f1718dd62c9032f3bd35089ab50d3b4e</md5sum>
+	<location>release/2.3/callback-1.4.2.1.tgz</location>
+	<md5sum>39773ad0d14097db3eccb0c3a0cb833d</md5sum>
 </module>
