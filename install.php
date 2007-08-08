@@ -16,7 +16,7 @@ $sql = "CREATE TABLE IF NOT EXISTS callback (
 
 $check = $db->query($sql);
 if (DB::IsError($check)) {
-	die( "Can not create `callback` table: " . $check->getMessage() .  "\n");
+	die_freepbx( "Can not create `callback` table: " . $check->getMessage() .  "\n");
 }
 
 
@@ -41,7 +41,7 @@ if (!DB::IsError($results)) { // error - table must not be there
 			$sql = "UPDATE callback SET destination = '$new_dest' WHERE callback_id = $callback_id  AND destination = '$old_dest'";
 			$results = $db->query($sql);
 			if(DB::IsError($results)) {
-				die($results->getMessage());
+				die_freepbx($results->getMessage());
 			}
 		}
 	}
