@@ -1,13 +1,14 @@
 <module>
 	<rawname>callback</rawname>
 	<name>Callback</name>
-	<version>1.4.2.2</version>
+	<version>1.4.2.3</version>
 	<type>setup</type>
-	<category>Remote Access</category>
+	<category>Internal Options &amp; Configuration</category>
 	<menuitems>
 		<callback>Callback</callback>
 	</menuitems>
 	<changelog>
+	*1.4.2.3* changed categories
 	*1.4.2.2* bump for rc1
 	*1.4.2.1* changed freePBX to FreePBX
 	*1.4.2* merge findmefollow/core extension destinations if any
@@ -17,6 +18,6 @@
 	*1.3* Fixed UI errors for new 2.2 look.
 	*1.2* First 2.2 release
 	</changelog>
-	<location>release/2.3/callback-1.4.2.2.tgz</location>
-	<md5sum>c09ac8e91976cd082f52c89513ffd217</md5sum>
+	<location>release/2.3/callback-1.4.2.3.tgz</location>
+	<md5sum>094ed1372d6f852bd6c50dc93dd5f0b6</md5sum>
 </module>
