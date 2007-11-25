@@ -82,7 +82,17 @@ if ($action == 'delete') {
 	
 	<p><?php echo ($itemid ? '' : _("A callback will hang up on the caller and then call them back, directing them to the selected destination. This is useful for reducing mobile phone charges as well as other applications. Outbound calls will proceed according to the dial patterns in Outbound Routes.")); ?></p>
 
-<?php		if ($itemid){  echo $delButton; 	} ?>
+<?php		if ($itemid) {
+					echo $delButton; 	
+					$usage_list = framework_display_destination_usage(callback_getdest($itemid));
+					if (!empty($usage_list)) {
+?>
+						<a href="#" class="info"><?php echo $usage_list['text']?>:<span><?php echo $usage_list['tooltip']?></span></a>
+<?php
+					}
+				}
+?>
+
 
 <form autocomplete="off" name="edit" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return edit_onsubmit();">
 	<input type="hidden" name="display" value="<?php echo $dispnum?>">

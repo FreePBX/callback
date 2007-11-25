@@ -16,6 +16,30 @@ function callback_destinations() {
 	}
 }
 
+function callback_getdest($exten) {
+	return array('callback,'.$exten.',1');
+}
+
+function callback_getdestinfo($dest) {
+	global $active_modules;
+
+	if (substr(trim($dest),0,9) == 'callback,') {
+		$exten = explode(',',$dest);
+		$exten = $exten[1];
+		$thisexten = callback_get($exten);
+		if (empty($thisexten)) {
+			return array();
+		} else {
+			//$type = isset($active_modules['announcement']['type'])?$active_modules['announcement']['type']:'setup';
+			return array('description' => 'Callback : '.$thisexten['description'],
+			             'edit_url' => 'config.php?display=callback&itemid='.urlencode($exten),
+								  );
+		}
+	} else {
+		return false;
+	}
+}
+
 /* 	Generates dialplan for callback
 	We call this with retrieve_conf
 */
