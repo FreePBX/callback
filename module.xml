@@ -1,13 +1,14 @@
 <module>
 	<rawname>callback</rawname>
 	<name>Callback</name>
-	<version>2.4.0.2</version>
+	<version>2.5.0</version>
 	<type>setup</type>
 	<category>Internal Options &amp; Configuration</category>
 	<menuitems>
 		<callback>Callback</callback>
 	</menuitems>
 	<changelog>
+	*2.5.0* #2845 tabindex
 	*2.4.0.2* #2843 Russian Translation
 	*2.4.0.1* add 2.4.0 dependency
 	*2.4.0* extension/destination registry, it translations
