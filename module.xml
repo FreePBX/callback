@@ -1,13 +1,14 @@
 <module>
 	<rawname>callback</rawname>
 	<name>Callback</name>
-	<version>2.5.0</version>
+	<version>2.5.0.1</version>
 	<type>setup</type>
 	<category>Internal Options &amp; Configuration</category>
 	<menuitems>
 		<callback>Callback</callback>
 	</menuitems>
 	<changelog>
+	*2.5.0.1* Swedish Translations, fix Italian Translations
 	*2.5.0* #2845 tabindex
 	*2.4.0.2* #2843 Russian Translation
 	*2.4.0.1* add 2.4.0 dependency
@@ -25,6 +26,6 @@
 	<depends>
 		<version>2.4.0</version>
 	</depends>
-	<location>release/2.5/callback-2.5.0.tgz</location>
-	<md5sum>ba1821e054ccf3c2629cc22478c767cf</md5sum>
+	<location>release/2.5/callback-2.5.0.1.tgz</location>
+	<md5sum>66a280c28c705cc0c8f804605871d3fe</md5sum>
 </module>
