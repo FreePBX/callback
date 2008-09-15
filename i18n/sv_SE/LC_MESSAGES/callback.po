@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: FreePBX callback\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-09-05 10:06+0200\n"
-"PO-Revision-Date: 2008-09-05 10:58+0100\n"
+"PO-Revision-Date: 2008-09-15 17:35+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -78,4 +78,8 @@ msgstr "Destination efter återuppringning"
 #: page.callback.php:132
 msgid "Submit Changes"
 msgstr "Spara ändringar"
+
+#: module.xml
+msgid "Callback"
+msgstr "Återuppringning"
 
