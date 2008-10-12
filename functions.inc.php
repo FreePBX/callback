@@ -39,6 +39,33 @@ function callback_getdestinfo($dest) {
 	}
 }
 
+function callback_check_destinations($dest=true) {
+	global $active_modules;
+
+	$destlist = array();
+	if (is_array($dest) && empty($dest)) {
+		return $destlist;
+	}
+	$sql = "SELECT callback_id, destination, description FROM callback ";
+	if ($dest !== true) {
+		$sql .= "WHERE destination in ('".implode("','",$dest)."')";
+	}
+	$results = sql($sql,"getAll",DB_FETCHMODE_ASSOC);
+
+	$type = isset($active_modules['callback']['type'])?$active_modules['callback']['type']:'setup';
+
+	foreach ($results as $result) {
+		$thisdest = $result['destination'];
+		$thisid   = $result['callback_id'];
+		$destlist[] = array(
+			'dest' => $thisdest,
+			'description' => sprintf(_("Callback: %s"),$result['description']),
+			'edit_url' => 'config.php?display=callback&type='.$type.'&itemid='.urlencode($thisid),
+		);
+	}
+	return $destlist;
+}
+
 /* 	Generates dialplan for callback
 	We call this with retrieve_conf
 */
