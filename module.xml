@@ -1,13 +1,14 @@
 <module>
 	<rawname>callback</rawname>
 	<name>Callback</name>
-	<version>2.5.0.1</version>
+	<version>2.5.0.2</version>
 	<type>setup</type>
 	<category>Internal Options &amp; Configuration</category>
 	<menuitems>
 		<callback>Callback</callback>
 	</menuitems>
 	<changelog>
+	*2.5.0.2* #3272 missing callback_check_destinations(), localization fixes
 	*2.5.0.1* Swedish Translations, fix Italian Translations
 	*2.5.0* #2845 tabindex
 	*2.4.0.2* #2843 Russian Translation
@@ -26,6 +27,6 @@
 	<depends>
 		<version>2.4.0</version>
 	</depends>
-	<location>release/2.5/callback-2.5.0.1.tgz</location>
-	<md5sum>66a280c28c705cc0c8f804605871d3fe</md5sum>
+	<location>release/2.5/callback-2.5.0.2.tgz</location>
+	<md5sum>ba3a9ae54bd09019263e5c6f018466ae</md5sum>
 </module>
