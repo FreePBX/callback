@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX callback\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-05 10:06+0200\n"
-"PO-Revision-Date: 2008-09-17 09:47+0100\n"
+"POT-Creation-Date: 2008-10-05 23:32+0200\n"
+"PO-Revision-Date: 2008-10-11 17:47+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,6 +16,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
+
+#: functions.inc.php:34
+#, php-format
+msgid "Callback: %s"
+msgstr "Återuppringning: %s"
 
 #: page.callback.php:50
 #: page.callback.php:81

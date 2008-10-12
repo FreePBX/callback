@@ -22,7 +22,6 @@ function callback_getdest($exten) {
 
 function callback_getdestinfo($dest) {
 	global $active_modules;
-
 	if (substr(trim($dest),0,9) == 'callback,') {
 		$exten = explode(',',$dest);
 		$exten = $exten[1];
@@ -31,7 +30,7 @@ function callback_getdestinfo($dest) {
 			return array();
 		} else {
 			//$type = isset($active_modules['announcement']['type'])?$active_modules['announcement']['type']:'setup';
-			return array('description' => 'Callback : '.$thisexten['description'],
+			return array('description' => sprintf(_("Callback: %s"),$thisexten['description']),
 			             'edit_url' => 'config.php?display=callback&itemid='.urlencode($exten),
 								  );
 		}
