@@ -23,6 +23,8 @@ isset($_REQUEST['itemid'])?$itemid=$_REQUEST['itemid']:$itemid='';
 
 $dispnum = "callback"; //used for switch on config.php
 
+$tabindex = 0;
+
 //if submitting form, update database
 if(isset($_POST['action'])) {
 	switch ($action) {
