@@ -1,13 +1,16 @@
 <module>
 	<rawname>callback</rawname>
 	<name>Callback</name>
-	<version>2.5.0.2</version>
+	<version>2.6.0.0</version>
+	<publisher>FreePBX</publisher>
+	<license>GPLv2+</license>
 	<type>setup</type>
 	<category>Internal Options &amp; Configuration</category>
 	<menuitems>
 		<callback>Callback</callback>
 	</menuitems>
 	<changelog>
+	*2.6.0.0* localizations, misc
 	*2.5.0.2* #3272 missing callback_check_destinations(), localization fixes
 	*2.5.0.1* Swedish Translations, fix Italian Translations
 	*2.5.0* #2845 tabindex
