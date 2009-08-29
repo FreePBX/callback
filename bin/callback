@@ -49,15 +49,15 @@ if (! @ include("Console/Getopt.php")) {
 }
 out("OK");
 
-
 outn("Reading ".AMP_CONF."..");
-$amp_conf = parse_amportal_conf(AMP_CONF);
+$amp_conf = parse_amportal_conf_bootstrap(AMP_CONF);
 if (count($amp_conf) == 0) {
 	fatal("FAILED");
 }
 out("OK");
 
 // include manager functions
+require_once($amp_conf['AMPWEBROOT']."/admin/functions.inc.php");
 include $amp_conf['AMPWEBROOT'].'/admin/common/php-asmanager.php';
 
 // **** Parse out command-line args
@@ -105,15 +105,7 @@ if ($res = $astman->connect("127.0.0.1", $amp_conf["AMPMGRUSER"] , $amp_conf["AM
 $astman->disconnect();
 
 
-
-
-
-
-
-
-
-
-function parse_amportal_conf($filename) {
+function parse_amportal_conf_bootstrap($filename) {
 	$file = file($filename);
 	foreach ($file as $line) {
 		if (preg_match("/^\s*([a-zA-Z0-9]+)\s*=\s*(.*)\s*([;#].*)?/",$line,$matches)) { 
