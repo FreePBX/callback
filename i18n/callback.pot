@@ -1,4 +1,4 @@
-#This file is part of FreePBX.
+# This file is part of FreePBX.
 #
 #    FreePBX is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -13,15 +13,14 @@
 #    You should have received a copy of the GNU General Public License
 #    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
 #
-# Copyright (C) 2008, 2009 Mikael Carlsson
-# Language template for callback
+# FreePBX language template for callback
+# Copyright (C) 2008, 2009, 2010 Bandwith.com
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-05 23:32+0200\n"
+"POT-Creation-Date: 2010-02-18 22:37+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,32 +28,44 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: functions.inc.php:34
+#: callback/callback.i18n.php:5 callback/callback.i18n.php:11
+msgid "Callback"
+msgstr ""
+
+#: callback/callback.i18n.php:7
+msgid ""
+"Internal Options \n"
+"&\n"
+" Configuration"
+msgstr ""
+
+#: callback/functions.inc.php:49 callback/functions.inc.php:78
 #, php-format
 msgid "Callback: %s"
 msgstr ""
 
-#: page.callback.php:50 page.callback.php:81 page.callback.php:102
+#: callback/page.callback.php:57 callback/page.callback.php:88
+#: callback/page.callback.php:109
 msgid "Add Callback"
 msgstr ""
 
-#: page.callback.php:63
+#: callback/page.callback.php:70
 msgid "Callback "
 msgstr ""
 
-#: page.callback.php:63
+#: callback/page.callback.php:70
 msgid "deleted"
 msgstr ""
 
-#: page.callback.php:76
+#: callback/page.callback.php:83
 msgid "Delete Callback"
 msgstr ""
 
-#: page.callback.php:81
+#: callback/page.callback.php:88
 msgid "Callback:"
 msgstr ""
 
-#: page.callback.php:83
+#: callback/page.callback.php:90
 msgid ""
 "A callback will hang up on the caller and then call them back, directing "
 "them to the selected destination. This is useful for reducing mobile phone "
@@ -62,46 +73,42 @@ msgid ""
 "to the dial patterns in Outbound Routes."
 msgstr ""
 
-#: page.callback.php:102
+#: callback/page.callback.php:109
 msgid "Edit Callback"
 msgstr ""
 
-#: page.callback.php:109
+#: callback/page.callback.php:116
 msgid "Callback Description:"
 msgstr ""
 
-#: page.callback.php:109
+#: callback/page.callback.php:116
 msgid "Enter a description for this callback."
 msgstr ""
 
-#: page.callback.php:113
+#: callback/page.callback.php:120
 msgid "Callback Number:"
 msgstr ""
 
-#: page.callback.php:113
+#: callback/page.callback.php:120
 msgid ""
 "Optional: Enter the number to dial for the callback.  Leave this blank to "
 "just dial the incoming Caller ID Number"
 msgstr ""
 
-#: page.callback.php:117
+#: callback/page.callback.php:124
 msgid "Delay Before Callback:"
 msgstr ""
 
-#: page.callback.php:117
+#: callback/page.callback.php:124
 msgid ""
 "Optional: Enter the number of seconds the system should wait before calling "
 "back."
 msgstr ""
 
-#: page.callback.php:120
+#: callback/page.callback.php:127
 msgid "Destination after Callback"
 msgstr ""
 
-#: page.callback.php:132
+#: callback/page.callback.php:139
 msgid "Submit Changes"
-msgstr ""
-
-#: module.xml
-msgid "Callback"
 msgstr ""
