@@ -1,13 +1,26 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# This file is part of FreePBX.
+#
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# FreePBX language for callback
+# Copyright (C) 2009, 2010 Mikael Carlsson
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX callback\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-05 23:32+0200\n"
+"POT-Creation-Date: 2010-02-27 13:44+0100\n"
 "PO-Revision-Date: 2008-10-11 17:47+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -17,74 +30,78 @@ msgstr ""
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
 
-#: functions.inc.php:34
+msgid "Callback"
+msgstr "Återuppringning"
+
+msgid ""
+"Internal Options \n"
+"&\n"
+" Configuration"
+msgstr ""
+
 #, php-format
 msgid "Callback: %s"
 msgstr "Återuppringning: %s"
 
-#: page.callback.php:50
-#: page.callback.php:81
-#: page.callback.php:102
 msgid "Add Callback"
 msgstr "Lägg till återuppringning"
 
-#: page.callback.php:63
 msgid "Callback "
 msgstr "Återuppringning"
 
-#: page.callback.php:63
 msgid "deleted"
 msgstr "borttagen"
 
-#: page.callback.php:76
 msgid "Delete Callback"
 msgstr "Ta bort återuppringning"
 
-#: page.callback.php:81
 msgid "Callback:"
 msgstr "Återuppringning:"
 
-#: page.callback.php:83
-msgid "A callback will hang up on the caller and then call them back, directing them to the selected destination. This is useful for reducing mobile phone charges as well as other applications. Outbound calls will proceed according to the dial patterns in Outbound Routes."
-msgstr "En återuppringning kommer att lägga på luren för den uppringande för att sedan ringa tillbaka och koppla samtalet till vald destination. Detta är användbart för att reducera kostnader för mobilsamtal eller för andra ändamål. Utgående samtal kommer att utföras enligt reglerna definierade för utgående vägar."
+msgid ""
+"A callback will hang up on the caller and then call them back, directing "
+"them to the selected destination. This is useful for reducing mobile phone "
+"charges as well as other applications. Outbound calls will proceed according "
+"to the dial patterns in Outbound Routes."
+msgstr ""
+"En återuppringning kommer att lägga på luren för den uppringande för att "
+"sedan ringa tillbaka och koppla samtalet till vald destination. Detta är "
+"användbart för att reducera kostnader för mobilsamtal eller för andra "
+"ändamål. Utgående samtal kommer att utföras enligt reglerna definierade för "
+"utgående vägar."
 
-#: page.callback.php:102
 msgid "Edit Callback"
 msgstr "Redigera återuppringning"
 
-#: page.callback.php:109
 msgid "Callback Description:"
 msgstr "Beskrivning:"
 
-#: page.callback.php:109
 msgid "Enter a description for this callback."
 msgstr "Skriv in en kortfattad beskrivning för denna återuppringning."
 
-#: page.callback.php:113
 msgid "Callback Number:"
 msgstr "Nummer för återuppringning"
 
-#: page.callback.php:113
-msgid "Optional: Enter the number to dial for the callback.  Leave this blank to just dial the incoming Caller ID Number"
-msgstr "Valbart: Skriv in det telefonnummer som ska användas för återuppringning. Lämna detta fält tomt för att ringa tillbaka på det nummer som uppringarens nummerpresentation skickade."
+msgid ""
+"Optional: Enter the number to dial for the callback.  Leave this blank to "
+"just dial the incoming Caller ID Number"
+msgstr ""
+"Valbart: Skriv in det telefonnummer som ska användas för återuppringning. "
+"Lämna detta fält tomt för att ringa tillbaka på det nummer som uppringarens "
+"nummerpresentation skickade."
 
-#: page.callback.php:117
 msgid "Delay Before Callback:"
 msgstr "Fördröjning före återuppringning."
 
-#: page.callback.php:117
-msgid "Optional: Enter the number of seconds the system should wait before calling back."
-msgstr "Valbart: Skriv in det antal sekunder systemet väntar innan det ringer tillbaka."
+msgid ""
+"Optional: Enter the number of seconds the system should wait before calling "
+"back."
+msgstr ""
+"Valbart: Skriv in det antal sekunder systemet väntar innan det ringer "
+"tillbaka."
 
-#: page.callback.php:120
 msgid "Destination after Callback"
 msgstr "Destination efter återuppringning"
 
-#: page.callback.php:132
 msgid "Submit Changes"
 msgstr "Spara ändringar"
-
-#: module.xml
-msgid "Callback"
-msgstr "Återuppringning"
-
