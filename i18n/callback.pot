@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-27 13:44+0100\n"
+"POT-Creation-Date: 2010-02-27 17:34+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,44 +28,34 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: callback/callback.i18n.php:5 callback/callback.i18n.php:11
 msgid "Callback"
 msgstr ""
 
-#: callback/callback.i18n.php:7
 msgid ""
 "Internal Options \n"
 "&\n"
 " Configuration"
 msgstr ""
 
-#: callback/functions.inc.php:49 callback/functions.inc.php:78
 #, php-format
 msgid "Callback: %s"
 msgstr ""
 
-#: callback/page.callback.php:57 callback/page.callback.php:88
-#: callback/page.callback.php:109
 msgid "Add Callback"
 msgstr ""
 
-#: callback/page.callback.php:70
 msgid "Callback "
 msgstr ""
 
-#: callback/page.callback.php:70
 msgid "deleted"
 msgstr ""
 
-#: callback/page.callback.php:83
 msgid "Delete Callback"
 msgstr ""
 
-#: callback/page.callback.php:88
 msgid "Callback:"
 msgstr ""
 
-#: callback/page.callback.php:90
 msgid ""
 "A callback will hang up on the caller and then call them back, directing "
 "them to the selected destination. This is useful for reducing mobile phone "
@@ -73,42 +63,33 @@ msgid ""
 "to the dial patterns in Outbound Routes."
 msgstr ""
 
-#: callback/page.callback.php:109
 msgid "Edit Callback"
 msgstr ""
 
-#: callback/page.callback.php:116
 msgid "Callback Description:"
 msgstr ""
 
-#: callback/page.callback.php:116
 msgid "Enter a description for this callback."
 msgstr ""
 
-#: callback/page.callback.php:120
 msgid "Callback Number:"
 msgstr ""
 
-#: callback/page.callback.php:120
 msgid ""
 "Optional: Enter the number to dial for the callback.  Leave this blank to "
 "just dial the incoming Caller ID Number"
 msgstr ""
 
-#: callback/page.callback.php:124
 msgid "Delay Before Callback:"
 msgstr ""
 
-#: callback/page.callback.php:124
 msgid ""
 "Optional: Enter the number of seconds the system should wait before calling "
 "back."
 msgstr ""
 
-#: callback/page.callback.php:127
 msgid "Destination after Callback"
 msgstr ""
 
-#: callback/page.callback.php:139
 msgid "Submit Changes"
 msgstr ""
