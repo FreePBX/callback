@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-10-05 23:32+0200\n"
+"POT-Creation-Date: 2010-02-27 17:34+0100\n"
 "PO-Revision-Date: 2008-11-07 18:23+0100\n"
 "Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
 "Language-Team: Italian\n"
@@ -17,128 +17,79 @@ msgstr ""
 "X-Poedit-Language: Italian\n"
 "X-Poedit-Country: ITALY\n"
 
-#: functions.inc.php:34
+msgid "Callback"
+msgstr "Callback"
+
+msgid ""
+"Internal Options \n"
+"&\n"
+" Configuration"
+msgstr ""
+
 #, php-format
 msgid "Callback: %s"
 msgstr "Callback: %s"
 
-#: page.callback.php:50
-#: page.callback.php:81
-#: page.callback.php:102
 msgid "Add Callback"
 msgstr "Aggiungi Callback"
 
-#: page.callback.php:63
 msgid "Callback "
 msgstr "Callback"
 
-#: page.callback.php:63
 msgid "deleted"
 msgstr "eliminato"
 
-#: page.callback.php:76
 msgid "Delete Callback"
 msgstr "Elimina Callback"
 
-#: page.callback.php:81
 msgid "Callback:"
 msgstr "Callback:"
 
-#: page.callback.php:83
-msgid "A callback will hang up on the caller and then call them back, directing them to the selected destination. This is useful for reducing mobile phone charges as well as other applications. Outbound calls will proceed according to the dial patterns in Outbound Routes."
-msgstr "Il callback è un sistema che permette di essere richiamati in modo automatico. Se si effettua una chiamata ad un callback, il sistema riaggancerà il chiamante e lo richiamerà \"indietro\" subito dopo, reindirizzando la chiamata alla destinazione selezionata. Questo è molto utile per esempio per ridurre i costi sulle chiamate ai cellulari o internazionali. Le chiamate effettuate procederanno secondo le impostazioni fatte nelle Rotte in Uscita."
+msgid ""
+"A callback will hang up on the caller and then call them back, directing "
+"them to the selected destination. This is useful for reducing mobile phone "
+"charges as well as other applications. Outbound calls will proceed according "
+"to the dial patterns in Outbound Routes."
+msgstr ""
+"Il callback è un sistema che permette di essere richiamati in modo "
+"automatico. Se si effettua una chiamata ad un callback, il sistema "
+"riaggancerà il chiamante e lo richiamerà \"indietro\" subito dopo, "
+"reindirizzando la chiamata alla destinazione selezionata. Questo è molto "
+"utile per esempio per ridurre i costi sulle chiamate ai cellulari o "
+"internazionali. Le chiamate effettuate procederanno secondo le impostazioni "
+"fatte nelle Rotte in Uscita."
 
-#: page.callback.php:102
 msgid "Edit Callback"
 msgstr "Modifica Callback"
 
-#: page.callback.php:109
 msgid "Callback Description:"
 msgstr "Descrizione Callback:"
 
-#: page.callback.php:109
 msgid "Enter a description for this callback."
 msgstr "Inserire una descrizione per questo callback."
 
-#: page.callback.php:113
 msgid "Callback Number:"
 msgstr "Numero Callback:"
 
-#: page.callback.php:113
-msgid "Optional: Enter the number to dial for the callback.  Leave this blank to just dial the incoming Caller ID Number"
-msgstr "Opzionale: inserire il numero che questo callback dovrà chiamare. Lasciare vuoto per chiamare semplicemente l'ID Chiamante"
+msgid ""
+"Optional: Enter the number to dial for the callback.  Leave this blank to "
+"just dial the incoming Caller ID Number"
+msgstr ""
+"Opzionale: inserire il numero che questo callback dovrà chiamare. Lasciare "
+"vuoto per chiamare semplicemente l'ID Chiamante"
 
-#: page.callback.php:117
 msgid "Delay Before Callback:"
 msgstr "Ritardo prima del Callback:"
 
-#: page.callback.php:117
-msgid "Optional: Enter the number of seconds the system should wait before calling back."
-msgstr "Opzionale: inserire il numero di secondi di attesa prima di effettuare il callback."
+msgid ""
+"Optional: Enter the number of seconds the system should wait before calling "
+"back."
+msgstr ""
+"Opzionale: inserire il numero di secondi di attesa prima di effettuare il "
+"callback."
 
-#: page.callback.php:120
 msgid "Destination after Callback"
 msgstr "Destinazione dopo il Callback"
 
-#: page.callback.php:132
 msgid "Submit Changes"
 msgstr "Conferma Cambiamenti"
-
-#: module.xml
-msgid "Callback"
-msgstr "Callback"
-
-#~ msgid "Core"
-#~ msgstr "Sistema"
-#~ msgid "Conferences"
-#~ msgstr "Conferenze"
-#~ msgid "Phonebook Directory"
-#~ msgstr "Elenco Telefonico"
-#~ msgid "Queues"
-#~ msgstr "Code"
-#~ msgid "Ring Groups"
-#~ msgstr "Gruppi di chiamata"
-#~ msgid "Speed dial functions"
-#~ msgstr "Selezione breve"
-#~ msgid "Time Conditions"
-#~ msgstr "Condizioni Temporali"
-#~ msgid "Custom Contexts"
-#~ msgstr "Contesti Personalizzati"
-#~ msgid "Extended Routing"
-#~ msgstr "Rotte specifiche"
-#~ msgid ""
-#~ "Custom App<span><br>ADVANCED USERS ONLY<br><br>Uses Goto() to send caller "
-#~ "to a custom context.<br><br>The context name should start with \"custom-"
-#~ "\", and be in the format custom-context,extension,priority. Example entry:"
-#~ "<br><br><b>custom-myapp,s,1</b><br><br>The <b>[custom-myapp]</b> context "
-#~ "would need to be created and included in extensions_custom.conf</span>"
-#~ msgstr ""
-#~ "Applicazione Personalizzata<span>SOLO UTENTI AVANZATI<br>Utilizzare Goto"
-#~ "() per inviare la chiamata verso un contesto personalizzato.<br><br>Il "
-#~ "nome del contesto deve iniziare per \"custom-\" e deve essere nel formato "
-#~ "custom-contesto,extension,priorità. Esempio: <br><br><b>custom-app,s,1</"
-#~ "b><br><br><b>Il contesto [custom-app] </b> deve poi essere creato e "
-#~ "incluso nel file extensions_custom.conf</span>"
-#~ msgid "Terminate Call"
-#~ msgstr "Termina Chiamata"
-#~ msgid "Extension"
-#~ msgstr "Interni"
-#~ msgid "Voicemail"
-#~ msgstr "Caselle Vocali"
-#~ msgid "Misc Destinations"
-#~ msgstr "Destinazioni Varie"
-#~ msgid "Custom Applications"
-#~ msgstr "Applicazioni Personalizzate"
-#~ msgid "VoiceMail Blasting"
-#~ msgstr "Gruppi di Caselle Vocali"
-#~ msgid "Languages"
-#~ msgstr "Lingue"
-#~ msgid "Extensions"
-#~ msgstr "Interni"
-#~ msgid "Announcements"
-#~ msgstr "Annunci"
-#~ msgid "Day Night Mode"
-#~ msgstr "Servizio Giorno/Notte"
-#~ msgid "Used as Destination by %s %s"
-#~ msgstr "Usato come Destinazione da %s %s"
-
