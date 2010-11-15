@@ -87,7 +87,7 @@ function callback_check_destinations($dest=true) {
 */
 function callback_get_config($engine) {
 	global $ext;  // is this the best way to pass this?
-	global $asterisk_conf;
+	global $amp_conf;
 	switch($engine) {
 		case "asterisk":
 			$timelist = callback_list();
@@ -109,7 +109,7 @@ function callback_get_config($engine) {
 					$ext->add('callback', $item['callback_id'], '', new ext_setvar("SLEEP",$sleep));
 					
 					// kick off the callback script - run in background (&) so we can hangup
-					$ext->add('callback', $item['callback_id'], '', new ext_system((empty($asterisk_conf['astvarlib']) ? '/var/lib/asterisk' : $asterisk_conf['astvarlib']).'/bin/callback ${CALL} ${DESTINATION} ${SLEEP} &'));
+					$ext->add('callback', $item['callback_id'], '', new ext_system((empty($amp_conf['ASTVARLIBDIR']) ? '/var/lib/asterisk' : $amp_conf['ASTVARLIBDIR']).'/bin/callback ${CALL} ${DESTINATION} ${SLEEP} '.escapeshellarg($amp_conf['AMPWEBROOT']).' '.escapeshellarg($amp_conf['ASTETCDIR']).' '.escapeshellarg($amp_conf['AMPMGRUSER']).' '.escapeshellarg($amp_conf['AMPMGRPASS']).'&'));
 					
 					//hangup
 					$ext->add('callback', $item['callback_id'], '', new ext_hangup(''));

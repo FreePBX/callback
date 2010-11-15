@@ -1,14 +1,19 @@
 #!/usr/bin/php -q
 <?php
 /*
-This Callback script takes 3 arguments:
+This Callback script takes 7 arguments:
 1- number to dial
 2- context.exten.priority to dump number into
 3- time in seconds to sleep before calling back
+4- path to the AMPWEBROOT
+5- path to the ASTETCDIR
+6- AMI USER
+6- AMI PASSWORD
 
 eg: callback 14032448089 ext-meetme.200.1
 */
 //Copyright (C) 2004 Coalescent Systems Inc. (info@coalescentsystems.ca)
+//Copyright (C) 2010 Astrogen LLC
 //This file is part of FreePBX.
 //
 //    FreePBX is free software: you can redistribute it and/or modify
@@ -26,52 +31,23 @@ eg: callback 14032448089 ext-meetme.200.1
 ?>
 
 <?php
-define("AMP_CONF", "/etc/amportal.conf");
 
-//sleep(10);
-
-/**************************************************************/
-
-// from  ben-php dot net at efros dot com   at  php.net/install.unix.commandline
-if (version_compare(phpversion(),'4.3.0','<') || !defined("STDIN")) {
-	define('STDIN',fopen("php://stdin","r"));
-	define('STDOUT',fopen("php://stdout","r"));
-	define('STDERR',fopen("php://stderr","r"));
-	register_shutdown_function( create_function( '' , 'fclose(STDIN); fclose(STDOUT); fclose(STDERR); return true;' ) );
+if ($args != 8) {
+  fatal("Wrong number of arguments, should be:\n".$argv[0]." callback_number callback_destination delay_seconds AMPWEBROOT ASTETCDIR AMPMGRUSER AMPMGRPASS\n");
 }
+echo "args: $argc\n";
 
-// **** Make sure we have PEAR's GetOpts.php, and include it
+$callback_number = $argv[1];
+$callback_destination = $argv[2];
+$pause_seconds = $argv[3];
 
-outn("Checking for PEAR Console::Getopt..");
-if (! @ include("Console/Getopt.php")) {
-	out("FAILED");
-	fatal("PEAR must be installed (requires Console/Getopt.php). Include path: ".ini_get("include_path"));
-}
-out("OK");
-
-outn("Reading ".AMP_CONF."..");
-$amp_conf = parse_amportal_conf_bootstrap(AMP_CONF);
-if (count($amp_conf) == 0) {
-	fatal("FAILED");
-}
-out("OK");
+$amp_conf['AMPWEBROOT'] = $argv[4];
+$amp_conf['ASTETCDIR']  = $argv[5];
+$amp_conf['AMPMGRUSER'] = $argv[6];
+$amp_conf['AMPMGRPASS'] = $argv[7];
 
 // include manager functions
-require_once($amp_conf['AMPWEBROOT']."/admin/functions.inc.php");
 include $amp_conf['AMPWEBROOT'].'/admin/common/php-asmanager.php';
-
-// **** Parse out command-line args
-// context, extension, and number of voicemails
-out("Getting passed arguments:");
-$con  = new Console_Getopt;
-$args = $con->readPHPArgv();
-array_shift($args);
-//system("echo \"".$args[0].substr($args[1],0,strpos($args[1],"@")).$args[2]."\" > on.txt"); ;
-print_r($args);
-
-$callback_number = $args[0];
-$callback_destination = $args[1];
-$pause_seconds = $args[2];
 
 if($pause_seconds)
 	sleep($pause_seconds);
@@ -84,7 +60,6 @@ $callback_priority = $dest[2];
 
 //define the args for Originate
 $channel = "Local/".$callback_number."@from-internal";
-//$channel = "zap/g0/".$uservm[$vmcontext][$vmextension]['options']['callme'];
 $exten = $callback_exten;
 $context = $callback_context;
 $priority = $callback_priority;
@@ -103,29 +78,6 @@ if ($res = $astman->connect("127.0.0.1", $amp_conf["AMPMGRUSER"] , $amp_conf["AM
 	fatal("Cannot connect to Asterisk Manager with ".$amp_conf["AMPMGRUSER"]."/".$amp_conf["AMPMGRPASS"]);
 }
 $astman->disconnect();
-
-
-function parse_amportal_conf_bootstrap($filename) {
-	$file = file($filename);
-	foreach ($file as $line) {
-		if (preg_match("/^\s*([a-zA-Z0-9]+)\s*=\s*(.*)\s*([;#].*)?/",$line,$matches)) { 
-			$conf[ $matches[1] ] = $matches[2];
-		}
-	}
-	return $conf;
-}
-
-function out($text) {
-	echo $text."\n";
-}
-
-function outn($text) {
-	echo $text;
-}
-
-function error($text) {
-	echo "[ERROR] ".$text."\n";
-}
 
 function fatal($text) {
 	echo "[FATAL] ".$text."\n";
