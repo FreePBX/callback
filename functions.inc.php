@@ -82,6 +82,12 @@ function callback_check_destinations($dest=true) {
 	return $destlist;
 }
 
+function callback_change_destination($old_dest, $new_dest) {
+	$sql = 'UPDATE callback SET destination = "' . $new_dest . '" WHERE destination = "' . $old_dest . '"';
+	sql($sql, "query");
+}
+
+
 /* 	Generates dialplan for callback
 	We call this with retrieve_conf
 */
