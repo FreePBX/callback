@@ -11,7 +11,7 @@
 		<callback>Callback</callback>
 	</menuitems>
 	<changelog>
-	*2.9.0.0* #4639
+	*2.9.0.0* #4639, #4655
 	*2.8.0.0* published 2.8 version
 	*2.7.0.0* localizations
 	*2.6.0.1* #3838
@@ -35,6 +35,6 @@
 	<depends>
 		<version>2.4.0</version>
 	</depends>
-	<location>release/2.8/callback-2.8.0.0.tgz</location>
-	<md5sum>3e6acf09530623157a54e159e56c0f76</md5sum>
+	<location>release/2.9/callback-2.9.0.0.tgz</location>
+	<md5sum>c57825fdc6e7507b0299c10e775c5e31</md5sum>
 </module>
