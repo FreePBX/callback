@@ -1,6 +1,6 @@
 <module>
 	<rawname>callback</rawname>
-	<repo>standard</repo>
+	<repo>extended</repo>
 	<name>Callback</name>
 	<version>2.9.0.0</version>
 	<publisher>FreePBX</publisher>
