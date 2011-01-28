@@ -2,7 +2,7 @@
 	<rawname>callback</rawname>
 	<repo>extended</repo>
 	<name>Callback</name>
-	<version>2.9.0.0</version>
+	<version>2.9.0.1</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
 	<type>setup</type>
@@ -11,6 +11,7 @@
 		<callback>Callback</callback>
 	</menuitems>
 	<changelog>
+	*2.9.0.1* set repo
 	*2.9.0.0* #4639, #4655
 	*2.8.0.0* published 2.8 version
 	*2.7.0.0* localizations
@@ -35,6 +36,6 @@
 	<depends>
 		<version>2.4.0</version>
 	</depends>
-	<location>release/2.9/callback-2.9.0.0.tgz</location>
-	<md5sum>c57825fdc6e7507b0299c10e775c5e31</md5sum>
+	<location>release/2.9/callback-2.9.0.1.tgz</location>
+	<md5sum>9e6f7ff334f54a37caca10ce91d14de3</md5sum>
 </module>
