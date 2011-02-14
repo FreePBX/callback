@@ -33,7 +33,7 @@ eg: callback 14032448089 ext-meetme.200.1
 <?php
 
 if ($args != 8) {
-  fatal("Wrong number of arguments, should be:\n".$argv[0]." callback_number callback_destination delay_seconds AMPWEBROOT ASTETCDIR AMPMGRUSER AMPMGRPASS\n");
+  cb_fatal("Wrong number of arguments, should be:\n".$argv[0]." callback_number callback_destination delay_seconds AMPWEBROOT ASTETCDIR AMPMGRUSER AMPMGRPASS\n");
 }
 echo "args: $argc\n";
 
@@ -75,11 +75,11 @@ $astman = new AGI_AsteriskManager();
 if ($res = $astman->connect("127.0.0.1", $amp_conf["AMPMGRUSER"] , $amp_conf["AMPMGRPASS"])) {
 	$astman->Originate($channel, $exten, $context, $priority, $timeout, $callerid, $variable, $account, $application, $data);
 } else {
-	fatal("Cannot connect to Asterisk Manager with ".$amp_conf["AMPMGRUSER"]."/".$amp_conf["AMPMGRPASS"]);
+	cb_fatal("Cannot connect to Asterisk Manager with ".$amp_conf["AMPMGRUSER"]."/".$amp_conf["AMPMGRPASS"]);
 }
 $astman->disconnect();
 
-function fatal($text) {
+function cb_fatal($text) {
 	echo "[FATAL] ".$text."\n";
 	exit(1);
 }
