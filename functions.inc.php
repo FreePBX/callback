@@ -115,7 +115,7 @@ function callback_get_config($engine) {
 					$ext->add('callback', $item['callback_id'], '', new ext_setvar("SLEEP",$sleep));
 					
 					// kick off the callback script - run in background (&) so we can hangup
-					$ext->add('callback', $item['callback_id'], '', new ext_system((empty($amp_conf['ASTVARLIBDIR']) ? '/var/lib/asterisk' : $amp_conf['ASTVARLIBDIR']).'/bin/callback ${CALL} ${DESTINATION} ${SLEEP} '.escapeshellarg($amp_conf['AMPWEBROOT']).' '.escapeshellarg($amp_conf['ASTETCDIR']).' '.escapeshellarg($amp_conf['AMPMGRUSER']).' '.escapeshellarg($amp_conf['AMPMGRPASS']).'&'));
+					$ext->add('callback', $item['callback_id'], '', new ext_system((empty($amp_conf['ASTVARLIBDIR']) ? '/var/lib/asterisk' : $amp_conf['ASTVARLIBDIR']).'/bin/callback ${CALL} ${DESTINATION} ${SLEEP} &'));
 					
 					//hangup
 					$ext->add('callback', $item['callback_id'], '', new ext_hangup(''));

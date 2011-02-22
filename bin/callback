@@ -4,11 +4,7 @@
 This Callback script takes 7 arguments:
 1- number to dial
 2- context.exten.priority to dump number into
-3- time in seconds to sleep before calling back
-4- path to the AMPWEBROOT
-5- path to the ASTETCDIR
-6- AMI USER
-6- AMI PASSWORD
+3- optional time in seconds to sleep before calling back
 
 eg: callback 14032448089 ext-meetme.200.1
 */
@@ -32,25 +28,25 @@ eg: callback 14032448089 ext-meetme.200.1
 
 <?php
 
-if ($argc != 8) {
-  cb_fatal("Wrong number of arguments, should be:\n".$argv[0]." callback_number callback_destination delay_seconds AMPWEBROOT ASTETCDIR AMPMGRUSER AMPMGRPASS\n");
+if ($argc < 3) {
+  cb_fatal("Wrong number of arguments, should be:\n".$argv[0]." callback_number callback_destination [delay_seconds]\n");
 }
 
 $callback_number = $argv[1];
 $callback_destination = $argv[2];
-$pause_seconds = $argv[3];
+$pause_seconds = isset($argv[3]) ? $argv[3] : 0;
 
-$amp_conf['AMPWEBROOT'] = $argv[4];
-$amp_conf['ASTETCDIR']  = $argv[5];
-$amp_conf['AMPMGRUSER'] = $argv[6];
-$amp_conf['AMPMGRPASS'] = $argv[7];
+// bootstrap the connection to get astman up
+//
+$restrict_mods = true;
+$bootstrap_settings['freepbx_auth'] = false;
+if (!@include_once(getenv('FREEPBX_CONF') ? getenv('FREEPBX_CONF') : '/etc/freepbx.conf')) { 
+  include_once('/etc/asterisk/freepbx.conf');
+}
 
-// include manager functions
-include $amp_conf['AMPWEBROOT'].'/admin/common/php-asmanager.php';
-
-if($pause_seconds)
+if($pause_seconds) {
 	sleep($pause_seconds);
-	
+}
 // figure out context, exten, priority
 $dest = explode(".",$callback_destination);
 $callback_context = $dest[0];
@@ -69,14 +65,12 @@ $account = "";
 $application = "";
 $data = "";
 
-//connect to manager and dial
-$astman = new AGI_AsteriskManager();
-if ($res = $astman->connect("127.0.0.1", $amp_conf["AMPMGRUSER"] , $amp_conf["AMPMGRPASS"])) {
+if ($bootstrap_settings['astman_connected']) {
 	$astman->Originate($channel, $exten, $context, $priority, $timeout, $callerid, $variable, $account, $application, $data);
+  $astman->disconnect();
 } else {
 	cb_fatal("Cannot connect to Asterisk Manager with ".$amp_conf["AMPMGRUSER"]."/".$amp_conf["AMPMGRPASS"]);
 }
-$astman->disconnect();
 
 function cb_fatal($text) {
 	echo "[FATAL] ".$text."\n";

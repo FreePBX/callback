@@ -2,7 +2,7 @@
 	<rawname>callback</rawname>
 	<repo>extended</repo>
 	<name>Callback</name>
-	<version>2.9.0.2</version>
+	<version>2.9.0.3</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
 	<type>setup</type>
@@ -11,6 +11,7 @@
 		<callback>Callback</callback>
 	</menuitems>
 	<changelog>
+	*2.9.0.3* #4840
 	*2.9.0.2* #4787
 	*2.9.0.1* set repo
 	*2.9.0.0* #4639, #4655
