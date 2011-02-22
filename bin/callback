@@ -32,10 +32,9 @@ eg: callback 14032448089 ext-meetme.200.1
 
 <?php
 
-if ($args != 8) {
+if ($argc != 8) {
   cb_fatal("Wrong number of arguments, should be:\n".$argv[0]." callback_number callback_destination delay_seconds AMPWEBROOT ASTETCDIR AMPMGRUSER AMPMGRPASS\n");
 }
-echo "args: $argc\n";
 
 $callback_number = $argv[1];
 $callback_destination = $argv[2];
@@ -83,5 +82,4 @@ function cb_fatal($text) {
 	echo "[FATAL] ".$text."\n";
 	exit(1);
 }
-
 ?>
