@@ -50,8 +50,6 @@ if(isset($_POST['action'])) {
 $callbacks = callback_list();
 ?>
 
-</div> <!-- end content div so we can display rnav properly-->
-
 <!-- right side menu -->
 <div class="rnav"><ul>
     <li><a id="<?php echo ($itemid=='' ? 'current':'') ?>" href="config.php?display=<?php echo urlencode($dispnum)?>"><?php echo _("Add Callback")?></a></li>
@@ -64,7 +62,6 @@ if (isset($callbacks)) {
 ?>
 </ul></div>
 
-<div class="content">
 <?php
 if ($action == 'delete') {
 	echo '<br><h3>'._("Callback ").' '.$itemid.' '._("deleted").'!</h3>';

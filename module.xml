@@ -5,8 +5,7 @@
 	<version>2.9.0.4</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
-	<type>setup</type>
-	<category>Internal Options &amp; Configuration</category>
+	<category>Apps</category>
 	<menuitems>
 		<callback>Callback</callback>
 	</menuitems>
