@@ -40,6 +40,6 @@
 	<depends>
 		<version>2.4.0</version>
 	</depends>
-	<location>release/2.10/callback-2.10.0.0.tgz</location>
-	<md5sum>eb59e3d07898b241d328b7782a552f58</md5sum>
+	<location>release/2.10/callback-2.10.0.1.tgz</location>
+	<md5sum>a50337cc74edf4f4256e83e04caf4f06</md5sum>
 </module>
