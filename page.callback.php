@@ -30,9 +30,9 @@ $tabindex = 0;
 if(isset($_POST['action'])) {
 	switch ($action) {
 		case "add":
-			callback_add($_POST);
+			$_REQUEST['itemid'] = callback_add($_POST);
 			needreload();
-			redirect_standard();
+			redirect_standard('itemid');
 		break;
 		case "delete":
 			callback_del($itemid);
