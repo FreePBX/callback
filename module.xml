@@ -2,14 +2,20 @@
 	<rawname>callback</rawname>
 	<repo>extended</repo>
 	<name>Callback</name>
-	<version>2.10.0.1</version>
+	<version>2.11.0.0</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
 	<category>Applications</category>
 	<menuitems>
 		<callback>Callback</callback>
 	</menuitems>
+	<popovers>
+		<callback>
+			<display>callback</display>
+		</callback>
+ 	</popovers>
 	<changelog>
+		*2.11.0.0* #6051
 		*2.10.0.1* #5478 
 	*2.10.0.0* new version changes
 	*2.9.0.4* spellings, localizaions
