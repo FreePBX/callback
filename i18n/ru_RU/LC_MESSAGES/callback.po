@@ -3,8 +3,8 @@
 # This file is distributed under the same license as the freePBX package.
 # Alexander Kozyrev <ceo@postmet.com>, Sergey Nikolayev <sergey@postmet.com>, 2006-2008.
 #
-# ёбЯЮЫмЧЮТРвм iconv amp.new -f UTF-8 -t ISO-8859-5 -o amp.po
-# fuzzy
+# РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ iconv amp.new -f UTF-8 -t ISO-8859-5 -o amp.po
+
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
@@ -14,33 +14,33 @@ msgstr ""
 "Last-Translator: Alexander Kozyrev <ceo@postmet.com>\n"
 "Language-Team: Russian <faq@postmet.com>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=iso-8859-5\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Callback"
-msgstr ""
+msgstr "РћР±СЂР°С‚РЅС‹Р№ Р·РІРѕРЅРѕРє"
 
 msgid "Applications"
-msgstr ""
+msgstr "РџСЂРёР»РѕР¶РµРЅРёСЏ"
 
 #, php-format
 msgid "Callback: %s"
-msgstr ""
+msgstr "РћР±СЂР°С‚РЅС‹Р№ Р·РІРѕРЅРѕРє: $s"
 
 msgid "Add Callback"
-msgstr "ґЮСРТШвм ЮСаРвЭлЩ ЧТЮЭЮЪ"
+msgstr "Р”РѕР±Р°РІРёС‚СЊ РѕР±СЂР°С‚РЅС‹Р№ Р·РІРѕРЅРѕРє"
 
 msgid "Callback "
-msgstr "ѕСаРвЭлЩ ЧТЮЭЮЪ"
+msgstr "РћР±СЂР°С‚РЅС‹Р№ Р·РІРѕРЅРѕРє"
 
 msgid "deleted"
-msgstr "гФРЫХЭЮ"
+msgstr "СѓРґР°Р»РµРЅРѕ"
 
 msgid "Delete Callback"
-msgstr "ГФРЫШвм ЮСаРвЭлЩ ЧТЮЭЮЪ"
+msgstr "РЈРґР°Р»РёС‚СЊ РѕР±СЂР°С‚РЅС‹Р№ Р·РІРѕРЅРѕРє"
 
 msgid "Callback:"
-msgstr "ѕСаРвЭлЩ ЧТЮЭЮЪ:"
+msgstr "РћР±СЂР°С‚РЅС‹Р№ Р·РІРѕРЅРѕРє:"
 
 msgid ""
 "A callback will hang up on the caller and then call them back, directing "
@@ -48,48 +48,43 @@ msgid ""
 "charges as well as other applications. Outbound calls will proceed according "
 "to the dial patterns in Outbound Routes."
 msgstr ""
-"ѕСаРвЭлЩ ЧТЮЭЮЪ вХаЬШЭШагХв ТеЮФпйШЩ ЧТЮЭЮЪ, Ш ШЭШжШШагХв ЮСаРвЭлЩ ЧТЮЭЮЪ "
-"ЯЮЫмЧЮТРвХЫо, ЪЮвЮалЩ ЧТЮЭШЫ вЮЫмЪЮ звЮ. НвЮ ЯЮЬЮУРХв гЬХЭмиШв аРбеЮФл ФЫп "
-"ЪЫШХЭвЮТ, ЪЮвЮалХ, ТЮЧЬЮЦЭЮ, ЯЫРвпв ЧР ТеЮФпйШЩ ЧТЮЭЮЪ ЯЮ вРаШдРЬ ЬЮСШЫмЭЮЩ "
-"бТпЧШ. ёбеЮФпйШЩ ЧТЮЭЮЪ СгФХв бЮТХаиХЭ ЯЮ иРСЫЮЭРЬ Ш ЬРаиагвРЬ, гЪРЧРЭЭлЬ Т "
-"ёбеЮФпйХЩ ЬРаиагвШЧРжШШ."
+"РћР±СЂР°С‚РЅС‹Р№ Р·РІРѕРЅРѕРє С‚РµСЂРјРёРЅРёСЂСѓРµС‚ РІС…РѕРґСЏС‰РёР№ Р·РІРѕРЅРѕРє, Рё РёРЅРёС†РёРёСЂСѓРµС‚ РѕР±СЂР°С‚РЅС‹Р№ Р·РІРѕРЅРѕРє "
+"РїРѕР»СЊР·РѕРІР°С‚РµР»СЋ, РєРѕС‚РѕСЂС‹Р№ Р·РІРѕРЅРёР» С‚РѕР»СЊРєРѕ С‡С‚Рѕ. Р­С‚Рѕ РїРѕРјРѕРіР°РµС‚ СѓРјРµРЅСЊС€РёС‚ СЂР°СЃС…РѕРґС‹ РґР»СЏ "
+"РєР»РёРµРЅС‚РѕРІ, РєРѕС‚РѕСЂС‹Рµ, РІРѕР·РјРѕР¶РЅРѕ, РїР»Р°С‚СЏС‚ Р·Р° РІС…РѕРґСЏС‰РёР№ Р·РІРѕРЅРѕРє РїРѕ С‚Р°СЂРёС„Р°Рј РјРѕР±РёР»СЊРЅРѕР№ "
+"СЃРІСЏР·Рё. РСЃС…РѕРґСЏС‰РёР№ Р·РІРѕРЅРѕРє Р±СѓРґРµС‚ СЃРѕРІРµСЂС€РµРЅ РїРѕ С€Р°Р±Р»РѕРЅР°Рј Рё РјР°СЂС€СЂСѓС‚Р°Рј, СѓРєР°Р·Р°РЅРЅС‹Рј РІ "
+"РСЃС…РѕРґСЏС‰РµР№ РјР°СЂС€СЂСѓС‚РёР·Р°С†РёРё."
 
 msgid "Edit Callback"
-msgstr "ёЧЬХЭШвм ЮСаРвЭлЩ ЧТЮЭЮЪ"
+msgstr "РР·РјРµРЅРёС‚СЊ РѕР±СЂР°С‚РЅС‹Р№ Р·РІРѕРЅРѕРє"
 
 msgid "Callback Description:"
-msgstr "ѕЯШбРЭШХ:"
+msgstr "РћРїРёСЃР°РЅРёРµ:"
 
 msgid "Enter a description for this callback."
-msgstr "ГЪРЦШвХ ЮЯШбРЭШХ ФЫп нвЮУЮ ЮСаРвЭЮУЮ ЧТЮЭЪР."
+msgstr "РЈРєР°Р¶РёС‚Рµ РѕРїРёСЃР°РЅРёРµ РґР»СЏ СЌС‚РѕРіРѕ РѕР±СЂР°С‚РЅРѕРіРѕ Р·РІРѕРЅРєР°."
 
 msgid "Callback Number:"
-msgstr "ЅЮЬХа ЮСаРвЭЮУЮ ЧТЮЭЪР:"
+msgstr "РќРѕРјРµСЂ РѕР±СЂР°С‚РЅРѕРіРѕ Р·РІРѕРЅРєР°:"
 
 msgid ""
 "Optional: Enter the number to dial for the callback.  Leave this blank to "
 "just dial the incoming CallerID Number"
-msgstr ""
+msgstr "" 
+"РћРїС†РёРѕРЅР°Р»СЊРЅРѕ: СѓРєР°Р¶РёС‚Рµ РЅРѕРјРµСЂ РґР»СЏ РѕР±СЂР°С‚РЅРѕРіРѕ Р·РІРѕРЅРєР°. РћСЃС‚Р°РІСЊС‚Рµ РїСѓСЃС‚С‹Рј, С‚РѕРіРґР° "
+"РѕР±СЂР°С‚РЅС‹Р№ Р·РІРѕРЅРѕРє Р±СѓРґРµС‚ СЃРѕРІРµСЂС€РµРЅ РЅР° РЅРѕРјРµСЂ Р·РІРѕРЅСЏС‰РµРіРѕ Р°Р±РѕРЅРµРЅС‚Р°"
 
 msgid "Delay Before Callback:"
-msgstr "їРгЧР ЯХаХФ ЮСаРвЭлЬ ЧТЮЭЪЮЬ:"
+msgstr "РџР°СѓР·Р° РїРµСЂРµРґ РѕР±СЂР°С‚РЅС‹Рј Р·РІРѕРЅРєРѕРј:"
 
 msgid ""
 "Optional: Enter the number of seconds the system should wait before calling "
 "back."
 msgstr ""
-"ѕЯжШЮЭРЫмЭЮ: гЪРЦШвХ ЯРгЧг (Т бХЪгЭФРе) зХаХЧ ЪЮвЮаго СгФХв бЮТХаиХЭ "
-"ЮСаРвЭлЩ ЧТЮЭЮЪ."
+"РћРїС†РёРѕРЅР°Р»СЊРЅРѕ: СѓРєР°Р¶РёС‚Рµ РїР°СѓР·Сѓ (РІ СЃРµРєСѓРЅРґР°С…) С‡РµСЂРµР· РєРѕС‚РѕСЂСѓСЋ Р±СѓРґРµС‚ СЃРѕРІРµСЂС€РµРЅ "
+"РѕР±СЂР°С‚РЅС‹Р№ Р·РІРѕРЅРѕРє."
 
 msgid "Destination after Callback"
-msgstr "ЅРЧЭРзХЭШХ ЯЮбЫХ ЮСаРвЭЮУЮ ЧТЮЭЪР"
+msgstr "РќР°Р·РЅР°С‡РµРЅРёРµ РїРѕСЃР»Рµ РѕР±СЂР°С‚РЅРѕРіРѕ Р·РІРѕРЅРєР°"
 
 msgid "Submit Changes"
-msgstr "їаШЬХЭШвм ШЧЬХЭХЭШп"
-
-#~ msgid ""
-#~ "Optional: Enter the number to dial for the callback.  Leave this blank to "
-#~ "just dial the incoming Caller ID Number"
-#~ msgstr ""
-#~ "ѕЯжШЮЭРЫмЭЮ: гЪРЦШвХ ЭЮЬХа ФЫп ЮСаРвЭЮУЮ ЧТЮЭЪР. ѕбвРТмвХ ЯгбвлЬ, вЮУФР "
-#~ "ЮСаРвЭлЩ ЧТЮЭЮЪ СгФХв ЭРСШаРвм ЭЮЬХа ёґ ТеЮФпйХУЮ ЧТЮЭЪР."
+msgstr "РџСЂРёРјРµРЅРёС‚СЊ РёР·РјРµРЅРµРЅРёСЏ"
