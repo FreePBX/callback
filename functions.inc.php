@@ -163,7 +163,11 @@ function callback_add($post){
 	extract($post);
 	if(empty($description)) $description = ${$goto0.'0'};
 	$results = sql("INSERT INTO callback (description,callbacknum,destination,deptname,sleep) values (\"$description\",\"$callbacknum\",\"${$goto0.'0'}\",\"$deptname\",\"$sleep\")");
-	$id = $amp_conf["AMPDBENGINE"] == "sqlite3" ? sqlite_last_insert_rowid($db->connection) : mysql_insert_id($db->connection);
+	if(method_exists($db,'insert_id')) {
+		$id = $db->insert_id();
+	} else {
+		$id = $amp_conf["AMPDBENGINE"] == "sqlite3" ? sqlite_last_insert_rowid($db->connection) : mysql_insert_id($db->connection);
+	}
 	return($id);
 }
 
