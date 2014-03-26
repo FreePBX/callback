@@ -47,6 +47,9 @@
 	<depends>
 		<version>2.4.0</version>
 	</depends>
+	<supported>
+		<version>2.10</version>
+	</supported>
 	<location>release/2.11/callback-2.11.0.0.tgz</location>
 	<md5sum>27e82a42a2d657a9a459d9e366c71747</md5sum>
 </module>
