@@ -2,9 +2,10 @@
 	<rawname>callback</rawname>
 	<repo>extended</repo>
 	<name>Callback</name>
-	<version>2.11.0.1</version>
-	<publisher>FreePBX</publisher>
-	<license>GPLv2+</license>
+	<version>2.11.0.2</version>
+	<publisher>Schmooze Com Inc</publisher>
+	<license>GPLv2 or greater</license>
+	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Applications</category>
 	<menuitems>
 		<callback>Callback</callback>
@@ -15,6 +16,7 @@
 		</callback>
  	</popovers>
 	<changelog>
+		*2.11.0.2* Generate license file
 		*2.11.0.1* Add wrapper function for DB helper
 		*2.11.0.0* #6051
 		*2.10.0.1* #5478 
