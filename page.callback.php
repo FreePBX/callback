@@ -132,8 +132,10 @@ theForm.description.focus();
 
 function edit_onsubmit() {
 	setDestinations(edit,1);
-	
+	var sizeDisplayName = "<?php echo callback_get_field_size('description', 50); ?>";	
 	defaultEmptyOK = false;
+        if (!isCorrectLength(theForm.description.value, sizeDisplayName))
+                return warnInvalid(theForm.description, "<?php echo _('The callback description provided is too long.'); ?>")
 	if (!isAlphanumeric(theForm.description.value))
 		return warnInvalid(theForm.description, "Please enter a valid Description");
 		
