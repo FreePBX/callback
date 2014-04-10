@@ -20,27 +20,6 @@ function callback_destinations() {
 	}
 }
 
-// This function will get the MySQL field size of the specified fieldname
-// It's useful for finding out the limit of certain fields in MySQL so that
-// we can do validation checks on strings to make sure they aren't too long.
-// This will help prevent MySQL from needing to do auto chopping on lengthy strings
-// which causes problems with multibyte characters getting cut off abruptly.
-// The second argument defaultsize is just to futureproof in case someone decides
-// to change things in MySQL in the future that would otherwise just pass null back
-// and cause a bug.
-function callback_get_field_size($fieldname, $defaultsize) {
-        global $db;
-
-        $sql = "select character_maximum_length from information_schema.columns where table_name = 'callback' and column_name = '$fieldname';";
-
-        $results = $db->getAll($sql);
-        if(DB::IsError($results)) {
-                $results = null;
-        }
-
-        return isset($results)?$results[0][0]:$defaultsize;
-}
-
 function callback_getdest($exten) {
 	return array('callback,'.$exten.',1');
 }
