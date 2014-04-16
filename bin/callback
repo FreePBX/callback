@@ -8,10 +8,6 @@ This Callback script takes 7 arguments:
 
 eg: callback 14032448089 ext-meetme.200.1
 */
-//	License for all code of this FreePBX module can be found in the license file inside the module directory
-//	Copyright (C) 2004 Coalescent Systems Inc. (info@coalescentsystems.ca)
-//	Copyright 2013 Schmooze Com Inc.
-//
 ?>
 
 <?php
