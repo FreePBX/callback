@@ -129,10 +129,14 @@ theForm.description.focus();
 
 function edit_onsubmit() {
 	setDestinations(edit,1);
-	var sizeDisplayName = "<?php echo module_get_field_size('callback', 'description', 50); ?>";	
-	defaultEmptyOK = false;
-        if (!isCorrectLength(theForm.description.value, sizeDisplayName))
-                return warnInvalid(theForm.description, "<?php echo _('The callback description provided is too long.'); ?>")
+	
+	defaultEmptyOk = false;
+	<?php if (function_exists('module_get_field_size')) { ?>
+		var sizeDisplayName = "<?php echo module_get_field_size('callback', 'description', 50); ?>";	
+	
+        	if (!isCorrectLength(theForm.description.value, sizeDisplayName))
+        	        return warnInvalid(theForm.description, "<?php echo _('The callback description provided is too long.'); ?>")
+	<?php } ?>
 	if (!isAlphanumeric(theForm.description.value))
 		return warnInvalid(theForm.description, "Please enter a valid Description");
 		
