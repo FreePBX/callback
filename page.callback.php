@@ -51,28 +51,28 @@ if (isset($callbacks)) {
 if ($action == 'delete') {
 	echo '<br><h3>'._("Callback ").' '.$itemid.' '._("deleted").'!</h3>';
 } else {
-	if ($itemid){ 
+	if ($itemid){
 		//get details for this time condition
 		$thisItem = callback_get($itemid);
 	}
 
-	$delURL = $_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING'].'&action=delete';
+	$delURL = '?'.$_SERVER['QUERY_STRING'].'&action=delete';
 	$delButton = "
-			<form name=delete action=\"{$_SERVER['PHP_SELF']}\" method=POST>
+			<form name=delete action=\"\" method=POST>
 				<input type=\"hidden\" name=\"display\" value=\"{$dispnum}\">
 				<input type=\"hidden\" name=\"itemid\" value=\"{$itemid}\">
 				<input type=\"hidden\" name=\"action\" value=\"delete\">
 				<input type=submit value=\""._("Delete Callback")."\">
 			</form>";
-	
+
 ?>
 
 	<h2><?php echo ($itemid ? _("Callback:")." ". $itemid : _("Add Callback")); ?></h2>
-	
+
 	<p><?php echo ($itemid ? '' : _("A callback will hang up on the caller and then call them back, directing them to the selected destination. This is useful for reducing mobile phone charges as well as other applications. Outbound calls will proceed according to the dial patterns in Outbound Routes.")); ?></p>
 
 <?php		if ($itemid) {
-					echo $delButton; 	
+					echo $delButton;
 					$usage_list = framework_display_destination_usage(callback_getdest($itemid));
 					if (!empty($usage_list)) {
 ?>
@@ -83,7 +83,7 @@ if ($action == 'delete') {
 ?>
 
 
-<form autocomplete="off" name="edit" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return edit_onsubmit();">
+<form autocomplete="off" name="edit" action="" method="post" onsubmit="return edit_onsubmit();">
 	<input type="hidden" name="display" value="<?php echo $dispnum?>">
 	<input type="hidden" name="action" value="<?php echo ($itemid ? 'edit' : 'add') ?>">
 	<input type="hidden" name="deptname" value="<?php echo $_SESSION["AMP_user"]->_deptname ?>">
@@ -108,17 +108,17 @@ if ($action == 'delete') {
 	</tr>
 	<tr><td colspan="2"><br><h5><?php echo _("Destination after Callback")?>:<hr></h5></td></tr>
 
-<?php 
+<?php
 //draw goto selects
 if (isset($thisItem)) {
 	echo drawselects($thisItem['destination'],0);
-} else { 
+} else {
 	echo drawselects(null, 0);
 }
 ?>
 
 	<tr>
-		<td colspan="2"><br><h6><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>" tabindex="<?php echo ++$tabindex;?>"></h6></td>		
+		<td colspan="2"><br><h6><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>" tabindex="<?php echo ++$tabindex;?>"></h6></td>
 	</tr>
 	</table>
 <script language="javascript">
@@ -129,20 +129,20 @@ theForm.description.focus();
 
 function edit_onsubmit() {
 	setDestinations(edit,1);
-	
+
 	defaultEmptyOk = false;
 	<?php if (function_exists('module_get_field_size')) { ?>
-		var sizeDisplayName = "<?php echo module_get_field_size('callback', 'description', 50); ?>";	
-	
+		var sizeDisplayName = "<?php echo module_get_field_size('callback', 'description', 50); ?>";
+
         	if (!isCorrectLength(theForm.description.value, sizeDisplayName))
         	        return warnInvalid(theForm.description, "<?php echo _('The callback description provided is too long.'); ?>")
 	<?php } ?>
 	if (!isAlphanumeric(theForm.description.value))
 		return warnInvalid(theForm.description, "Please enter a valid Description");
-		
+
 	if (!validateDestinations(edit,1,true))
 		return false;
-	
+
 	return true;
 }
 
@@ -152,6 +152,6 @@ function edit_onsubmit() {
 
 
 	</form>
-<?php		
+<?php
 } //end if action == delete
 ?>
