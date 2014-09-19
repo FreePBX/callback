@@ -1,21 +1,5 @@
 <?php /* $Id */
 if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
-//Copyright (C) 2004 Coalescent Systems Inc. (info@coalescentsystems.ca)
-//
-//This file is part of FreePBX.
-//
-//    FreePBX is free software: you can redistribute it and/or modify
-//    it under the terms of the GNU General Public License as published by
-//    the Free Software Foundation, either version 2 of the License, or
-//    (at your option) any later version.
-//
-//    FreePBX is distributed in the hope that it will be useful,
-//    but WITHOUT ANY WARRANTY; without even the implied warranty of
-//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-//    GNU General Public License for more details.
-//
-//    You should have received a copy of the GNU General Public License
-//    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
 
 isset($_REQUEST['action'])?$action = $_REQUEST['action']:$action='';
 
@@ -146,7 +130,13 @@ theForm.description.focus();
 function edit_onsubmit() {
 	setDestinations(edit,1);
 	
-	defaultEmptyOK = false;
+	defaultEmptyOk = false;
+	<?php if (function_exists('module_get_field_size')) { ?>
+		var sizeDisplayName = "<?php echo module_get_field_size('callback', 'description', 50); ?>";	
+	
+        	if (!isCorrectLength(theForm.description.value, sizeDisplayName))
+        	        return warnInvalid(theForm.description, "<?php echo _('The callback description provided is too long.'); ?>")
+	<?php } ?>
 	if (!isAlphanumeric(theForm.description.value))
 		return warnInvalid(theForm.description, "Please enter a valid Description");
 		
