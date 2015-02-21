@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-11 16:49-0500\n"
+"POT-Creation-Date: 2015-02-20 19:01-0500\n"
 "PO-Revision-Date: 2014-03-04 09:09+0200\n"
 "Last-Translator: Andrew <andrew.nagy@the159.com>\n"
 "Language-Team: Hebrew <http://git.freepbx.org/projects/freepbx/callback/he/"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 1.9-dev\n"
 
-#: /usr/src/freepbx/callback/page.callback.php:72
+#: page.callback.php:72
 msgid ""
 "A callback will hang up on the caller and then call them back, directing "
 "them to the selected destination. This is useful for reducing mobile phone "
@@ -30,61 +30,68 @@ msgstr ""
 "ליעד הנבחר. דבר זה מועיל כדי להקטין חיובים בטלפונים ניידים וגם ליישומים "
 "נוספים. שיחות יוצאות תמשכנה על פי דפוסי החיוג אשר מוגדרים בניתובים יוצאים."
 
-#: /usr/src/freepbx/callback/page.callback.php:40
-#: /usr/src/freepbx/callback/page.callback.php:70
-#: /usr/src/freepbx/callback/page.callback.php:91
+#: page.callback.php:40 page.callback.php:70 page.callback.php:91
 msgid "Add Callback"
 msgstr "הוסף חיוג חזרה"
 
-#: /usr/src/freepbx/callback/page.callback.php:52
+#: callback.i18n.php:4 callback.i18n.php:9
+#, fuzzy
+msgid "Applications"
+msgstr "יישומים"
+
+#: callback.i18n.php:3 callback.i18n.php:5 callback.i18n.php:7
+#: callback.i18n.php:11
+msgid "Callback"
+msgstr ""
+
+#: page.callback.php:52
 msgid "Callback "
 msgstr "חיוג חזרה "
 
-#: /usr/src/freepbx/callback/page.callback.php:98
+#: page.callback.php:98
 msgid "Callback Description:"
 msgstr "תיאור חיוג חזרה:"
 
-#: /usr/src/freepbx/callback/page.callback.php:102
+#: page.callback.php:102
 msgid "Callback Number:"
 msgstr "מספר לחיוג חזרה:"
 
-#: /usr/src/freepbx/callback/page.callback.php:70
+#: page.callback.php:70
 msgid "Callback:"
 msgstr "חיוג חזרה:"
 
-#: /usr/src/freepbx/callback/functions.inc.php:36
-#: /usr/src/freepbx/callback/functions.inc.php:65
+#: functions.inc.php:36 functions.inc.php:65
 #, php-format
 msgid "Callback: %s"
 msgstr ""
 
-#: /usr/src/freepbx/callback/page.callback.php:106
+#: page.callback.php:106
 msgid "Delay Before Callback:"
 msgstr "המתנה לפני חיוג חזרה"
 
-#: /usr/src/freepbx/callback/page.callback.php:65
+#: page.callback.php:65
 msgid "Delete Callback"
 msgstr "מחק חיוג חזרה"
 
-#: /usr/src/freepbx/callback/page.callback.php:109
+#: page.callback.php:109
 msgid "Destination after Callback"
 msgstr "יעד לאחר חיוג חזרה"
 
-#: /usr/src/freepbx/callback/page.callback.php:91
+#: page.callback.php:91
 msgid "Edit Callback"
 msgstr "ערוך חיוג חזרה"
 
-#: /usr/src/freepbx/callback/page.callback.php:98
+#: page.callback.php:98
 msgid "Enter a description for this callback."
 msgstr "הכנס תיאור עבור חיוג חזרה זה."
 
-#: /usr/src/freepbx/callback/page.callback.php:106
+#: page.callback.php:106
 msgid ""
 "Optional: Enter the number of seconds the system should wait before calling "
 "back."
 msgstr "רשות: הכנס את מספר השניות שעל המערכת לחכות לפני שהיא מחייגת בחזרה."
 
-#: /usr/src/freepbx/callback/page.callback.php:102
+#: page.callback.php:102
 #, fuzzy
 msgid ""
 "Optional: Enter the number to dial for the callback.  Leave this blank to "
@@ -93,18 +100,14 @@ msgstr ""
 "רשות: הכנס את המספר שאליו יש להתקשר בחיוג חזרה. השאר שדה זה רק על מנת לחייג "
 "בפשטות למספר שהתקבל בשירות השיחה המזוהה"
 
-#: /usr/src/freepbx/callback/page.callback.php:121
+#: page.callback.php:121
 msgid "Submit Changes"
 msgstr ""
 
-#: /usr/src/freepbx/callback/page.callback.php:138
+#: page.callback.php:138
 msgid "The callback description provided is too long."
 msgstr ""
 
-#: /usr/src/freepbx/callback/page.callback.php:52
+#: page.callback.php:52
 msgid "deleted"
 msgstr "נמחק"
-
-#, fuzzy
-#~ msgid "Applications"
-#~ msgstr "יישומים"
