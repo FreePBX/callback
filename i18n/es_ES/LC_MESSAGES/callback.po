@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: FreePBX - módulo callback module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 19:01-0500\n"
-"PO-Revision-Date: 2015-03-23 00:18+0200\n"
+"PO-Revision-Date: 2015-03-23 00:19+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish "
 "<http://weblate.freepbx.org/projects/freepbx/callback/es_ES/>\n"
@@ -44,7 +44,7 @@ msgstr "Devolución de llamada"
 
 #: page.callback.php:52
 msgid "Callback "
-msgstr "Devolución de llamada"
+msgstr "Devolución de llamada "
 
 #: page.callback.php:98
 msgid "Callback Description:"
@@ -52,7 +52,7 @@ msgstr "Descripción de la devolución de llamada:"
 
 #: page.callback.php:102
 msgid "Callback Number:"
-msgstr "Número al que devolver la llamada"
+msgstr "Número al cual devolver la llamada:"
 
 #: page.callback.php:70
 msgid "Callback:"
@@ -73,7 +73,7 @@ msgstr "Eliminar devolución de llamada"
 
 #: page.callback.php:109
 msgid "Destination after Callback"
-msgstr "Destino después de devolver la llamada:"
+msgstr "Destino después de devolver la llamada"
 
 #: page.callback.php:91
 msgid "Edit Callback"
