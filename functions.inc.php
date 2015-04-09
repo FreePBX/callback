@@ -88,26 +88,26 @@ function callback_get_config($engine) {
 				foreach($timelist as $item) {
 					//$thisitem = callback_get(ltrim($item['callback_id']));
 					// add dialplan
-					
+
 					// use callbacknum if avail, otherwise use cidnum
 					$callback_num = (empty($item['callbacknum']) ? '${CALLERID(number)}' : $item['callbacknum']);
 					$ext->add('callback', $item['callback_id'], '', new ext_setvar("CALL",$callback_num));
-					
+
 					//substitute commas with periods to keep asterisk dialplan variables happy
 					$callback_destination = str_replace(",",".",$item['destination']);
 					$ext->add('callback', $item['callback_id'], '', new ext_setvar("DESTINATION",$callback_destination));
-					
+
 					// set sleep time
 					$sleep = (empty($item['sleep']) ? '0' : $item['sleep']);
 					$ext->add('callback', $item['callback_id'], '', new ext_setvar("SLEEP",$sleep));
-					
+
 					// kick off the callback script - run in background (&) so we can hangup
 					$ext->add('callback', $item['callback_id'], '', new ext_system((empty($amp_conf['ASTVARLIBDIR']) ? '/var/lib/asterisk' : $amp_conf['ASTVARLIBDIR']).'/bin/callback ${CALL} ${DESTINATION} ${SLEEP} &'));
-					
+
 					//hangup
 					$ext->add('callback', $item['callback_id'], '', new ext_hangup(''));
 				}
-				
+
 			}
 		break;
 	}
@@ -117,19 +117,9 @@ function callback_get_config($engine) {
 function callback_list() {
 	$results = sql("SELECT * FROM callback","getAll",DB_FETCHMODE_ASSOC);
 	if(is_array($results)){
-		foreach($results as $result){
-			// check to see if we have a dept match for the current AMP User.
-			if (checkDept($result['deptname'])){
-				// return this item's dialplan destination, and the description
-				$allowed[] = $result;
-			}
-		}
+		return $results;
 	}
-	if (isset($allowed)) {
-		return $allowed;
-	} else { 
-		return null;
-	}
+	return null;
 }
 
 function callback_get($id){
