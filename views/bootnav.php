@@ -1,0 +1,2 @@
+<a href="?display=callback" class="list-group-item"><i class="fa fa-list"></i>&nbsp;<?php echo _("List Callbacks")?></a>
+<a href="?display=callback&view=form" class="list-group-item"><i class="fa fa-plus"></i>&nbsp;<?php echo _("Add Callback")?></a>
