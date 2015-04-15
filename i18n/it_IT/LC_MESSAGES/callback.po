@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:01-0500\n"
+"POT-Creation-Date: 2015-04-14 20:00-0400\n"
 "PO-Revision-Date: 2008-11-07 18:23+0100\n"
 "Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
 "Language-Team: Italian\n"
@@ -17,76 +17,72 @@ msgstr ""
 "X-Poedit-Language: Italian\n"
 "X-Poedit-Country: ITALY\n"
 
-#: page.callback.php:72
-msgid ""
-"A callback will hang up on the caller and then call them back, directing "
-"them to the selected destination. This is useful for reducing mobile phone "
-"charges as well as other applications. Outbound calls will proceed according "
-"to the dial patterns in Outbound Routes."
+#: page.callback.php:11
+msgid " Add"
 msgstr ""
-"Il callback è un sistema che permette di essere richiamati in modo "
-"automatico. Se si effettua una chiamata ad un callback, il sistema "
-"riaggancerà il chiamante e lo richiamerà \"indietro\" subito dopo, "
-"reindirizzando la chiamata alla destinazione selezionata. Questo è molto "
-"utile per esempio per ridurre i costi sulle chiamate ai cellulari o "
-"internazionali. Le chiamate effettuate procederanno secondo le impostazioni "
-"fatte nelle Rotte in Uscita."
 
-#: page.callback.php:40 page.callback.php:70 page.callback.php:91
+#: page.callback.php:11
+msgid " Edit"
+msgstr ""
+
+#: views/grid.php:6
+msgid "Actions"
+msgstr ""
+
+#: views/bootnav.php:2
 msgid "Add Callback"
 msgstr "Aggiungi Callback"
 
-#: callback.i18n.php:4 callback.i18n.php:9
+#: callback.i18n.php:6 callback.i18n.php:10
 msgid "Applications"
 msgstr ""
 
-#: callback.i18n.php:3 callback.i18n.php:5 callback.i18n.php:7
-#: callback.i18n.php:11
+#: callback.i18n.php:4 callback.i18n.php:8 page.callback.php:6
 msgid "Callback"
 msgstr "Callback"
 
-#: page.callback.php:52
-msgid "Callback "
-msgstr "Callback"
+#: views/form.php:20
+msgid "Callback Description"
+msgstr ""
 
-#: page.callback.php:98
-msgid "Callback Description:"
-msgstr "Descrizione Callback:"
-
-#: page.callback.php:102
-msgid "Callback Number:"
-msgstr "Numero Callback:"
-
-#: page.callback.php:70
-msgid "Callback:"
-msgstr "Callback:"
+#: views/form.php:44 views/grid.php:5
+msgid "Callback Number"
+msgstr ""
 
 #: functions.inc.php:36 functions.inc.php:65
 #, php-format
 msgid "Callback: %s"
 msgstr "Callback: %s"
 
-#: page.callback.php:106
-msgid "Delay Before Callback:"
-msgstr "Ritardo prima del Callback:"
+#: views/form.php:68
+msgid "Delay Before Callback"
+msgstr ""
 
-#: page.callback.php:65
-msgid "Delete Callback"
-msgstr "Elimina Callback"
+#: Callback.class.php:56
+msgid "Delete"
+msgstr ""
 
-#: page.callback.php:109
+#: views/form.php:92
 msgid "Destination after Callback"
 msgstr "Destinazione dopo il Callback"
 
-#: page.callback.php:91
-msgid "Edit Callback"
-msgstr "Modifica Callback"
-
-#: page.callback.php:98
+#: views/form.php:32
 msgid "Enter a description for this callback."
 msgstr "Inserire una descrizione per questo callback."
 
-#: page.callback.php:106
+#: Callback.class.php:41
+msgid "Invalid Request"
+msgstr ""
+
+#: views/grid.php:4
+msgid "Item"
+msgstr ""
+
+#: views/bootnav.php:1
+msgid "List Callbacks"
+msgstr ""
+
+#: views/form.php:80
 msgid ""
 "Optional: Enter the number of seconds the system should wait before calling "
 "back."
@@ -94,23 +90,72 @@ msgstr ""
 "Opzionale: inserire il numero di secondi di attesa prima di effettuare il "
 "callback."
 
-#: page.callback.php:102
+#: views/form.php:56
 msgid ""
 "Optional: Enter the number to dial for the callback.  Leave this blank to "
 "just dial the incoming CallerID Number"
 msgstr ""
 
-#: page.callback.php:121
-msgid "Submit Changes"
-msgstr "Conferma Cambiamenti"
+#: assets/js/callback.js:13
+msgid "Please enter a valid Description"
+msgstr ""
 
-#: page.callback.php:138
+#: Callback.class.php:61
+msgid "Reset"
+msgstr ""
+
+#: Callback.class.php:66
+msgid "Submit"
+msgstr ""
+
+#: assets/js/callback.js:11
 msgid "The callback description provided is too long."
 msgstr ""
 
-#: page.callback.php:52
-msgid "deleted"
-msgstr "eliminato"
+#: views/form.php:111
+msgid "Where to send the caller once they are called back"
+msgstr ""
+
+#~ msgid ""
+#~ "A callback will hang up on the caller and then call them back, directing "
+#~ "them to the selected destination. This is useful for reducing mobile "
+#~ "phone charges as well as other applications. Outbound calls will proceed "
+#~ "according to the dial patterns in Outbound Routes."
+#~ msgstr ""
+#~ "Il callback è un sistema che permette di essere richiamati in modo "
+#~ "automatico. Se si effettua una chiamata ad un callback, il sistema "
+#~ "riaggancerà il chiamante e lo richiamerà \"indietro\" subito dopo, "
+#~ "reindirizzando la chiamata alla destinazione selezionata. Questo è molto "
+#~ "utile per esempio per ridurre i costi sulle chiamate ai cellulari o "
+#~ "internazionali. Le chiamate effettuate procederanno secondo le "
+#~ "impostazioni fatte nelle Rotte in Uscita."
+
+#~ msgid "Callback "
+#~ msgstr "Callback"
+
+#~ msgid "Callback Description:"
+#~ msgstr "Descrizione Callback:"
+
+#~ msgid "Callback Number:"
+#~ msgstr "Numero Callback:"
+
+#~ msgid "Callback:"
+#~ msgstr "Callback:"
+
+#~ msgid "Delay Before Callback:"
+#~ msgstr "Ritardo prima del Callback:"
+
+#~ msgid "Delete Callback"
+#~ msgstr "Elimina Callback"
+
+#~ msgid "Edit Callback"
+#~ msgstr "Modifica Callback"
+
+#~ msgid "Submit Changes"
+#~ msgstr "Conferma Cambiamenti"
+
+#~ msgid "deleted"
+#~ msgstr "eliminato"
 
 #~ msgid ""
 #~ "Optional: Enter the number to dial for the callback.  Leave this blank to "

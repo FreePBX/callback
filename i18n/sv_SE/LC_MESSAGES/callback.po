@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX callback\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:01-0500\n"
+"POT-Creation-Date: 2015-04-14 20:00-0400\n"
 "PO-Revision-Date: 2011-03-19 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -30,74 +30,72 @@ msgstr ""
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
 
-#: page.callback.php:72
-msgid ""
-"A callback will hang up on the caller and then call them back, directing "
-"them to the selected destination. This is useful for reducing mobile phone "
-"charges as well as other applications. Outbound calls will proceed according "
-"to the dial patterns in Outbound Routes."
+#: page.callback.php:11
+msgid " Add"
 msgstr ""
-"En återuppringning kommer att lägga på luren för den uppringande för att "
-"sedan ringa tillbaka och koppla samtalet till vald destination. Detta är "
-"användbart för att reducera kostnader för mobilsamtal eller för andra "
-"ändamål. Utgående samtal kommer att utföras enligt reglerna definierade för "
-"utgående vägar."
 
-#: page.callback.php:40 page.callback.php:70 page.callback.php:91
+#: page.callback.php:11
+msgid " Edit"
+msgstr ""
+
+#: views/grid.php:6
+msgid "Actions"
+msgstr ""
+
+#: views/bootnav.php:2
 msgid "Add Callback"
 msgstr "Lägg till återuppringning"
 
-#: callback.i18n.php:4 callback.i18n.php:9
+#: callback.i18n.php:6 callback.i18n.php:10
 msgid "Applications"
 msgstr ""
 
-#: callback.i18n.php:3 callback.i18n.php:5 callback.i18n.php:7
-#: callback.i18n.php:11
+#: callback.i18n.php:4 callback.i18n.php:8 page.callback.php:6
 msgid "Callback"
 msgstr "Återuppringning"
 
-#: page.callback.php:52
-msgid "Callback "
-msgstr "Återuppringning"
+#: views/form.php:20
+msgid "Callback Description"
+msgstr ""
 
-#: page.callback.php:98
-msgid "Callback Description:"
-msgstr "Beskrivning:"
-
-#: page.callback.php:102
-msgid "Callback Number:"
-msgstr "Nummer för återuppringning"
-
-#: page.callback.php:70
-msgid "Callback:"
-msgstr "Återuppringning:"
+#: views/form.php:44 views/grid.php:5
+msgid "Callback Number"
+msgstr ""
 
 #: functions.inc.php:36 functions.inc.php:65
 #, php-format
 msgid "Callback: %s"
 msgstr "Återuppringning: %s"
 
-#: page.callback.php:106
-msgid "Delay Before Callback:"
-msgstr "Fördröjning före återuppringning."
+#: views/form.php:68
+msgid "Delay Before Callback"
+msgstr ""
 
-#: page.callback.php:65
-msgid "Delete Callback"
-msgstr "Ta bort återuppringning"
+#: Callback.class.php:56
+msgid "Delete"
+msgstr ""
 
-#: page.callback.php:109
+#: views/form.php:92
 msgid "Destination after Callback"
 msgstr "Destination efter återuppringning"
 
-#: page.callback.php:91
-msgid "Edit Callback"
-msgstr "Redigera återuppringning"
-
-#: page.callback.php:98
+#: views/form.php:32
 msgid "Enter a description for this callback."
 msgstr "Skriv in en kortfattad beskrivning för denna återuppringning."
 
-#: page.callback.php:106
+#: Callback.class.php:41
+msgid "Invalid Request"
+msgstr ""
+
+#: views/grid.php:4
+msgid "Item"
+msgstr ""
+
+#: views/bootnav.php:1
+msgid "List Callbacks"
+msgstr ""
+
+#: views/form.php:80
 msgid ""
 "Optional: Enter the number of seconds the system should wait before calling "
 "back."
@@ -105,7 +103,7 @@ msgstr ""
 "Valbart: Skriv in det antal sekunder systemet väntar innan det ringer "
 "tillbaka."
 
-#: page.callback.php:102
+#: views/form.php:56
 msgid ""
 "Optional: Enter the number to dial for the callback.  Leave this blank to "
 "just dial the incoming CallerID Number"
@@ -114,17 +112,64 @@ msgstr ""
 "Lämna detta fält tomt för att ringa tillbaka på det nummer som uppringarens "
 "nummerpresentation skickade."
 
-#: page.callback.php:121
-msgid "Submit Changes"
-msgstr "Spara ändringar"
+#: assets/js/callback.js:13
+msgid "Please enter a valid Description"
+msgstr ""
 
-#: page.callback.php:138
+#: Callback.class.php:61
+msgid "Reset"
+msgstr ""
+
+#: Callback.class.php:66
+msgid "Submit"
+msgstr ""
+
+#: assets/js/callback.js:11
 msgid "The callback description provided is too long."
 msgstr ""
 
-#: page.callback.php:52
-msgid "deleted"
-msgstr "borttagen"
+#: views/form.php:111
+msgid "Where to send the caller once they are called back"
+msgstr ""
+
+#~ msgid ""
+#~ "A callback will hang up on the caller and then call them back, directing "
+#~ "them to the selected destination. This is useful for reducing mobile "
+#~ "phone charges as well as other applications. Outbound calls will proceed "
+#~ "according to the dial patterns in Outbound Routes."
+#~ msgstr ""
+#~ "En återuppringning kommer att lägga på luren för den uppringande för att "
+#~ "sedan ringa tillbaka och koppla samtalet till vald destination. Detta är "
+#~ "användbart för att reducera kostnader för mobilsamtal eller för andra "
+#~ "ändamål. Utgående samtal kommer att utföras enligt reglerna definierade "
+#~ "för utgående vägar."
+
+#~ msgid "Callback "
+#~ msgstr "Återuppringning"
+
+#~ msgid "Callback Description:"
+#~ msgstr "Beskrivning:"
+
+#~ msgid "Callback Number:"
+#~ msgstr "Nummer för återuppringning"
+
+#~ msgid "Callback:"
+#~ msgstr "Återuppringning:"
+
+#~ msgid "Delay Before Callback:"
+#~ msgstr "Fördröjning före återuppringning."
+
+#~ msgid "Delete Callback"
+#~ msgstr "Ta bort återuppringning"
+
+#~ msgid "Edit Callback"
+#~ msgstr "Redigera återuppringning"
+
+#~ msgid "Submit Changes"
+#~ msgstr "Spara ändringar"
+
+#~ msgid "deleted"
+#~ msgstr "borttagen"
 
 #~ msgid "Internal Options & Configuration"
 #~ msgstr "Interna val och konfigurationer"

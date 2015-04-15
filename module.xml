@@ -2,7 +2,7 @@
 	<rawname>callback</rawname>
 	<repo>extended</repo>
 	<name>Callback</name>
-	<version>2.11.0.4</version>
+	<version>13.0.1alpha1</version>
 	<publisher>Schmooze Com Inc</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -16,6 +16,7 @@
 		</callback>
  	</popovers>
 	<changelog>
+		*13.0.1alpha1* FREEPBX-9039 Remove Departments
 		*2.11.0.4* #1953
 		*2.11.0.3* Generate license file
 		*2.11.0.1* Add wrapper function for DB helper
@@ -51,7 +52,7 @@
 		<version>2.4.0</version>
 	</depends>
 	<supported>
-		<version>2.10</version>
+		<version>13.0</version>
 	</supported>
 	<location>release/2.11/callback-2.11.0.0.tgz</location>
 	<md5sum>27e82a42a2d657a9a459d9e366c71747</md5sum>
