@@ -76,4 +76,13 @@ class Callback implements \BMO {
 		}
 		return $buttons;
 	}
+	public function chownFreePBX(){
+		$webroot = \FreePBX::Config()->get('AMPWEBROOT');
+		$modulebindir = $webroot . '/admin/modules/callback/bin/'; 
+		$files = array();
+		$files[] = array('type' => 'file',
+						'path' => $modulebindir.'callback',
+						'perms' => 0755);
+		return $files;
+	}
 }
