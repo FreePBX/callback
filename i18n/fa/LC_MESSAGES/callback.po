@@ -10,83 +10,87 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-04-14 20:00-0400\n"
-"PO-Revision-Date: 2015-04-14 20:00-0400\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2015-10-10 14:27+0200\n"
+"Last-Translator: Media <mousavi.media@gmail.com>\n"
+"Language-Team: Persian "
+"<http://weblate.freepbx.org/projects/freepbx/callback/fa/>\n"
+"Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.2-dev\n"
 
 #: page.callback.php:11
 msgid " Add"
-msgstr ""
+msgstr " افزودن"
 
 #: page.callback.php:11
 msgid " Edit"
-msgstr ""
+msgstr " ویرایش"
 
 #: views/grid.php:6
 msgid "Actions"
-msgstr ""
+msgstr "عملیات"
 
 #: views/bootnav.php:2
 msgid "Add Callback"
-msgstr ""
+msgstr "افزودن تماس بازگشتی"
 
 #: callback.i18n.php:6 callback.i18n.php:10
 msgid "Applications"
-msgstr ""
+msgstr "برنامه‌ ها"
 
 #: callback.i18n.php:4 callback.i18n.php:8 page.callback.php:6
 msgid "Callback"
-msgstr ""
+msgstr "تماس بازگشتی"
 
 #: views/form.php:20
 msgid "Callback Description"
-msgstr ""
+msgstr "شرح تماس بازگشتی"
 
 #: views/form.php:44 views/grid.php:5
 msgid "Callback Number"
-msgstr ""
+msgstr "تعداد تماس بازگشتی"
 
 #: functions.inc.php:36 functions.inc.php:65
 #, php-format
 msgid "Callback: %s"
-msgstr ""
+msgstr "تماس بازگشتی：%s"
 
 #: views/form.php:68
 msgid "Delay Before Callback"
-msgstr ""
+msgstr "تاخیر قبل از تماس بازگشتی"
 
 #: Callback.class.php:56
 msgid "Delete"
-msgstr ""
+msgstr "حذف"
 
 #: views/form.php:92
 msgid "Destination after Callback"
-msgstr ""
+msgstr "مقصد پس از تماس بازگشتی"
 
 #: views/form.php:32
 msgid "Enter a description for this callback."
-msgstr ""
+msgstr "شرحی بزای این تماس بازگشتی وارد کنید."
 
 #: Callback.class.php:41
 msgid "Invalid Request"
-msgstr ""
+msgstr "درخواست نامعتبر"
 
 #: views/grid.php:4
 msgid "Item"
-msgstr ""
+msgstr "مورد"
 
 #: views/bootnav.php:1
 msgid "List Callbacks"
-msgstr ""
+msgstr "فهرست تماس های بازگشتی"
 
 #: views/form.php:80
 msgid ""
 "Optional: Enter the number of seconds the system should wait before calling "
 "back."
-msgstr ""
+msgstr "اختیاری：سیستم چند ثانیه قبل از بازگشت تماس صبر کند."
 
 #: views/form.php:56
 msgid ""
@@ -96,20 +100,20 @@ msgstr ""
 
 #: assets/js/callback.js:13
 msgid "Please enter a valid Description"
-msgstr ""
+msgstr "لطفا شرح درست وارد کنید"
 
 #: Callback.class.php:61
 msgid "Reset"
-msgstr ""
+msgstr "بازنشانی"
 
 #: Callback.class.php:66
 msgid "Submit"
-msgstr ""
+msgstr "ثبت"
 
 #: assets/js/callback.js:11
 msgid "The callback description provided is too long."
-msgstr ""
+msgstr "شرح تماس بازگشتی طولانی است."
 
 #: views/form.php:111
 msgid "Where to send the caller once they are called back"
-msgstr ""
+msgstr "وقتی تماس بازمیگردد تماس گیرنده به کجا ارسال شود"
