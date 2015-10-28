@@ -2,7 +2,7 @@
 	<rawname>callback</rawname>
 	<repo>extended</repo>
 	<name>Callback</name>
-	<version>13.0.2</version>
+	<version>13.0.3</version>
 	<publisher>Schmooze Com Inc</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -16,6 +16,7 @@
 		</callback>
  	</popovers>
 	<changelog>
+		*13.0.3* Slideout menu, move grid to ajax handler
 		*13.0.2* Version bump Beta
 		*13.0.1alpha1* FREEPBX-9039 Remove Departments
 		*2.11.0.4* #1953
@@ -50,7 +51,7 @@
 		*1.2* First 2.2 release
 	</changelog>
 	<depends>
-		<version>2.4.0</version>
+		<version>13.0.5</version>
 	</depends>
 	<supported>
 		<version>13.0</version>
