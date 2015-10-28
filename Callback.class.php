@@ -9,12 +9,12 @@ class Callback implements \BMO {
 		$this->FreePBX = $freepbx;
 		$this->db = $freepbx->Database;
 	}
-    public function install() {}
-    public function uninstall() {}
-    public function backup() {}
-    public function restore($backup) {}
-    public function doConfigPageInit($page) {
-    	isset($_REQUEST['action'])?$action = $_REQUEST['action']:$action='';
+		public function install() {}
+		public function uninstall() {}
+		public function backup() {}
+		public function restore($backup) {}
+		public function doConfigPageInit($page) {
+			isset($_REQUEST['action'])?$action = $_REQUEST['action']:$action='';
 		isset($_REQUEST['itemid'])?$itemid=$_REQUEST['itemid']:$itemid='';
 		switch ($action) {
 			case "add":
@@ -29,22 +29,18 @@ class Callback implements \BMO {
 				callback_edit($itemid,$_POST);
 				needreload();
 			break;
-			case "getJSON":
-			    header('Content-Type: application/json');    
-			    switch ($_REQUEST['jdata']) { 
-			    	case 'grid':
-			    		$data = callback_list();
-			    		echo json_encode($data);
-			    		exit();
-			    	break;
-			    	default:
-			    		json_encode(array("Error"=>_("Invalid Request")));
-			    		exit();
-			    	break;
-			    }
-			    break;
 		}
-    }
+	}
+	public function listCallbacks(){
+		$sql = "SELECT * FROM callback";
+		$stmt = $this->db->prepare($sql);
+		$stmt->execute();
+		$results = $stmt->fetchall(\PDO::FETCH_ASSOC);
+		if(is_array($results)){
+			return $results;
+		}
+		return array();
+	}
 	public function getActionBar($request) {
 		$buttons = array();
 		switch($request['display']) {
@@ -78,11 +74,45 @@ class Callback implements \BMO {
 	}
 	public function chownFreePBX(){
 		$webroot = \FreePBX::Config()->get('AMPWEBROOT');
-		$modulebindir = $webroot . '/admin/modules/callback/bin/'; 
+		$modulebindir = $webroot . '/admin/modules/callback/bin/';
 		$files = array();
 		$files[] = array('type' => 'file',
 						'path' => $modulebindir.'callback',
 						'perms' => 0755);
 		return $files;
+	}
+	public function ajaxRequest($req, &$setting) {
+			 switch ($req) {
+					 case 'getJSON':
+							 return true;
+					 break;
+					 default:
+							 return false;
+					 break;
+			 }
+	 }
+	 public function ajaxHandler(){
+		switch ($_REQUEST['command']) {
+			case 'getJSON':
+				switch ($_REQUEST['jdata']) {
+					case 'grid':
+						return array_values($this->listCallbacks());
+					break;
+
+					default:
+						return false;
+					break;
+				}
+			break;
+
+			default:
+				return false;
+			break;
+		}
+	}
+	public function getRightNav($request) {
+		if($request['view'] == 'form'){
+    	return load_view(__DIR__."/views/bootnav.php",array());
+		}
 	}
 }

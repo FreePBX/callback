@@ -115,11 +115,8 @@ function callback_get_config($engine) {
 
 //get the existing meetme extensions
 function callback_list() {
-	$results = sql("SELECT * FROM callback","getAll",DB_FETCHMODE_ASSOC);
-	if(is_array($results)){
-		return $results;
-	}
-	return null;
+	dbug('Function callback_list had been moved to BMO');
+	return \FreePBX::Callback()->listCallbacks();
 }
 
 function callback_get($id){
