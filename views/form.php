@@ -69,7 +69,10 @@ if($itemid){
 							<i class="fa fa-question-circle fpbx-help-icon" data-for="sleep"></i>
 						</div>
 						<div class="col-md-9">
-							<input type="number" class="form-control" id="sleep" name="sleep" value="<?php echo (isset($thisItem['sleep']) ? $thisItem['sleep'] : ''); ?>">
+							<div class="input-group">
+								<input type="number" class="form-control" id="sleep" name="sleep" value="<?php echo (isset($thisItem['sleep']) ? $thisItem['sleep'] : ''); ?>">
+								<span class="input-group-addon"><?php echo _("Seconds")?></span>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -93,11 +96,11 @@ if($itemid){
 							<i class="fa fa-question-circle fpbx-help-icon" data-for="goto0"></i>
 						</div>
 						<div class="col-md-9">
-							<?php 
+							<?php
 								//draw goto selects
 								if (isset($thisItem)) {
 									echo drawselects($thisItem['destination'],0);
-								} else { 
+								} else {
 									echo drawselects(null, 0);
 								}
 							?>
