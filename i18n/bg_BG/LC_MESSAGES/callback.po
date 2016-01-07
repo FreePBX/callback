@@ -24,15 +24,15 @@ msgstr ""
 
 #: page.callback.php:11
 msgid " Add"
-msgstr ""
+msgstr " Добави"
 
 #: page.callback.php:11
 msgid " Edit"
-msgstr ""
+msgstr " Редактирай"
 
 #: views/grid.php:6
 msgid "Actions"
-msgstr ""
+msgstr "Действия"
 
 #: views/bootnav.php:2
 msgid "Add Callback"
@@ -48,11 +48,11 @@ msgstr "Обратно Обаждане"
 
 #: views/form.php:20
 msgid "Callback Description"
-msgstr ""
+msgstr "Описание на Обратно Обаждане"
 
 #: views/form.php:44 views/grid.php:5
 msgid "Callback Number"
-msgstr ""
+msgstr "Номер за Обратно Обаждане"
 
 #: functions.inc.php:36 functions.inc.php:65
 #, php-format
@@ -61,11 +61,11 @@ msgstr "Обратно Обаждане: %s"
 
 #: views/form.php:68
 msgid "Delay Before Callback"
-msgstr ""
+msgstr "Пауза Преди Обратно Обаждане"
 
 #: Callback.class.php:56
 msgid "Delete"
-msgstr ""
+msgstr "Изтрий"
 
 #: views/form.php:92
 msgid "Destination after Callback"
@@ -77,15 +77,15 @@ msgstr "Въведете описание за това Обратно Обаж�
 
 #: Callback.class.php:41
 msgid "Invalid Request"
-msgstr ""
+msgstr "Невалидна Заявка"
 
 #: views/grid.php:4
 msgid "Item"
-msgstr ""
+msgstr "Описание"
 
 #: views/bootnav.php:1
 msgid "List Callbacks"
-msgstr ""
+msgstr "Списък на Обратно Обаждане"
 
 #: views/form.php:80
 msgid ""
@@ -105,15 +105,15 @@ msgstr ""
 
 #: assets/js/callback.js:13
 msgid "Please enter a valid Description"
-msgstr ""
+msgstr "Моля въведете правилно Описание"
 
 #: Callback.class.php:61
 msgid "Reset"
-msgstr ""
+msgstr "Изчисти"
 
 #: Callback.class.php:66
 msgid "Submit"
-msgstr ""
+msgstr "Приеми"
 
 #: assets/js/callback.js:11
 msgid "The callback description provided is too long."
@@ -121,7 +121,7 @@ msgstr "Въведеното описание е прекалено дълго."
 
 #: views/form.php:111
 msgid "Where to send the caller once they are called back"
-msgstr ""
+msgstr "Къде да се насочи обаждането след като се обадят обратно"
 
 #~ msgid ""
 #~ "A callback will hang up on the caller and then call them back, directing "

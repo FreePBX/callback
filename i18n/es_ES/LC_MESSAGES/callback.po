@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: FreePBX - módulo callback module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-04-14 20:00-0400\n"
-"PO-Revision-Date: 2015-03-23 00:19+0200\n"
+"PO-Revision-Date: 2016-01-03 11:13+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
-"Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/callback/"
-"es_ES/>\n"
+"Language-Team: Spanish "
+"<http://weblate.freepbx.org/projects/freepbx/callback/es_ES/>\n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es_ES\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.2-dev\n"
 "X-Poedit-Language: Spanish\n"
@@ -19,15 +19,15 @@ msgstr ""
 
 #: page.callback.php:11
 msgid " Add"
-msgstr ""
+msgstr " Agregar"
 
 #: page.callback.php:11
 msgid " Edit"
-msgstr ""
+msgstr " Editar"
 
 #: views/grid.php:6
 msgid "Actions"
-msgstr ""
+msgstr "Acciones"
 
 #: views/bootnav.php:2
 msgid "Add Callback"
@@ -43,11 +43,11 @@ msgstr "Devolución de llamada"
 
 #: views/form.php:20
 msgid "Callback Description"
-msgstr ""
+msgstr "Descripcion Callback"
 
 #: views/form.php:44 views/grid.php:5
 msgid "Callback Number"
-msgstr ""
+msgstr "Numero Callback"
 
 #: functions.inc.php:36 functions.inc.php:65
 #, php-format
@@ -56,11 +56,11 @@ msgstr "Devolución de llamada: %s"
 
 #: views/form.php:68
 msgid "Delay Before Callback"
-msgstr ""
+msgstr "Espera antes de Callback"
 
 #: Callback.class.php:56
 msgid "Delete"
-msgstr ""
+msgstr "Eliminar"
 
 #: views/form.php:92
 msgid "Destination after Callback"
@@ -72,15 +72,15 @@ msgstr "Introduzca una descripción para esta devolución de llamada."
 
 #: Callback.class.php:41
 msgid "Invalid Request"
-msgstr ""
+msgstr "Solicitud no válida"
 
 #: views/grid.php:4
 msgid "Item"
-msgstr ""
+msgstr "Ítem"
 
 #: views/bootnav.php:1
 msgid "List Callbacks"
-msgstr ""
+msgstr "Lista de rellamadas (Callbacks)"
 
 #: views/form.php:80
 msgid ""
@@ -100,15 +100,15 @@ msgstr ""
 
 #: assets/js/callback.js:13
 msgid "Please enter a valid Description"
-msgstr ""
+msgstr "Por favor, introduzca una descripción válida"
 
 #: Callback.class.php:61
 msgid "Reset"
-msgstr ""
+msgstr "Reiniciar"
 
 #: Callback.class.php:66
 msgid "Submit"
-msgstr ""
+msgstr "Enviar"
 
 #: assets/js/callback.js:11
 msgid "The callback description provided is too long."
@@ -116,7 +116,7 @@ msgstr "La descripción provista para la devolución de llamada en muy larga."
 
 #: views/form.php:111
 msgid "Where to send the caller once they are called back"
-msgstr ""
+msgstr "Dónde enviar la persona que llama una vez que se llaman de vuelta"
 
 #~ msgid ""
 #~ "A callback will hang up on the caller and then call them back, directing "
