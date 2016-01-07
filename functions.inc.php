@@ -10,6 +10,7 @@ function callback_destinations() {
 
 	// return an associative array with destination and description
 	if (isset($results)) {
+		$extens = array();
 		foreach($results as $result){
 				$extens[] = array('destination' => 'callback,'.$result['callback_id'].',1', 'description' => $result['description']);
 		}
