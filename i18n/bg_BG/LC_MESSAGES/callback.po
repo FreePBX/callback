@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-14 20:00-0400\n"
+"POT-Creation-Date: 2016-01-07 11:01-0800\n"
 "PO-Revision-Date: 2015-03-11 20:59+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://weblate.freepbx.org/projects/freepbx/"
@@ -30,11 +30,11 @@ msgstr " Добави"
 msgid " Edit"
 msgstr " Редактирай"
 
-#: views/grid.php:6
+#: views/grid.php:16
 msgid "Actions"
 msgstr "Действия"
 
-#: views/bootnav.php:2
+#: views/bootnav.php:4 views/grid.php:2
 msgid "Add Callback"
 msgstr "Добави Обратно Обаждане"
 
@@ -43,6 +43,7 @@ msgid "Applications"
 msgstr "Приложения"
 
 #: callback.i18n.php:4 callback.i18n.php:8 page.callback.php:6
+#: views/bootnav.php:15
 msgid "Callback"
 msgstr "Обратно Обаждане"
 
@@ -50,11 +51,11 @@ msgstr "Обратно Обаждане"
 msgid "Callback Description"
 msgstr "Описание на Обратно Обаждане"
 
-#: views/form.php:44 views/grid.php:5
+#: views/form.php:44 views/grid.php:15
 msgid "Callback Number"
 msgstr "Номер за Обратно Обаждане"
 
-#: functions.inc.php:36 functions.inc.php:65
+#: functions.inc.php:37 functions.inc.php:66
 #, php-format
 msgid "Callback: %s"
 msgstr "Обратно Обаждане: %s"
@@ -63,11 +64,11 @@ msgstr "Обратно Обаждане: %s"
 msgid "Delay Before Callback"
 msgstr "Пауза Преди Обратно Обаждане"
 
-#: Callback.class.php:56
+#: Callback.class.php:52
 msgid "Delete"
 msgstr "Изтрий"
 
-#: views/form.php:92
+#: views/form.php:95
 msgid "Destination after Callback"
 msgstr "Направление след Обратно Обаждане"
 
@@ -75,19 +76,15 @@ msgstr "Направление след Обратно Обаждане"
 msgid "Enter a description for this callback."
 msgstr "Въведете описание за това Обратно Обаждане."
 
-#: Callback.class.php:41
-msgid "Invalid Request"
-msgstr "Невалидна Заявка"
-
-#: views/grid.php:4
+#: views/grid.php:14
 msgid "Item"
 msgstr "Описание"
 
-#: views/bootnav.php:1
+#: views/bootnav.php:3
 msgid "List Callbacks"
 msgstr "Списък на Обратно Обаждане"
 
-#: views/form.php:80
+#: views/form.php:83
 msgid ""
 "Optional: Enter the number of seconds the system should wait before calling "
 "back."
@@ -107,11 +104,15 @@ msgstr ""
 msgid "Please enter a valid Description"
 msgstr "Моля въведете правилно Описание"
 
-#: Callback.class.php:61
+#: Callback.class.php:57
 msgid "Reset"
 msgstr "Изчисти"
 
-#: Callback.class.php:66
+#: views/form.php:74
+msgid "Seconds"
+msgstr ""
+
+#: Callback.class.php:62
 msgid "Submit"
 msgstr "Приеми"
 
@@ -119,9 +120,12 @@ msgstr "Приеми"
 msgid "The callback description provided is too long."
 msgstr "Въведеното описание е прекалено дълго."
 
-#: views/form.php:111
+#: views/form.php:114
 msgid "Where to send the caller once they are called back"
 msgstr "Къде да се насочи обаждането след като се обадят обратно"
+
+#~ msgid "Invalid Request"
+#~ msgstr "Невалидна Заявка"
 
 #~ msgid ""
 #~ "A callback will hang up on the caller and then call them back, directing "

@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-14 20:00-0400\n"
+"POT-Creation-Date: 2016-01-07 11:01-0800\n"
 "PO-Revision-Date: 2014-02-19 22:17+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/callback/ja/>\n"
@@ -56,11 +56,11 @@ msgstr ""
 msgid " Edit"
 msgstr ""
 
-#: views/grid.php:6
+#: views/grid.php:16
 msgid "Actions"
 msgstr ""
 
-#: views/bootnav.php:2
+#: views/bootnav.php:4 views/grid.php:2
 msgid "Add Callback"
 msgstr "コールバックを追加"
 
@@ -69,6 +69,7 @@ msgid "Applications"
 msgstr "アプリケーション"
 
 #: callback.i18n.php:4 callback.i18n.php:8 page.callback.php:6
+#: views/bootnav.php:15
 msgid "Callback"
 msgstr "コールバック"
 
@@ -76,11 +77,11 @@ msgstr "コールバック"
 msgid "Callback Description"
 msgstr ""
 
-#: views/form.php:44 views/grid.php:5
+#: views/form.php:44 views/grid.php:15
 msgid "Callback Number"
 msgstr ""
 
-#: functions.inc.php:36 functions.inc.php:65
+#: functions.inc.php:37 functions.inc.php:66
 #, php-format
 msgid "Callback: %s"
 msgstr "コールバック： %s"
@@ -89,11 +90,11 @@ msgstr "コールバック： %s"
 msgid "Delay Before Callback"
 msgstr ""
 
-#: Callback.class.php:56
+#: Callback.class.php:52
 msgid "Delete"
 msgstr ""
 
-#: views/form.php:92
+#: views/form.php:95
 msgid "Destination after Callback"
 msgstr "コールバック後の宛先"
 
@@ -101,19 +102,15 @@ msgstr "コールバック後の宛先"
 msgid "Enter a description for this callback."
 msgstr "このコールバックの説明を入力します。"
 
-#: Callback.class.php:41
-msgid "Invalid Request"
-msgstr ""
-
-#: views/grid.php:4
+#: views/grid.php:14
 msgid "Item"
 msgstr ""
 
-#: views/bootnav.php:1
+#: views/bootnav.php:3
 msgid "List Callbacks"
 msgstr ""
 
-#: views/form.php:80
+#: views/form.php:83
 msgid ""
 "Optional: Enter the number of seconds the system should wait before calling "
 "back."
@@ -131,11 +128,15 @@ msgstr ""
 msgid "Please enter a valid Description"
 msgstr ""
 
-#: Callback.class.php:61
+#: Callback.class.php:57
 msgid "Reset"
 msgstr ""
 
-#: Callback.class.php:66
+#: views/form.php:74
+msgid "Seconds"
+msgstr ""
+
+#: Callback.class.php:62
 msgid "Submit"
 msgstr ""
 
@@ -143,7 +144,7 @@ msgstr ""
 msgid "The callback description provided is too long."
 msgstr ""
 
-#: views/form.php:111
+#: views/form.php:114
 msgid "Where to send the caller once they are called back"
 msgstr ""
 

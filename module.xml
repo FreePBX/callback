@@ -2,8 +2,8 @@
 	<rawname>callback</rawname>
 	<repo>extended</repo>
 	<name>Callback</name>
-	<version>13.0.3</version>
-	<publisher>Schmooze Com Inc</publisher>
+	<version>13.0.4</version>
+	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Applications</category>
@@ -16,6 +16,7 @@
 		</callback>
  	</popovers>
 	<changelog>
+		*13.0.4* Invalid variable in destinations
 		*13.0.3* Slideout menu, move grid to ajax handler
 		*13.0.2* Version bump Beta
 		*13.0.1alpha1* FREEPBX-9039 Remove Departments
