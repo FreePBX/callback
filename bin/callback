@@ -8,12 +8,10 @@ This Callback script takes 7 arguments:
 
 eg: callback 14032448089 ext-meetme.200.1
 */
-?>
-
-<?php
 
 if ($argc < 3) {
-  cb_fatal("Wrong number of arguments, should be:\n".$argv[0]." callback_number callback_destination [delay_seconds]\n");
+	cb_fatal("Wrong number of arguments, should be:\n".$argv[0].
+	" callback_number callback_destination [delay_seconds]\n");
 }
 
 $callback_number = $argv[1];
@@ -25,7 +23,7 @@ $pause_seconds = isset($argv[3]) ? $argv[3] : 0;
 $restrict_mods = true;
 $bootstrap_settings['freepbx_auth'] = false;
 if (!@include_once(getenv('FREEPBX_CONF') ? getenv('FREEPBX_CONF') : '/etc/freepbx.conf')) { 
-  include_once('/etc/asterisk/freepbx.conf');
+	include_once('/etc/asterisk/freepbx.conf');
 }
 
 if($pause_seconds) {
@@ -51,7 +49,7 @@ $data = "";
 
 if ($bootstrap_settings['astman_connected']) {
 	$astman->Originate($channel, $exten, $context, $priority, $timeout, $callerid, $variable, $account, $application, $data);
-  $astman->disconnect();
+	$astman->disconnect();
 } else {
 	cb_fatal("Cannot connect to Asterisk Manager with ".$amp_conf["AMPMGRUSER"]."/".$amp_conf["AMPMGRPASS"]);
 }
