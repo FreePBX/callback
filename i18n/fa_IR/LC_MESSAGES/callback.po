@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-07 11:01-0800\n"
-"PO-Revision-Date: 2016-04-30 15:59+0200\n"
+"PO-Revision-Date: 2016-04-30 16:12+0200\n"
 "Last-Translator: psdk <hyavari26@gmail.com>\n"
 "Language-Team: Persian (Iran) "
 "<http://weblate.freepbx.org/projects/freepbx/callback/fa_IR/>\n"
@@ -52,7 +52,7 @@ msgstr "توضیحات تماس بازگشتی"
 
 #: views/form.php:44 views/grid.php:15
 msgid "Callback Number"
-msgstr "تعداد تماس بازگشتی"
+msgstr "شماره تماس بازگشتی"
 
 #: functions.inc.php:37 functions.inc.php:66
 #, php-format
@@ -69,15 +69,15 @@ msgstr "حذف"
 
 #: views/form.php:95
 msgid "Destination after Callback"
-msgstr "مقصد پس از تماس بازگشتی"
+msgstr "مقصد پس از برقراری تماس بازگشتی"
 
 #: views/form.php:32
 msgid "Enter a description for this callback."
-msgstr "شرحی بزای این تماس بازگشتی وارد کنید."
+msgstr "توضیحاتی برای این تماس بازگشتی بنویسید."
 
 #: views/grid.php:14
 msgid "Item"
-msgstr "مورد"
+msgstr "عنوان"
 
 #: views/bootnav.php:3
 msgid "List Callbacks"
@@ -87,19 +87,19 @@ msgstr "فهرست تماس های بازگشتی"
 msgid ""
 "Optional: Enter the number of seconds the system should wait before calling "
 "back."
-msgstr "اختیاری：سیستم چند ثانیه قبل از بازگشت تماس صبر کند."
+msgstr "اختیاری: سیستم چند ثانیه قبل از برقراری تماس بازگشتی صبر کند."
 
 #: views/form.php:56
 msgid ""
 "Optional: Enter the number to dial for the callback.  Leave this blank to "
 "just dial the incoming CallerID Number"
 msgstr ""
-"اختیاری： شماره ای برای بازگشت تماس وارد کنید. برای شماره شناسه تماس گیرنده  "
-"خالی بگذارید"
+"اختیاری： شماره ای جهت برقرای تماس بازگشتی وارد کنید. برای شماره گیری شناسه "
+"تماس گیرنده، این فیلد را خالی بگذارید"
 
 #: assets/js/callback.js:13
 msgid "Please enter a valid Description"
-msgstr "لطفا شرح درست وارد کنید"
+msgstr "لطفا توضیحات معتبر وارد نمایید"
 
 #: Callback.class.php:57
 msgid "Reset"
@@ -107,7 +107,7 @@ msgstr "بازنشانی"
 
 #: views/form.php:74
 msgid "Seconds"
-msgstr "ثانیه ها"
+msgstr "ثانیه"
 
 #: Callback.class.php:62
 msgid "Submit"
@@ -115,11 +115,11 @@ msgstr "ثبت"
 
 #: assets/js/callback.js:11
 msgid "The callback description provided is too long."
-msgstr "شرح تماس بازگشتی طولانی است."
+msgstr "توضیحات برای تماس بازگشتی طولانی است."
 
 #: views/form.php:114
 msgid "Where to send the caller once they are called back"
-msgstr "وقتی تماس بازمیگردد تماس گیرنده به کجا ارسال شود"
+msgstr "وقتی تماس بازگشتی برقرار شد، تماس به کجا وصل گردد"
 
 #~ msgid "Invalid Request"
 #~ msgstr "درخواست نامعتبر"
