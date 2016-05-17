@@ -116,7 +116,7 @@ function callback_get_config($engine) {
 
 //get the existing meetme extensions
 function callback_list() {
-	dbug('Function callback_list had been moved to BMO');
+	_callback_backtrace();
 	return \FreePBX::Callback()->listCallbacks();
 }
 
@@ -156,5 +156,12 @@ function callback_edit($id,$post){
 // ensures post vars is valid
 function callback_chk($post){
 	return true;
+}
+function _callback_backtrace() {
+	$trace = debug_backtrace();
+	$function = $trace[1]['function'];
+	$line = $trace[1]['line'];
+	$file = $trace[1]['file'];
+	freepbx_log(FPBX_LOG_WARNING,'Depreciated Function '.$function.' detected in '.$file.' on line '.$line);
 }
 ?>
