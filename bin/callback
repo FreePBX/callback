@@ -22,9 +22,7 @@ $pause_seconds = isset($argv[3]) ? $argv[3] : 0;
 //
 $restrict_mods = true;
 $bootstrap_settings['freepbx_auth'] = false;
-if (!@include_once(getenv('FREEPBX_CONF') ? getenv('FREEPBX_CONF') : '/etc/freepbx.conf')) { 
-	include_once('/etc/asterisk/freepbx.conf');
-}
+include '/etc/freepbx.conf';
 
 if($pause_seconds) {
 	sleep($pause_seconds);
