@@ -10,108 +10,115 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-07 11:01-0800\n"
-"PO-Revision-Date: 2016-01-07 11:01-0800\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2016-12-09 15:17+0200\n"
+"Last-Translator: Sven <spiderrs4@web.de>\n"
+"Language-Team: German "
+"<http://weblate.freepbx.org/projects/freepbx/callback/de_DE/>\n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.4\n"
 
 #: page.callback.php:11
 msgid " Add"
-msgstr ""
+msgstr " Hinzufügen"
 
 #: page.callback.php:11
 msgid " Edit"
-msgstr ""
+msgstr " Bearbeiten"
 
 #: views/grid.php:16
 msgid "Actions"
-msgstr ""
+msgstr "Aktionen"
 
 #: views/bootnav.php:4 views/grid.php:2
 msgid "Add Callback"
-msgstr ""
+msgstr "Rückruf hinzufügen"
 
 #: callback.i18n.php:6 callback.i18n.php:10
 msgid "Applications"
-msgstr ""
+msgstr "Anwendungen"
 
 #: callback.i18n.php:4 callback.i18n.php:8 page.callback.php:6
 #: views/bootnav.php:15
 msgid "Callback"
-msgstr ""
+msgstr "Rückruf"
 
 #: views/form.php:20
 msgid "Callback Description"
-msgstr ""
+msgstr "Rückrufbeschreibung"
 
 #: views/form.php:44 views/grid.php:15
 msgid "Callback Number"
-msgstr ""
+msgstr "Rückrufnummer"
 
 #: functions.inc.php:37 functions.inc.php:66
 #, php-format
 msgid "Callback: %s"
-msgstr ""
+msgstr "Rückruf: %s"
 
 #: views/form.php:68
 msgid "Delay Before Callback"
-msgstr ""
+msgstr "Verzögerung bis Rückruf"
 
 #: Callback.class.php:52
 msgid "Delete"
-msgstr ""
+msgstr "Löschen"
 
 #: views/form.php:95
 msgid "Destination after Callback"
-msgstr ""
+msgstr "Ziel nach Rückruf"
 
 #: views/form.php:32
 msgid "Enter a description for this callback."
-msgstr ""
+msgstr "Erstellen Sie eine Beschreibung für diesen Rückruf."
 
 #: views/grid.php:14
 msgid "Item"
-msgstr ""
+msgstr "Lfd Nummer"
 
 #: views/bootnav.php:3
 msgid "List Callbacks"
-msgstr ""
+msgstr "Rückrufliste"
 
 #: views/form.php:83
 msgid ""
 "Optional: Enter the number of seconds the system should wait before calling "
 "back."
 msgstr ""
+"Optional: Geben Sie in Sekunden an, wie lange das System warten soll bis es "
+"zurück ruft."
 
 #: views/form.php:56
 msgid ""
 "Optional: Enter the number to dial for the callback.  Leave this blank to "
 "just dial the incoming CallerID Number"
 msgstr ""
+"Optional: Geben Sie an welche Nummer zurückgerufen werden soll. Lassen Sie "
+"dieses Feld frei, wird die ankommende Nummer zurückgerufen."
 
 #: assets/js/callback.js:13
 msgid "Please enter a valid Description"
-msgstr ""
+msgstr "Geben Sie bitte eine gültige Beschreibung ein."
 
 #: Callback.class.php:57
 msgid "Reset"
-msgstr ""
+msgstr "Zurücksetzen"
 
 #: views/form.php:74
 msgid "Seconds"
-msgstr ""
+msgstr "Sekunden"
 
 #: Callback.class.php:62
 msgid "Submit"
-msgstr ""
+msgstr "Bestätigen"
 
 #: assets/js/callback.js:11
 msgid "The callback description provided is too long."
-msgstr ""
+msgstr "Die eingegebene Beschreibung ist zu lang."
 
 #: views/form.php:114
 msgid "Where to send the caller once they are called back"
-msgstr ""
+msgstr "Wohin soll der Anrufer bei Rückruf geleitet werden."
