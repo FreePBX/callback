@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-07 11:01-0800\n"
+"POT-Creation-Date: 2017-06-05 18:32-0400\n"
 "PO-Revision-Date: 2015-04-24 21:48+0200\n"
 "Last-Translator: Paulo <paulop1975@gmail.com>\n"
 "Language-Team: Portuguese (Portugal) <http://weblate.freepbx.org/projects/"
@@ -29,6 +29,10 @@ msgstr ""
 msgid " Edit"
 msgstr ""
 
+#: assets/js/callback.js:16
+msgid " already used, please use a different description."
+msgstr ""
+
 #: views/grid.php:16
 msgid "Actions"
 msgstr ""
@@ -37,7 +41,7 @@ msgstr ""
 msgid "Add Callback"
 msgstr "Adicionar Devolução de Chamada"
 
-#: callback.i18n.php:6 callback.i18n.php:10
+#: callback.i18n.php:6
 msgid "Applications"
 msgstr "Aplicações"
 
@@ -46,11 +50,11 @@ msgstr "Aplicações"
 msgid "Callback"
 msgstr "Devolução de Chamadas"
 
-#: views/form.php:20
+#: views/form.php:41
 msgid "Callback Description"
 msgstr ""
 
-#: views/form.php:44 views/grid.php:15
+#: views/form.php:65 views/grid.php:15
 msgid "Callback Number"
 msgstr ""
 
@@ -59,19 +63,19 @@ msgstr ""
 msgid "Callback: %s"
 msgstr "Devolução de Chamadas: %s"
 
-#: views/form.php:68
+#: views/form.php:89
 msgid "Delay Before Callback"
 msgstr ""
 
-#: Callback.class.php:52
+#: Callback.class.php:54
 msgid "Delete"
 msgstr ""
 
-#: views/form.php:95
+#: views/form.php:116
 msgid "Destination after Callback"
 msgstr "Destino após Devolver Chamada"
 
-#: views/form.php:32
+#: views/form.php:53
 msgid "Enter a description for this callback."
 msgstr "Introduza uma descrição para esta devolução de chamadas."
 
@@ -83,7 +87,7 @@ msgstr ""
 msgid "List Callbacks"
 msgstr ""
 
-#: views/form.php:83
+#: views/form.php:104
 msgid ""
 "Optional: Enter the number of seconds the system should wait before calling "
 "back."
@@ -91,7 +95,7 @@ msgstr ""
 "Opcional: defina quantos segundos o sistema deve esperar antes de devolver a "
 "chamada."
 
-#: views/form.php:56
+#: views/form.php:77
 msgid ""
 "Optional: Enter the number to dial for the callback.  Leave this blank to "
 "just dial the incoming CallerID Number"
@@ -103,15 +107,15 @@ msgstr ""
 msgid "Please enter a valid Description"
 msgstr ""
 
-#: Callback.class.php:57
+#: Callback.class.php:59
 msgid "Reset"
 msgstr ""
 
-#: views/form.php:74
+#: views/form.php:95
 msgid "Seconds"
 msgstr ""
 
-#: Callback.class.php:62
+#: Callback.class.php:64
 msgid "Submit"
 msgstr ""
 
@@ -119,7 +123,7 @@ msgstr ""
 msgid "The callback description provided is too long."
 msgstr "A descrição é demasiado longa."
 
-#: views/form.php:114
+#: views/form.php:135
 msgid "Where to send the caller once they are called back"
 msgstr ""
 
