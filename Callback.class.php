@@ -20,6 +20,7 @@ class Callback implements \BMO {
 			case "add":
 				$_REQUEST['itemid'] = callback_add($_POST);
 				needreload();
+				redirect_standard();
 			break;
 			case "delete":
 				callback_del($itemid);
@@ -28,6 +29,7 @@ class Callback implements \BMO {
 			case "edit":
 				callback_edit($itemid,$_POST);
 				needreload();
+				redirect_standard();
 			break;
 		}
 	}
