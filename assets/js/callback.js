@@ -2,28 +2,6 @@ var theForm = document.edit;
 if(typeof theForm !== 'undefined'){
 	theForm.description.focus();
 }
-function edit_onsubmit() {
-	setDestinations(edit,1);
-	
-	defaultEmptyOk = false;
-		var sizeDisplayName = 50;	
-	
-        	if (!isCorrectLength(theForm.description.value, sizeDisplayName))
-        	        return warnInvalid(theForm.description, _('The callback description provided is too long.'));
-	if (!isAlphanumeric(theForm.description.value)){
-		return warnInvalid(theForm.description, _("Please enter a valid Description"));
-	}else{
-		if($.inArray(theForm.description.value, callback_names) != -1){
-		        return warnInvalid(theForm.description, theForm.description.value  + _(" already used, please use a different description."));
-		}
-	}
-
-		
-	if (!validateDestinations(edit,1,true))
-		return false;
-	
-	return true;
-}
 
 $(document).ready(function() {
 	$('form').unbind( "submit");
