@@ -10,112 +10,117 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-05 18:32-0400\n"
-"PO-Revision-Date: 2017-06-05 18:32-0400\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2017-06-07 09:54+0200\n"
+"Last-Translator: Peter Trinh <ftek@ymail.com>\n"
+"Language-Team: Vietnamese "
+"<http://weblate.freepbx.org/projects/freepbx/callback/vi/>\n"
+"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2.4\n"
 
 #: page.callback.php:11
 msgid " Add"
-msgstr ""
+msgstr " Thêm"
 
 #: page.callback.php:11
 msgid " Edit"
-msgstr ""
+msgstr " Hiệu chỉnh"
 
 #: assets/js/callback.js:16
 msgid " already used, please use a different description."
-msgstr ""
+msgstr " Đã được sử dụng, vui lòng sử dụng mô tả khác."
 
 #: views/grid.php:16
 msgid "Actions"
-msgstr ""
+msgstr "Các thao tác"
 
 #: views/bootnav.php:4 views/grid.php:2
 msgid "Add Callback"
-msgstr ""
+msgstr "Thêm cuộc gọi lại"
 
 #: callback.i18n.php:6
 msgid "Applications"
-msgstr ""
+msgstr "Các ứng dụng"
 
 #: callback.i18n.php:4 callback.i18n.php:8 page.callback.php:6
 #: views/bootnav.php:15
 msgid "Callback"
-msgstr ""
+msgstr "Gọi lại"
 
 #: views/form.php:41
 msgid "Callback Description"
-msgstr ""
+msgstr "Mô tả Gọi lại"
 
 #: views/form.php:65 views/grid.php:15
 msgid "Callback Number"
-msgstr ""
+msgstr "Số điện thoại gọi lại"
 
 #: functions.inc.php:37 functions.inc.php:66
 #, php-format
 msgid "Callback: %s"
-msgstr ""
+msgstr "Gọi lại: %s"
 
 #: views/form.php:89
 msgid "Delay Before Callback"
-msgstr ""
+msgstr "Hoãn trước khi Gọi lại"
 
 #: Callback.class.php:54
 msgid "Delete"
-msgstr ""
+msgstr "Xóa"
 
 #: views/form.php:116
 msgid "Destination after Callback"
-msgstr ""
+msgstr "Điểm đến sau khi Gọi lại"
 
 #: views/form.php:53
 msgid "Enter a description for this callback."
-msgstr ""
+msgstr "Nhập một mô tả cho cuộc gọi lại này."
 
 #: views/grid.php:14
 msgid "Item"
-msgstr ""
+msgstr "Thư mục"
 
 #: views/bootnav.php:3
 msgid "List Callbacks"
-msgstr ""
+msgstr "Danh sách các cuộc gọi lại"
 
 #: views/form.php:104
 msgid ""
 "Optional: Enter the number of seconds the system should wait before calling "
 "back."
-msgstr ""
+msgstr "Lựa chọn: Nhập một số giây mà hệ thống sẽ chờ trước khi gọi lại."
 
 #: views/form.php:77
 msgid ""
 "Optional: Enter the number to dial for the callback.  Leave this blank to "
 "just dial the incoming CallerID Number"
 msgstr ""
+"Lựa chọn: Nhập số để quay số cho cuộc gọi lại. Để phần trống này để chỉ quay "
+"số ID người gọi đến"
 
 #: assets/js/callback.js:13
 msgid "Please enter a valid Description"
-msgstr ""
+msgstr "Vui lòng nhập Mô tả hợp lệ"
 
 #: Callback.class.php:59
 msgid "Reset"
-msgstr ""
+msgstr "Cài đặt lại"
 
 #: views/form.php:95
 msgid "Seconds"
-msgstr ""
+msgstr "Giây"
 
 #: Callback.class.php:64
 msgid "Submit"
-msgstr ""
+msgstr "Gửi đi"
 
 #: assets/js/callback.js:11
 msgid "The callback description provided is too long."
-msgstr ""
+msgstr "Mô tả cuộc gọi lại quá dài."
 
 #: views/form.php:135
 msgid "Where to send the caller once they are called back"
-msgstr ""
+msgstr "Nơi gửi đến người gọi mỗi khi họ được gọi lại"
