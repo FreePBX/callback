@@ -3,31 +3,31 @@
 # For licensing information, please see the file named LICENSE located in the module directory
 #
 # FreePBX language template for callback
-# Copyright (C) 2008-2015 Sangoma, Inc.
+# Copyright (C) 2008-2016 Sangoma, Inc.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-05 18:32-0400\n"
-"PO-Revision-Date: 2015-04-24 21:48+0200\n"
-"Last-Translator: Paulo <paulop1975@gmail.com>\n"
-"Language-Team: Portuguese (Portugal) <http://weblate.freepbx.org/projects/"
-"freepbx/callback/pt_PT/>\n"
+"PO-Revision-Date: 2017-03-03 15:55+0200\n"
+"Last-Translator: hammer125 <auswertung@aon.at>\n"
+"Language-Team: German <http://weblate.freepbx.org/projects/freepbx/callback/"
+"de_DE/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pt_PT\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.2-dev\n"
+"Language: de_DE\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.4\n"
 
 #: page.callback.php:11
 msgid " Add"
-msgstr ""
+msgstr " Hinzufügen"
 
 #: page.callback.php:11
 msgid " Edit"
-msgstr ""
+msgstr " Bearbeiten"
 
 #: assets/js/callback.js:16
 msgid " already used, please use a different description."
@@ -35,121 +35,94 @@ msgstr ""
 
 #: views/grid.php:16
 msgid "Actions"
-msgstr ""
+msgstr "Aktionen"
 
 #: views/bootnav.php:4 views/grid.php:2
 msgid "Add Callback"
-msgstr "Adicionar Devolução de Chamada"
+msgstr "Rückruf hinzufügen"
 
 #: callback.i18n.php:6
 msgid "Applications"
-msgstr "Aplicações"
+msgstr "Anwendungen"
 
 #: callback.i18n.php:4 callback.i18n.php:8 page.callback.php:6
 #: views/bootnav.php:15
 msgid "Callback"
-msgstr "Devolução de Chamadas"
+msgstr "Rückruf"
 
 #: views/form.php:41
 msgid "Callback Description"
-msgstr ""
+msgstr "Rückrufbeschreibung"
 
 #: views/form.php:65 views/grid.php:15
 msgid "Callback Number"
-msgstr ""
+msgstr "Rückrufnummer"
 
 #: functions.inc.php:37 functions.inc.php:66
 #, php-format
 msgid "Callback: %s"
-msgstr "Devolução de Chamadas: %s"
+msgstr "Rückruf: %s"
 
 #: views/form.php:89
 msgid "Delay Before Callback"
-msgstr ""
+msgstr "Verzögerung bis Rückruf"
 
 #: Callback.class.php:54
 msgid "Delete"
-msgstr ""
+msgstr "Löschen"
 
 #: views/form.php:116
 msgid "Destination after Callback"
-msgstr "Destino após Devolver Chamada"
+msgstr "Ziel nach Rückruf"
 
 #: views/form.php:53
 msgid "Enter a description for this callback."
-msgstr "Introduza uma descrição para esta devolução de chamadas."
+msgstr "Erstellen Sie eine Beschreibung für diesen Rückruf."
 
 #: views/grid.php:14
 msgid "Item"
-msgstr ""
+msgstr "Lfd Nummer"
 
 #: views/bootnav.php:3
 msgid "List Callbacks"
-msgstr ""
+msgstr "Rückrufliste"
 
 #: views/form.php:104
 msgid ""
 "Optional: Enter the number of seconds the system should wait before calling "
 "back."
 msgstr ""
-"Opcional: defina quantos segundos o sistema deve esperar antes de devolver a "
-"chamada."
+"Optional: Geben Sie in Sekunden an, wie lange das System warten soll bis es "
+"zurück ruft."
 
 #: views/form.php:77
 msgid ""
 "Optional: Enter the number to dial for the callback.  Leave this blank to "
 "just dial the incoming CallerID Number"
 msgstr ""
-"Opcional: defina o número a marcar para a devolução de chamada. Deixar em "
-"branco para marcar apenas o Número Chamador (CallerID)"
+"Optional: Geben Sie an welche Nummer zurückgerufen werden soll. Lassen Sie "
+"dieses Feld frei, wird die ankommende Nummer zurückgerufen"
 
 #: assets/js/callback.js:13
 msgid "Please enter a valid Description"
-msgstr ""
+msgstr "Geben Sie bitte eine gültige Beschreibung ein"
 
 #: Callback.class.php:59
 msgid "Reset"
-msgstr ""
+msgstr "Zurücksetzen"
 
 #: views/form.php:95
 msgid "Seconds"
-msgstr ""
+msgstr "Sekunden"
 
 #: Callback.class.php:64
 msgid "Submit"
-msgstr ""
+msgstr "Bestätigen"
 
 #: assets/js/callback.js:11
 msgid "The callback description provided is too long."
-msgstr "A descrição é demasiado longa."
+msgstr "Die eingegebene Beschreibung ist zu lang."
 
 #: views/form.php:135
 msgid "Where to send the caller once they are called back"
-msgstr ""
-
-#~ msgid "Callback "
-#~ msgstr "Devolução de Chamadas "
-
-#~ msgid "Callback Description:"
-#~ msgstr "Descrição da Devolução de Chamadas:"
-
-#~ msgid "Callback Number:"
-#~ msgstr "Número de Devolução de Chamadas:"
-
-#~ msgid "Callback:"
-#~ msgstr "Devolução de Chamadas:"
-
-#~ msgid "Delay Before Callback:"
-#~ msgstr "Atraso Antes de Devolver Chamada:"
-
-#~ msgid "Delete Callback"
-#~ msgstr "Apagar Devolução de Chamadas"
-
-#~ msgid "Edit Callback"
-#~ msgstr "Editar Devolução de Chamadas"
-
-#~ msgid "Submit Changes"
-#~ msgstr "Submeter Alterações"
-
-#~ msgid "deleted"
-#~ msgstr "apagado"
+msgstr "Wohin soll der Anrufer bei Rückruf geleitet werden"

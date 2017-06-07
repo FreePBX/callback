@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-07 11:01-0800\n"
+"POT-Creation-Date: 2017-06-05 18:32-0400\n"
 "PO-Revision-Date: 2014-09-11 01:52+0200\n"
 "Last-Translator: Andrew <andrew.nagy@the159.com>\n"
 "Language-Team: Russian <http://git.freepbx.org/projects/freepbx/callback/ru/"
@@ -23,21 +23,25 @@ msgstr ""
 
 #: page.callback.php:11
 msgid " Add"
-msgstr ""
+msgstr " Добавить"
 
 #: page.callback.php:11
 msgid " Edit"
+msgstr " Редактировать"
+
+#: assets/js/callback.js:16
+msgid " already used, please use a different description."
 msgstr ""
 
 #: views/grid.php:16
 msgid "Actions"
-msgstr ""
+msgstr "Действия"
 
 #: views/bootnav.php:4 views/grid.php:2
 msgid "Add Callback"
 msgstr "Добавить обратный звонок"
 
-#: callback.i18n.php:6 callback.i18n.php:10
+#: callback.i18n.php:6
 msgid "Applications"
 msgstr "Приложения"
 
@@ -46,53 +50,52 @@ msgstr "Приложения"
 msgid "Callback"
 msgstr "Обратный звонок"
 
-#: views/form.php:20
+#: views/form.php:41
 msgid "Callback Description"
-msgstr ""
+msgstr "Описание действия обратного вызова"
 
-#: views/form.php:44 views/grid.php:15
+#: views/form.php:65 views/grid.php:15
 msgid "Callback Number"
-msgstr ""
+msgstr "Номер обратного вызова"
 
 #: functions.inc.php:37 functions.inc.php:66
 #, php-format
 msgid "Callback: %s"
 msgstr "Обратный звонок: %s"
 
-#: views/form.php:68
+#: views/form.php:89
 msgid "Delay Before Callback"
-msgstr ""
+msgstr "Задержка перед обратным вызовом"
 
-#: Callback.class.php:52
+#: Callback.class.php:54
 msgid "Delete"
-msgstr ""
+msgstr "Удалить"
 
-#: views/form.php:95
+#: views/form.php:116
 msgid "Destination after Callback"
 msgstr "Назначение после обратного звонка"
 
-#: views/form.php:32
+#: views/form.php:53
 msgid "Enter a description for this callback."
 msgstr "Укажите описание для этого обратного звонка."
 
 #: views/grid.php:14
 msgid "Item"
-msgstr ""
+msgstr "Пункт"
 
 #: views/bootnav.php:3
 msgid "List Callbacks"
-msgstr ""
+msgstr "Список обратных вызовов"
 
-#: views/form.php:83
-#, fuzzy
+#: views/form.php:104
 msgid ""
 "Optional: Enter the number of seconds the system should wait before calling "
 "back."
 msgstr ""
-"Опционально: укажите паузу (в секундах) через которую будет совершен "
+"Опционально: укажите паузу (в секундах) после которой будет совершен "
 "обратный звонок."
 
-#: views/form.php:56
+#: views/form.php:77
 msgid ""
 "Optional: Enter the number to dial for the callback.  Leave this blank to "
 "just dial the incoming CallerID Number"
@@ -102,27 +105,27 @@ msgstr ""
 
 #: assets/js/callback.js:13
 msgid "Please enter a valid Description"
-msgstr ""
+msgstr "Укажите понятное описание"
 
-#: Callback.class.php:57
+#: Callback.class.php:59
 msgid "Reset"
-msgstr ""
+msgstr "Сброс"
 
-#: views/form.php:74
+#: views/form.php:95
 msgid "Seconds"
-msgstr ""
+msgstr "Секунд"
 
-#: Callback.class.php:62
+#: Callback.class.php:64
 msgid "Submit"
-msgstr ""
+msgstr "Подтвердить"
 
 #: assets/js/callback.js:11
 msgid "The callback description provided is too long."
 msgstr "Описание обратного вызова слишком длинное."
 
-#: views/form.php:114
+#: views/form.php:135
 msgid "Where to send the caller once they are called back"
-msgstr ""
+msgstr "Что сообщать позвонившему прежде чем он получит обратный вызов"
 
 #, fuzzy
 #~ msgid ""

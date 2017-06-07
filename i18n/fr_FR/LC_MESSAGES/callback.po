@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-07 11:01-0800\n"
-"PO-Revision-Date: 2016-01-17 06:27+0200\n"
-"Last-Translator: Nicolas <forums@riendeau.org>\n"
+"POT-Creation-Date: 2017-06-05 18:32-0400\n"
+"PO-Revision-Date: 2016-02-04 23:04+0200\n"
+"Last-Translator: Nicolas Riendeau <freepbx@riendeau.org>\n"
 "Language-Team: French <http://weblate.freepbx.org/projects/freepbx/callback/"
 "fr_FR/>\n"
 "MIME-Version: 1.0\n"
@@ -29,6 +29,10 @@ msgstr " Ajouter"
 msgid " Edit"
 msgstr " Éditer"
 
+#: assets/js/callback.js:16
+msgid " already used, please use a different description."
+msgstr ""
+
 #: views/grid.php:16
 msgid "Actions"
 msgstr "Actions"
@@ -37,7 +41,7 @@ msgstr "Actions"
 msgid "Add Callback"
 msgstr "Ajouter rappel"
 
-#: callback.i18n.php:6 callback.i18n.php:10
+#: callback.i18n.php:6
 msgid "Applications"
 msgstr "Applications"
 
@@ -46,11 +50,11 @@ msgstr "Applications"
 msgid "Callback"
 msgstr "Rappel"
 
-#: views/form.php:20
+#: views/form.php:41
 msgid "Callback Description"
 msgstr "Description du rappel"
 
-#: views/form.php:44 views/grid.php:15
+#: views/form.php:65 views/grid.php:15
 msgid "Callback Number"
 msgstr "Numéro du rappel"
 
@@ -59,19 +63,19 @@ msgstr "Numéro du rappel"
 msgid "Callback: %s"
 msgstr "Rappel : %s"
 
-#: views/form.php:68
+#: views/form.php:89
 msgid "Delay Before Callback"
 msgstr "Délai avant le rappel"
 
-#: Callback.class.php:52
+#: Callback.class.php:54
 msgid "Delete"
 msgstr "Supprimer"
 
-#: views/form.php:95
+#: views/form.php:116
 msgid "Destination after Callback"
 msgstr "Destination après le rappel"
 
-#: views/form.php:32
+#: views/form.php:53
 msgid "Enter a description for this callback."
 msgstr "Entrez une description pour ce rappel."
 
@@ -83,7 +87,7 @@ msgstr "Item"
 msgid "List Callbacks"
 msgstr "Liste des rappels"
 
-#: views/form.php:83
+#: views/form.php:104
 msgid ""
 "Optional: Enter the number of seconds the system should wait before calling "
 "back."
@@ -91,7 +95,7 @@ msgstr ""
 "Optionnel : Entrez le nombre de seconds que le système devrait attendre "
 "avant de rappeler."
 
-#: views/form.php:56
+#: views/form.php:77
 msgid ""
 "Optional: Enter the number to dial for the callback.  Leave this blank to "
 "just dial the incoming CallerID Number"
@@ -103,15 +107,15 @@ msgstr ""
 msgid "Please enter a valid Description"
 msgstr "S'il vous plaît, saisir une description valide"
 
-#: Callback.class.php:57
+#: Callback.class.php:59
 msgid "Reset"
-msgstr "Remise à 0"
+msgstr "Réinitialiser"
 
-#: views/form.php:74
+#: views/form.php:95
 msgid "Seconds"
 msgstr "Secondes"
 
-#: Callback.class.php:62
+#: Callback.class.php:64
 msgid "Submit"
 msgstr "Soumettre"
 
@@ -119,6 +123,6 @@ msgstr "Soumettre"
 msgid "The callback description provided is too long."
 msgstr "La description du rappel fournie est trop longue."
 
-#: views/form.php:114
+#: views/form.php:135
 msgid "Where to send the caller once they are called back"
 msgstr "Où envoyer l'appelant après l'avoir rappelé"

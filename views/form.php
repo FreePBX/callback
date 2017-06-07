@@ -4,7 +4,28 @@ if($itemid){
 	$thisItem = callback_get($itemid);
 	$deldata = "?display=callback&action=delete&itemid=".$itemid;
 }
+$callback_list = callback_list();
+$callback_names = null;
+$tmp_id = '';
+if(isset($_REQUEST['itemid'])){
+	        $tmp_id = $_REQUEST['itemid'];
+}
+if(!empty($callback_list)){
+	foreach($callback_list as $tmp_item){
+		if($tmp_item['callback_id'] != $tmp_id){
+			$callback_names[] = $tmp_item['description'];
+		}
+	}
+}
 ?>
+<script>
+var callback_names = new Array();
+<?php
+if(!empty($callback_names)){
+	        echo "callback_names = " . json_encode($callback_names) . ";";
+}
+?>
+</script>
 <form autocomplete="off" name="edit" id="edit" action="" method="post" class="fpbx-submit" data-fpbx-delete="<?php echo $deldata?>" >
 	<input type="hidden" name="display" value="callback">
 	<input type="hidden" name="action" value="<?php echo ($itemid ? 'edit' : 'add') ?>">
@@ -70,7 +91,7 @@ if($itemid){
 						</div>
 						<div class="col-md-9">
 							<div class="input-group">
-								<input type="number" class="form-control" id="sleep" name="sleep" value="<?php echo (isset($thisItem['sleep']) ? $thisItem['sleep'] : ''); ?>">
+								<input type="number" min="0" class="form-control" id="sleep" name="sleep" value="<?php echo (isset($thisItem['sleep']) ? $thisItem['sleep'] : ''); ?>">
 								<span class="input-group-addon"><?php echo _("Seconds")?></span>
 							</div>
 						</div>
