@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-05 18:32-0400\n"
-"PO-Revision-Date: 2017-06-07 09:54+0200\n"
+"PO-Revision-Date: 2017-06-14 09:58+0200\n"
 "Last-Translator: Peter Trinh <ftek@ymail.com>\n"
 "Language-Team: Vietnamese "
 "<http://weblate.freepbx.org/projects/freepbx/callback/vi/>\n"
@@ -56,7 +56,7 @@ msgstr "Mô tả Gọi lại"
 
 #: views/form.php:65 views/grid.php:15
 msgid "Callback Number"
-msgstr "Số điện thoại gọi lại"
+msgstr "Số gọi lại"
 
 #: functions.inc.php:37 functions.inc.php:66
 #, php-format
