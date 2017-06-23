@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-05 18:32-0400\n"
+"POT-Creation-Date: 2017-06-23 19:30-0400\n"
 "PO-Revision-Date: 2008-11-07 18:23+0100\n"
 "Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
 "Language-Team: Italian\n"
@@ -25,7 +25,7 @@ msgstr ""
 msgid " Edit"
 msgstr ""
 
-#: assets/js/callback.js:16
+#: assets/js/callback.js:18
 msgid " already used, please use a different description."
 msgstr ""
 
@@ -97,7 +97,7 @@ msgid ""
 "just dial the incoming CallerID Number"
 msgstr ""
 
-#: assets/js/callback.js:13
+#: assets/js/callback.js:15
 msgid "Please enter a valid Description"
 msgstr ""
 
@@ -113,7 +113,7 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: assets/js/callback.js:11
+#: assets/js/callback.js:13
 msgid "The callback description provided is too long."
 msgstr ""
 

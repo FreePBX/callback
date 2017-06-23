@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-05 18:32-0400\n"
+"POT-Creation-Date: 2017-06-23 19:30-0400\n"
 "PO-Revision-Date: 2014-02-19 22:17+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/callback/ja/>\n"
@@ -56,7 +56,7 @@ msgstr ""
 msgid " Edit"
 msgstr ""
 
-#: assets/js/callback.js:16
+#: assets/js/callback.js:18
 msgid " already used, please use a different description."
 msgstr ""
 
@@ -128,7 +128,7 @@ msgstr ""
 "オプション： コールバックする番号。着信した発信者番号にダイヤルするだけの場合"
 "は空のままにしておいてください。"
 
-#: assets/js/callback.js:13
+#: assets/js/callback.js:15
 msgid "Please enter a valid Description"
 msgstr ""
 
@@ -144,7 +144,7 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: assets/js/callback.js:11
+#: assets/js/callback.js:13
 msgid "The callback description provided is too long."
 msgstr ""
 

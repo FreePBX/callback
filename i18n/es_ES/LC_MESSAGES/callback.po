@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo callback module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-05 18:32-0400\n"
+"POT-Creation-Date: 2017-06-23 19:30-0400\n"
 "PO-Revision-Date: 2016-01-14 22:40+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/callback/"
@@ -25,7 +25,7 @@ msgstr " Agregar"
 msgid " Edit"
 msgstr " Editar"
 
-#: assets/js/callback.js:16
+#: assets/js/callback.js:18
 msgid " already used, please use a different description."
 msgstr ""
 
@@ -99,7 +99,7 @@ msgstr ""
 "Opcional. Ingrese el numero a marcar para el callback. Dejelo en blanco para "
 "marcar al numero del caller id entrante"
 
-#: assets/js/callback.js:13
+#: assets/js/callback.js:15
 msgid "Please enter a valid Description"
 msgstr "Por favor, introduzca una descripción válida"
 
@@ -115,7 +115,7 @@ msgstr "Segundos"
 msgid "Submit"
 msgstr "Enviar"
 
-#: assets/js/callback.js:11
+#: assets/js/callback.js:13
 msgid "The callback description provided is too long."
 msgstr "La descripción provista para la devolución de llamada en muy larga."
 

@@ -2,7 +2,7 @@
 	<rawname>callback</rawname>
 	<repo>extended</repo>
 	<name>Callback</name>
-	<version>13.0.5.1</version>
+	<version>13.0.5.2</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -16,6 +16,7 @@
 		</callback>
  	</popovers>
 	<changelog>
+		*13.0.5.2* FREEPBX-14739 Unable to select the "Destination after Callback" value under Callback application.
 		*13.0.5.1* FREEPBX-14740 Multiple Callbacks can be added with same Name
 		*13.0.5* Use '/usr/bin/env php' to start script
 		*13.0.4* Invalid variable in destinations

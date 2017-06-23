@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-05 18:32-0400\n"
+"POT-Creation-Date: 2017-06-23 19:30-0400\n"
 "PO-Revision-Date: 2017-03-03 15:55+0200\n"
 "Last-Translator: hammer125 <auswertung@aon.at>\n"
 "Language-Team: German <http://weblate.freepbx.org/projects/freepbx/callback/"
@@ -29,7 +29,7 @@ msgstr " Hinzufügen"
 msgid " Edit"
 msgstr " Bearbeiten"
 
-#: assets/js/callback.js:16
+#: assets/js/callback.js:18
 msgid " already used, please use a different description."
 msgstr ""
 
@@ -103,7 +103,7 @@ msgstr ""
 "Optional: Geben Sie an welche Nummer zurückgerufen werden soll. Lassen Sie "
 "dieses Feld frei, wird die ankommende Nummer zurückgerufen"
 
-#: assets/js/callback.js:13
+#: assets/js/callback.js:15
 msgid "Please enter a valid Description"
 msgstr "Geben Sie bitte eine gültige Beschreibung ein"
 
@@ -119,7 +119,7 @@ msgstr "Sekunden"
 msgid "Submit"
 msgstr "Bestätigen"
 
-#: assets/js/callback.js:11
+#: assets/js/callback.js:13
 msgid "The callback description provided is too long."
 msgstr "Die eingegebene Beschreibung ist zu lang."
 

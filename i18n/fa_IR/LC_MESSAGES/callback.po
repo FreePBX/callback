@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-05 18:32-0400\n"
+"POT-Creation-Date: 2017-06-23 19:30-0400\n"
 "PO-Revision-Date: 2016-04-30 16:12+0200\n"
 "Last-Translator: psdk <hyavari26@gmail.com>\n"
 "Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
@@ -29,7 +29,7 @@ msgstr " افزودن"
 msgid " Edit"
 msgstr " ویرایش"
 
-#: assets/js/callback.js:16
+#: assets/js/callback.js:18
 msgid " already used, please use a different description."
 msgstr ""
 
@@ -101,7 +101,7 @@ msgstr ""
 "اختیاری： شماره ای جهت برقرای تماس بازگشتی وارد کنید. برای شماره گیری شناسه "
 "تماس گیرنده، این فیلد را خالی بگذارید"
 
-#: assets/js/callback.js:13
+#: assets/js/callback.js:15
 msgid "Please enter a valid Description"
 msgstr "لطفا توضیحات معتبر وارد نمایید"
 
@@ -117,7 +117,7 @@ msgstr "ثانیه"
 msgid "Submit"
 msgstr "ثبت"
 
-#: assets/js/callback.js:11
+#: assets/js/callback.js:13
 msgid "The callback description provided is too long."
 msgstr "توضیحات برای تماس بازگشتی طولانی است."
 

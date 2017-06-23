@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-05 18:32-0400\n"
+"POT-Creation-Date: 2017-06-23 19:30-0400\n"
 "PO-Revision-Date: 2017-03-21 23:36+0200\n"
 "Last-Translator: Michal <mboltz@tlen.pl>\n"
 "Language-Team: Polish (Polish) <http://weblate.freepbx.org/projects/freepbx/"
@@ -30,7 +30,7 @@ msgstr " Dodaj"
 msgid " Edit"
 msgstr " Edytuj"
 
-#: assets/js/callback.js:16
+#: assets/js/callback.js:18
 msgid " already used, please use a different description."
 msgstr ""
 
@@ -104,7 +104,7 @@ msgstr ""
 "Opcjonalnie: Wprowadź numer do wybierania dla połączenia zwrotnego. Zostaw "
 "to puste, aby po prostu wybrać numer CallerID"
 
-#: assets/js/callback.js:13
+#: assets/js/callback.js:15
 msgid "Please enter a valid Description"
 msgstr "Proszę wprowadzić prawidłowy opis"
 
@@ -120,7 +120,7 @@ msgstr "Sekundy"
 msgid "Submit"
 msgstr "Zatwierdź"
 
-#: assets/js/callback.js:11
+#: assets/js/callback.js:13
 msgid "The callback description provided is too long."
 msgstr "Podany opis połączeń zwrotnych jest zbyt długi."
 

@@ -9,15 +9,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-05 18:32-0400\n"
+"POT-Creation-Date: 2017-06-23 19:30-0400\n"
 "PO-Revision-Date: 2017-06-14 09:58+0200\n"
 "Last-Translator: Peter Trinh <ftek@ymail.com>\n"
-"Language-Team: Vietnamese "
-"<http://weblate.freepbx.org/projects/freepbx/callback/vi/>\n"
-"Language: vi\n"
+"Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
+"callback/vi/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.4\n"
 
@@ -29,7 +29,7 @@ msgstr " Thêm"
 msgid " Edit"
 msgstr " Hiệu chỉnh"
 
-#: assets/js/callback.js:16
+#: assets/js/callback.js:18
 msgid " already used, please use a different description."
 msgstr " Đã được sử dụng, vui lòng sử dụng mô tả khác."
 
@@ -101,7 +101,7 @@ msgstr ""
 "Lựa chọn: Nhập số để quay số cho cuộc gọi lại. Để phần trống này để chỉ quay "
 "số ID người gọi đến"
 
-#: assets/js/callback.js:13
+#: assets/js/callback.js:15
 msgid "Please enter a valid Description"
 msgstr "Vui lòng nhập Mô tả hợp lệ"
 
@@ -117,7 +117,7 @@ msgstr "Giây"
 msgid "Submit"
 msgstr "Gửi đi"
 
-#: assets/js/callback.js:11
+#: assets/js/callback.js:13
 msgid "The callback description provided is too long."
 msgstr "Mô tả cuộc gọi lại quá dài."
 

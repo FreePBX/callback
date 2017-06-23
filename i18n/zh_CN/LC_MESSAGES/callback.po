@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-05 18:32-0400\n"
+"POT-Creation-Date: 2017-06-23 19:30-0400\n"
 "PO-Revision-Date: 2015-10-16 08:53+0200\n"
 "Last-Translator: james <zhulizhong@gmail.com>\n"
 "Language-Team: Simplified Chinese <http://weblate.freepbx.org/projects/"
@@ -30,7 +30,7 @@ msgstr " 添加"
 msgid " Edit"
 msgstr " 编辑"
 
-#: assets/js/callback.js:16
+#: assets/js/callback.js:18
 msgid " already used, please use a different description."
 msgstr ""
 
@@ -100,7 +100,7 @@ msgid ""
 "just dial the incoming CallerID Number"
 msgstr "选项: 输入需要回拨的号码。如果为空则拨打呼入的CallerID 号码"
 
-#: assets/js/callback.js:13
+#: assets/js/callback.js:15
 msgid "Please enter a valid Description"
 msgstr "请输入有效描述"
 
@@ -116,7 +116,7 @@ msgstr ""
 msgid "Submit"
 msgstr "提交"
 
-#: assets/js/callback.js:11
+#: assets/js/callback.js:13
 msgid "The callback description provided is too long."
 msgstr "描述太长。"
 
