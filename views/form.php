@@ -26,7 +26,7 @@ if(!empty($callback_names)){
 }
 ?>
 </script>
-<form autocomplete="off" name="edit" id="edit" action="" method="post" class="fpbx-submit" data-fpbx-delete="<?php echo $deldata?>" onsubmit="return edit_onsubmit();">
+<form autocomplete="off" name="edit" id="edit" action="" method="post" class="fpbx-submit" data-fpbx-delete="<?php echo $deldata?>" >
 	<input type="hidden" name="display" value="callback">
 	<input type="hidden" name="action" value="<?php echo ($itemid ? 'edit' : 'add') ?>">
 	<input type="hidden" name="deptname" value="">
