@@ -33,7 +33,6 @@ function callback_getdestinfo($dest) {
 		if (empty($thisexten)) {
 			return array();
 		} else {
-			//$type = isset($active_modules['announcement']['type'])?$active_modules['announcement']['type']:'setup';
 			return array('description' => sprintf(_("Callback: %s"),$thisexten['description']),
 			             'edit_url' => 'config.php?display=callback&itemid='.urlencode($exten),
 								  );
@@ -87,8 +86,6 @@ function callback_get_config($engine) {
 			$timelist = callback_list();
 			if(is_array($timelist)) {
 				foreach($timelist as $item) {
-					//$thisitem = callback_get(ltrim($item['callback_id']));
-					// add dialplan
 
 					// use callbacknum if avail, otherwise use cidnum
 					$callback_num = (empty($item['callbacknum']) ? '${CALLERID(number)}' : $item['callbacknum']);
@@ -122,8 +119,7 @@ function callback_list() {
 
 function callback_get($id){
 	//get all the variables for the meetme
-	$results = sql("SELECT * FROM callback WHERE callback_id = '$id'","getRow",DB_FETCHMODE_ASSOC);
-	return $results;
+	return sql("SELECT * FROM callback WHERE callback_id = '$id'","getRow",DB_FETCHMODE_ASSOC);
 }
 
 function callback_del($id){
@@ -164,4 +160,3 @@ function _callback_backtrace() {
 	$file = $trace[1]['file'];
 	freepbx_log(FPBX_LOG_WARNING,'Depreciated Function '.$function.' detected in '.$file.' on line '.$line);
 }
-?>

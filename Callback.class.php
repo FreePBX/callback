@@ -1,7 +1,9 @@
 <?php
 namespace FreePBX\modules;
-
-class Callback implements \BMO {
+use BMO;
+use FreePBX_Helpers;
+use PDO;
+class Callback extends FreePBX_Helpers implements BMO {
 	public function __construct($freepbx = null) {
 		if ($freepbx == null) {
 			throw new Exception("Not given a FreePBX Object");
@@ -9,18 +11,15 @@ class Callback implements \BMO {
 		$this->FreePBX = $freepbx;
 		$this->db = $freepbx->Database;
 	}
-		public function install() {}
-		public function uninstall() {}
-		public function backup() {}
-		public function restore($backup) {}
-		public function doConfigPageInit($page) {
-			isset($_REQUEST['action'])?$action = $_REQUEST['action']:$action='';
-		isset($_REQUEST['itemid'])?$itemid=$_REQUEST['itemid']:$itemid='';
+	public function install() {}
+	public function uninstall() {}
+	public function doConfigPageInit($page) {
+		$action = $this->getReq('action','');
+		$itemid = $this->getReq('itemid','');
 		switch ($action) {
 			case "add":
-				$_REQUEST['itemid'] = callback_add($_POST);
+				callback_add($_POST);
 				needreload();
-				redirect_standard('callback');
 			break;
 			case "delete":
 				callback_del($itemid);
@@ -29,7 +28,6 @@ class Callback implements \BMO {
 			case "edit":
 				callback_edit($itemid,$_POST);
 				needreload();
-				redirect_standard('callback');
 			break;
 		}
 	}
@@ -116,5 +114,18 @@ class Callback implements \BMO {
 		if($request['view'] == 'form'){
     	return load_view(__DIR__."/views/bootnav.php",array());
 		}
+	}
+	public function upsert($id,$description,$number,$destination,$sleep,$department){
+		$sql = "INSERT INTO callback (callback_id,description,callbacknum,destination,deptname,sleep) values (:callback_id,:description,:callbacknum,:destination,:deptname,:sleep)";
+		$sql .= " ON DUPLICATE KEY UPDATE description = VALUES(description), callbacknum= VALUES(callbacknum), destination= VALUES(destination), deptname= VALUES(deptname), sleep= VALUES(sleep)";
+		$stmt = $this->db->prepare($sql);
+		return $stmt->execute([
+			':callback_id' => $id, 
+			':description' => $description, 
+			':callbacknum' => $number, 
+			':destination' => $destination, 
+			':deptname' => $department, 
+			':sleep' => $sleep,
+		]);
 	}
 }

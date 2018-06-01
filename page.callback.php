@@ -6,14 +6,10 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 $heading = _("Callback");
 
 $request = $_REQUEST;
-switch ($request['view']) {
-	case 'form':
-		$heading .= $itemid? _(" Edit"):_(" Add");
-		$content = load_view(__DIR__.'/views/form.php', array('request' => $request));
-	break;
-	default:
-		$content = load_view(__DIR__.'/views/grid.php', array('request' => $request));
-	break;
+$content = load_view(__DIR__ . '/views/grid.php', array('request' => $request));
+if(isset($_GET['view']) && $_GET['view'] == 'form'){
+	$heading .= (isset($_GET['itemid']) && !empty($_GET['itemid']))? _(" Edit") : _(" Add");
+	$content = load_view(__DIR__ . '/views/form.php', array('request' => $request));
 }
 
 ?>
