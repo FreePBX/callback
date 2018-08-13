@@ -11,6 +11,13 @@ class Callback extends FreePBX_Helpers implements BMO {
 		$this->FreePBX = $freepbx;
 		$this->db = $freepbx->Database;
 	}
+	public function setDatabase($database){
+		$this->db = $database;
+		return $this;
+	}
+	public function resetDatabase(){
+		$this->db = $this->FreePBX->Database;
+	}
 	public function install() {}
 	public function uninstall() {}
 	public function doConfigPageInit($page) {
