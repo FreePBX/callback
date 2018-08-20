@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-23 19:30-0400\n"
+"POT-Creation-Date: 2018-08-20 12:41-0400\n"
 "PO-Revision-Date: 2015-10-16 08:53+0200\n"
 "Last-Translator: james <zhulizhong@gmail.com>\n"
 "Language-Team: Simplified Chinese <http://weblate.freepbx.org/projects/"
 "freepbx/callback/zh_CN/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.2-dev\n"
 "X-Poedit-Language: Chinese\n"
@@ -59,7 +59,7 @@ msgstr "回拨描述"
 msgid "Callback Number"
 msgstr "回拨号码"
 
-#: functions.inc.php:37 functions.inc.php:66
+#: functions.inc.php:36 functions.inc.php:65
 #, php-format
 msgid "Callback: %s"
 msgstr "回呼：%s"
@@ -68,7 +68,7 @@ msgstr "回呼：%s"
 msgid "Delay Before Callback"
 msgstr "回拨前延时"
 
-#: Callback.class.php:54
+#: Callback.class.php:59
 msgid "Delete"
 msgstr "删除"
 
@@ -104,7 +104,7 @@ msgstr "选项: 输入需要回拨的号码。如果为空则拨打呼入的Call
 msgid "Please enter a valid Description"
 msgstr "请输入有效描述"
 
-#: Callback.class.php:59
+#: Callback.class.php:64
 msgid "Reset"
 msgstr "重新设置"
 
@@ -112,7 +112,7 @@ msgstr "重新设置"
 msgid "Seconds"
 msgstr ""
 
-#: Callback.class.php:64
+#: Callback.class.php:69
 msgid "Submit"
 msgstr "提交"
 

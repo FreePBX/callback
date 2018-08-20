@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-23 19:30-0400\n"
+"POT-Creation-Date: 2018-08-20 12:41-0400\n"
 "PO-Revision-Date: 2018-07-03 12:05+0000\n"
 "Last-Translator: Chavdar Shtiliyanov <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://*/projects/freepbx/callback/bg/>\n"
@@ -58,7 +58,7 @@ msgstr "Описание на Обратно Обаждане"
 msgid "Callback Number"
 msgstr "Номер за Обратно Обаждане"
 
-#: functions.inc.php:37 functions.inc.php:66
+#: functions.inc.php:36 functions.inc.php:65
 #, php-format
 msgid "Callback: %s"
 msgstr "Обратно Обаждане: %s"
@@ -67,7 +67,7 @@ msgstr "Обратно Обаждане: %s"
 msgid "Delay Before Callback"
 msgstr "Пауза Преди Обратно Обаждане"
 
-#: Callback.class.php:54
+#: Callback.class.php:59
 msgid "Delete"
 msgstr "Изтрий"
 
@@ -107,7 +107,7 @@ msgstr ""
 msgid "Please enter a valid Description"
 msgstr "Моля въведете правилно Описание"
 
-#: Callback.class.php:59
+#: Callback.class.php:64
 msgid "Reset"
 msgstr "Изчисти"
 
@@ -115,7 +115,7 @@ msgstr "Изчисти"
 msgid "Seconds"
 msgstr "Секунди"
 
-#: Callback.class.php:64
+#: Callback.class.php:69
 msgid "Submit"
 msgstr "Приеми"
 

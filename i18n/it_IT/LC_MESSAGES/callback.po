@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-23 19:30-0400\n"
+"POT-Creation-Date: 2018-08-20 12:41-0400\n"
 "PO-Revision-Date: 2018-05-28 15:14+0000\n"
 "Last-Translator: Stell0 <stefano.fancello@nethesis.it>\n"
 "Language-Team: Italian <http://*/projects/freepbx/callback/it/>\n"
@@ -57,7 +57,7 @@ msgstr "Descrizione della richiamata"
 msgid "Callback Number"
 msgstr "Numero di richiamata"
 
-#: functions.inc.php:37 functions.inc.php:66
+#: functions.inc.php:36 functions.inc.php:65
 #, php-format
 msgid "Callback: %s"
 msgstr "Callback: %s"
@@ -66,7 +66,7 @@ msgstr "Callback: %s"
 msgid "Delay Before Callback"
 msgstr "Ritardo prima della richiamata"
 
-#: Callback.class.php:54
+#: Callback.class.php:59
 msgid "Delete"
 msgstr "Elimina"
 
@@ -106,7 +106,7 @@ msgstr ""
 msgid "Please enter a valid Description"
 msgstr "Si prega di inserire una descrizione valida"
 
-#: Callback.class.php:59
+#: Callback.class.php:64
 msgid "Reset"
 msgstr "Azzera"
 
@@ -114,7 +114,7 @@ msgstr "Azzera"
 msgid "Seconds"
 msgstr "Secondi"
 
-#: Callback.class.php:64
+#: Callback.class.php:69
 msgid "Submit"
 msgstr "Sottoscrivi"
 
