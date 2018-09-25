@@ -12,8 +12,10 @@ $sql = "CREATE TABLE IF NOT EXISTS callback (
 	callbacknum VARCHAR( 100 ) ,
 	destination VARCHAR( 50 ) ,
 	sleep INTEGER,
-	deptname VARCHAR( 50 )
-);";
+	deptname VARCHAR( 50 ),
+	timeout INT(10),
+	callerid VARCHAR( 100 )
+	);";
 
 $check = $db->query($sql);
 if (DB::IsError($check)) {
@@ -28,6 +30,12 @@ if(DB::IsError($check)) {
 	// add new field
 	sql('ALTER TABLE callback ADD COLUMN sleep INT DEFAULT 0');
 	}
+
+$sql = "SELECT timeout,callerid FROM callback";
+$check = $db->getRow($sql, DB_FETCHMODE_ASSOC);
+if(DB::IsError($check)) {
+	sql('ALTER TABLE callback ADD COLUMN (timeout INT(10), callerid VARCHAR( 100 ))');
+}
 
 $results = array();
 $sql = "SELECT callback_id, destination FROM callback";

@@ -106,6 +106,57 @@ if(!empty($callback_names)){
 		</div>
 	</div>
 	<!--END Delay Before Callback-->
+	<!--Caller Id-->
+	<div class="element-container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="row">
+					<div class="form-group">
+						<div class="col-md-3">
+							<label class="control-label" for="callerid"><?php echo _("Caller Id") ?></label>
+							<i class="fa fa-question-circle fpbx-help-icon" data-for="callerid"></i>
+						</div>
+						<div class="col-md-9">
+							<input type="text" class="form-control" id="callerid" name="callerid" value="<?php echo (isset($thisItem['callerid']) ? htmlspecialchars($thisItem['callerid']) : ''); ?>">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<span id="callerid-help" class="help-block fpbx-help-block"><?php echo _("Optional: Enter the callerid for the callback.<br>Format: <b>\"caller name\" &lt;#######&gt;</b><br>Default: Callback") ?></span>
+			</div>
+		</div>
+	</div>
+	<!--END Caller Id-->
+	<!--Timeout-->
+	<div class="element-container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="row">
+					<div class="form-group">
+						<div class="col-md-3">
+							<label class="control-label" for="timeout"><?php echo _("Timeout") ?></label>
+							<i class="fa fa-question-circle fpbx-help-icon" data-for="timeout"></i>
+						</div>
+						<div class="col-md-9">
+							<div class="input-group">
+								<input type="number" min="0" class="form-control" id="timeout" name="timeout" value="<?php echo (isset($thisItem['timeout']) ? $thisItem['timeout'] : ''); ?>">
+								<span class="input-group-addon"><?php echo _("Milliseconds")?></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<span id="timeout-help" class="help-block fpbx-help-block"><?php echo _("Optional: Timeout in Milliseconds.</br>Default: 15000")?></span>
+			</div>
+		</div>
+	</div>
+	<!--Timeout-->
 	<!--Destination after Callback-->
 	<div class="element-container">
 		<div class="row">

@@ -17,6 +17,8 @@ if ($argc < 3) {
 $callback_number = $argv[1];
 $callback_destination = $argv[2];
 $pause_seconds = isset($argv[3]) ? $argv[3] : 0;
+$callback_timeout = $argv[4];
+$callback_callerid = base64_decode($argv[5]);
 
 // bootstrap the connection to get astman up
 //
@@ -38,8 +40,8 @@ $channel = "Local/".$callback_number."@from-internal";
 $exten = $callback_exten;
 $context = $callback_context;
 $priority = $callback_priority;
-$timeout = "15000";
-$callerid = "Callback";
+$timeout = $callback_timeout;
+$callerid = $callback_callerid;
 $variable = "";
 $account = "";
 $application = "";
