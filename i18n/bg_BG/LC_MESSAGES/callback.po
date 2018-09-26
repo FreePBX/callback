@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-23 19:30-0400\n"
+"POT-Creation-Date: 2018-09-26 00:02-0400\n"
 "PO-Revision-Date: 2018-07-03 12:05+0000\n"
 "Last-Translator: Chavdar Shtiliyanov <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://*/projects/freepbx/callback/bg/>\n"
@@ -63,6 +63,10 @@ msgstr "Номер за Обратно Обаждане"
 msgid "Callback: %s"
 msgstr "Обратно Обаждане: %s"
 
+#: views/form.php:116
+msgid "Caller Id"
+msgstr ""
+
 #: views/form.php:89
 msgid "Delay Before Callback"
 msgstr "Пауза Преди Обратно Обаждане"
@@ -71,7 +75,7 @@ msgstr "Пауза Преди Обратно Обаждане"
 msgid "Delete"
 msgstr "Изтрий"
 
-#: views/form.php:116
+#: views/form.php:167
 msgid "Destination after Callback"
 msgstr "Направление след Обратно Обаждане"
 
@@ -86,6 +90,16 @@ msgstr "Описание"
 #: views/bootnav.php:3
 msgid "List Callbacks"
 msgstr "Списък на Обратно Обаждане"
+
+#: views/form.php:146
+msgid "Milliseconds"
+msgstr ""
+
+#: views/form.php:128
+msgid ""
+"Optional: Enter the callerid for the callback.<br>Format: <b>\"caller name\" "
+"&lt;#######&gt;</b><br>Default: Callback"
+msgstr ""
 
 #: views/form.php:104
 msgid ""
@@ -102,6 +116,10 @@ msgid ""
 msgstr ""
 "Незадължително: Въведете номер за обратно обаждане. Оставете празно за да "
 "избира входящия CallerID Номер"
+
+#: views/form.php:155
+msgid "Optional: Timeout in Milliseconds.</br>Default: 15000"
+msgstr ""
 
 #: assets/js/callback.js:15
 msgid "Please enter a valid Description"
@@ -123,7 +141,11 @@ msgstr "Приеми"
 msgid "The callback description provided is too long."
 msgstr "Въведеното описание е прекалено дълго."
 
-#: views/form.php:135
+#: views/form.php:140
+msgid "Timeout"
+msgstr ""
+
+#: views/form.php:186
 msgid "Where to send the caller once they are called back"
 msgstr "Къде да се насочи обаждането след като се обадят обратно"
 

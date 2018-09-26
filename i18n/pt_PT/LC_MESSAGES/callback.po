@@ -9,15 +9,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-23 19:30-0400\n"
+"POT-Creation-Date: 2018-09-26 00:02-0400\n"
 "PO-Revision-Date: 2015-04-24 21:48+0200\n"
 "Last-Translator: Paulo <paulop1975@gmail.com>\n"
 "Language-Team: Portuguese (Portugal) <http://weblate.freepbx.org/projects/"
 "freepbx/callback/pt_PT/>\n"
+"Language: pt_PT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pt_PT\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
@@ -63,6 +63,10 @@ msgstr ""
 msgid "Callback: %s"
 msgstr "Devolução de Chamadas: %s"
 
+#: views/form.php:116
+msgid "Caller Id"
+msgstr ""
+
 #: views/form.php:89
 msgid "Delay Before Callback"
 msgstr ""
@@ -71,7 +75,7 @@ msgstr ""
 msgid "Delete"
 msgstr ""
 
-#: views/form.php:116
+#: views/form.php:167
 msgid "Destination after Callback"
 msgstr "Destino após Devolver Chamada"
 
@@ -85,6 +89,16 @@ msgstr ""
 
 #: views/bootnav.php:3
 msgid "List Callbacks"
+msgstr ""
+
+#: views/form.php:146
+msgid "Milliseconds"
+msgstr ""
+
+#: views/form.php:128
+msgid ""
+"Optional: Enter the callerid for the callback.<br>Format: <b>\"caller name\" "
+"&lt;#######&gt;</b><br>Default: Callback"
 msgstr ""
 
 #: views/form.php:104
@@ -102,6 +116,10 @@ msgid ""
 msgstr ""
 "Opcional: defina o número a marcar para a devolução de chamada. Deixar em "
 "branco para marcar apenas o Número Chamador (CallerID)"
+
+#: views/form.php:155
+msgid "Optional: Timeout in Milliseconds.</br>Default: 15000"
+msgstr ""
 
 #: assets/js/callback.js:15
 msgid "Please enter a valid Description"
@@ -123,7 +141,11 @@ msgstr ""
 msgid "The callback description provided is too long."
 msgstr "A descrição é demasiado longa."
 
-#: views/form.php:135
+#: views/form.php:140
+msgid "Timeout"
+msgstr ""
+
+#: views/form.php:186
 msgid "Where to send the caller once they are called back"
 msgstr ""
 

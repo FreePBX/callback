@@ -9,11 +9,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-23 19:30-0400\n"
+"POT-Creation-Date: 2018-09-26 00:02-0400\n"
 "PO-Revision-Date: 2017-12-01 23:20+0200\n"
 "Last-Translator: CATTAN Jérémie <jeremie@famillecattan.com>\n"
-"Language-Team: French "
-"<http://weblate.freepbx.org/projects/freepbx/callback/fr_FR/>\n"
+"Language-Team: French <http://weblate.freepbx.org/projects/freepbx/callback/"
+"fr_FR/>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -63,6 +63,10 @@ msgstr "Numéro du rappel"
 msgid "Callback: %s"
 msgstr "Rappel : %s"
 
+#: views/form.php:116
+msgid "Caller Id"
+msgstr ""
+
 #: views/form.php:89
 msgid "Delay Before Callback"
 msgstr "Délai avant le rappel"
@@ -71,7 +75,7 @@ msgstr "Délai avant le rappel"
 msgid "Delete"
 msgstr "Supprimer"
 
-#: views/form.php:116
+#: views/form.php:167
 msgid "Destination after Callback"
 msgstr "Destination après le rappel"
 
@@ -86,6 +90,16 @@ msgstr "Item"
 #: views/bootnav.php:3
 msgid "List Callbacks"
 msgstr "Liste des rappels"
+
+#: views/form.php:146
+msgid "Milliseconds"
+msgstr ""
+
+#: views/form.php:128
+msgid ""
+"Optional: Enter the callerid for the callback.<br>Format: <b>\"caller name\" "
+"&lt;#######&gt;</b><br>Default: Callback"
+msgstr ""
 
 #: views/form.php:104
 msgid ""
@@ -102,6 +116,10 @@ msgid ""
 msgstr ""
 "Optionnel : Entrez le numéro à rappeler. Laissez à vide pour rappeler le "
 "numéro fourni lors de l'appel entrant"
+
+#: views/form.php:155
+msgid "Optional: Timeout in Milliseconds.</br>Default: 15000"
+msgstr ""
 
 #: assets/js/callback.js:15
 msgid "Please enter a valid Description"
@@ -123,6 +141,10 @@ msgstr "Soumettre"
 msgid "The callback description provided is too long."
 msgstr "La description du rappel fournie est trop longue."
 
-#: views/form.php:135
+#: views/form.php:140
+msgid "Timeout"
+msgstr ""
+
+#: views/form.php:186
 msgid "Where to send the caller once they are called back"
 msgstr "Où envoyer l'appelant après l'avoir rappelé"
