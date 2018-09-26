@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:41-0400\n"
+"POT-Creation-Date: 2018-09-26 00:06-0400\n"
 "PO-Revision-Date: 2014-03-04 09:09+0200\n"
 "Last-Translator: Andrew <andrew.nagy@the159.com>\n"
 "Language-Team: Hebrew <http://git.freepbx.org/projects/freepbx/callback/he/"
@@ -62,6 +62,10 @@ msgstr ""
 msgid "Callback: %s"
 msgstr ""
 
+#: views/form.php:116
+msgid "Caller Id"
+msgstr ""
+
 #: views/form.php:89
 msgid "Delay Before Callback"
 msgstr ""
@@ -70,7 +74,7 @@ msgstr ""
 msgid "Delete"
 msgstr ""
 
-#: views/form.php:116
+#: views/form.php:167
 msgid "Destination after Callback"
 msgstr "יעד לאחר חיוג חזרה"
 
@@ -84,6 +88,16 @@ msgstr ""
 
 #: views/bootnav.php:3
 msgid "List Callbacks"
+msgstr ""
+
+#: views/form.php:146
+msgid "Milliseconds"
+msgstr ""
+
+#: views/form.php:128
+msgid ""
+"Optional: Enter the callerid for the callback.<br>Format: <b>\"caller name\" "
+"&lt;#######&gt;</b><br>Default: Callback"
 msgstr ""
 
 #: views/form.php:104
@@ -100,6 +114,10 @@ msgid ""
 msgstr ""
 "רשות: הכנס את המספר שאליו יש להתקשר בחיוג חזרה. השאר שדה זה רק על מנת לחייג "
 "בפשטות למספר שהתקבל בשירות השיחה המזוהה"
+
+#: views/form.php:155
+msgid "Optional: Timeout in Milliseconds.</br>Default: 15000"
+msgstr ""
 
 #: assets/js/callback.js:15
 msgid "Please enter a valid Description"
@@ -121,7 +139,11 @@ msgstr ""
 msgid "The callback description provided is too long."
 msgstr ""
 
-#: views/form.php:135
+#: views/form.php:140
+msgid "Timeout"
+msgstr ""
+
+#: views/form.php:186
 msgid "Where to send the caller once they are called back"
 msgstr ""
 

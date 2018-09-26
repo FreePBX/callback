@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:41-0400\n"
+"POT-Creation-Date: 2018-09-26 00:06-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,6 +65,10 @@ msgstr ""
 msgid "Callback: %s"
 msgstr ""
 
+#: views/form.php:116
+msgid "Caller Id"
+msgstr ""
+
 #: views/form.php:89
 msgid "Delay Before Callback"
 msgstr ""
@@ -73,7 +77,7 @@ msgstr ""
 msgid "Delete"
 msgstr ""
 
-#: views/form.php:116
+#: views/form.php:167
 msgid "Destination after Callback"
 msgstr ""
 
@@ -89,6 +93,16 @@ msgstr ""
 msgid "List Callbacks"
 msgstr ""
 
+#: views/form.php:146
+msgid "Milliseconds"
+msgstr ""
+
+#: views/form.php:128
+msgid ""
+"Optional: Enter the callerid for the callback.<br>Format: <b>\"caller name\" "
+"&lt;#######&gt;</b><br>Default: Callback"
+msgstr ""
+
 #: views/form.php:104
 msgid ""
 "Optional: Enter the number of seconds the system should wait before calling "
@@ -99,6 +113,10 @@ msgstr ""
 msgid ""
 "Optional: Enter the number to dial for the callback.  Leave this blank to "
 "just dial the incoming CallerID Number"
+msgstr ""
+
+#: views/form.php:155
+msgid "Optional: Timeout in Milliseconds.</br>Default: 15000"
 msgstr ""
 
 #: assets/js/callback.js:15
@@ -121,6 +139,10 @@ msgstr ""
 msgid "The callback description provided is too long."
 msgstr ""
 
-#: views/form.php:135
+#: views/form.php:140
+msgid "Timeout"
+msgstr ""
+
+#: views/form.php:186
 msgid "Where to send the caller once they are called back"
 msgstr ""

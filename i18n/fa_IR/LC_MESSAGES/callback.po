@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:41-0400\n"
+"POT-Creation-Date: 2018-09-26 00:06-0400\n"
 "PO-Revision-Date: 2016-04-30 16:12+0200\n"
 "Last-Translator: psdk <hyavari26@gmail.com>\n"
 "Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
@@ -63,6 +63,10 @@ msgstr "شماره تماس بازگشتی"
 msgid "Callback: %s"
 msgstr "تماس بازگشتی：%s"
 
+#: views/form.php:116
+msgid "Caller Id"
+msgstr ""
+
 #: views/form.php:89
 msgid "Delay Before Callback"
 msgstr "تاخیر قبل از تماس بازگشتی"
@@ -71,7 +75,7 @@ msgstr "تاخیر قبل از تماس بازگشتی"
 msgid "Delete"
 msgstr "حذف"
 
-#: views/form.php:116
+#: views/form.php:167
 msgid "Destination after Callback"
 msgstr "مقصد پس از برقراری تماس بازگشتی"
 
@@ -87,6 +91,16 @@ msgstr "عنوان"
 msgid "List Callbacks"
 msgstr "فهرست تماس های بازگشتی"
 
+#: views/form.php:146
+msgid "Milliseconds"
+msgstr ""
+
+#: views/form.php:128
+msgid ""
+"Optional: Enter the callerid for the callback.<br>Format: <b>\"caller name\" "
+"&lt;#######&gt;</b><br>Default: Callback"
+msgstr ""
+
 #: views/form.php:104
 msgid ""
 "Optional: Enter the number of seconds the system should wait before calling "
@@ -100,6 +114,10 @@ msgid ""
 msgstr ""
 "اختیاری： شماره ای جهت برقرای تماس بازگشتی وارد کنید. برای شماره گیری شناسه "
 "تماس گیرنده، این فیلد را خالی بگذارید"
+
+#: views/form.php:155
+msgid "Optional: Timeout in Milliseconds.</br>Default: 15000"
+msgstr ""
 
 #: assets/js/callback.js:15
 msgid "Please enter a valid Description"
@@ -121,7 +139,11 @@ msgstr "ثبت"
 msgid "The callback description provided is too long."
 msgstr "توضیحات برای تماس بازگشتی طولانی است."
 
-#: views/form.php:135
+#: views/form.php:140
+msgid "Timeout"
+msgstr ""
+
+#: views/form.php:186
 msgid "Where to send the caller once they are called back"
 msgstr "وقتی تماس بازگشتی برقرار شد، تماس به کجا وصل گردد"
 

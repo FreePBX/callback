@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:41-0400\n"
+"POT-Creation-Date: 2018-09-26 00:06-0400\n"
 "PO-Revision-Date: 2017-06-14 09:58+0200\n"
 "Last-Translator: Peter Trinh <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -63,6 +63,10 @@ msgstr "Số gọi lại"
 msgid "Callback: %s"
 msgstr "Gọi lại: %s"
 
+#: views/form.php:116
+msgid "Caller Id"
+msgstr ""
+
 #: views/form.php:89
 msgid "Delay Before Callback"
 msgstr "Hoãn trước khi Gọi lại"
@@ -71,7 +75,7 @@ msgstr "Hoãn trước khi Gọi lại"
 msgid "Delete"
 msgstr "Xóa"
 
-#: views/form.php:116
+#: views/form.php:167
 msgid "Destination after Callback"
 msgstr "Điểm đến sau khi Gọi lại"
 
@@ -87,6 +91,16 @@ msgstr "Thư mục"
 msgid "List Callbacks"
 msgstr "Danh sách các cuộc gọi lại"
 
+#: views/form.php:146
+msgid "Milliseconds"
+msgstr ""
+
+#: views/form.php:128
+msgid ""
+"Optional: Enter the callerid for the callback.<br>Format: <b>\"caller name\" "
+"&lt;#######&gt;</b><br>Default: Callback"
+msgstr ""
+
 #: views/form.php:104
 msgid ""
 "Optional: Enter the number of seconds the system should wait before calling "
@@ -100,6 +114,10 @@ msgid ""
 msgstr ""
 "Lựa chọn: Nhập số để quay số cho cuộc gọi lại. Để phần trống này để chỉ quay "
 "số ID người gọi đến"
+
+#: views/form.php:155
+msgid "Optional: Timeout in Milliseconds.</br>Default: 15000"
+msgstr ""
 
 #: assets/js/callback.js:15
 msgid "Please enter a valid Description"
@@ -121,6 +139,10 @@ msgstr "Gửi đi"
 msgid "The callback description provided is too long."
 msgstr "Mô tả cuộc gọi lại quá dài."
 
-#: views/form.php:135
+#: views/form.php:140
+msgid "Timeout"
+msgstr ""
+
+#: views/form.php:186
 msgid "Where to send the caller once they are called back"
 msgstr "Nơi gửi đến người gọi mỗi khi họ được gọi lại"
