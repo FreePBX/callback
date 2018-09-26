@@ -102,8 +102,16 @@ function callback_get_config($engine) {
 					$sleep = (empty($item['sleep']) ? '0' : $item['sleep']);
 					$ext->add('callback', $item['callback_id'], '', new ext_setvar("SLEEP",$sleep));
 
+					// set timeout
+					$timeout = (empty($item['timeout']) ? '15000' : $item['timeout']);
+					$ext->add('callback', $item['callback_id'], '', new ext_setvar("TIMEOUT",$timeout));
+
+					// set callerid
+					$callerid = (empty($item['callerid']) ? "Callback" : trim($item['callerid']));
+					$ext->add('callback', $item['callback_id'], '', new ext_setvar("CALLERID",$callerid));
+
 					// kick off the callback script - run in background (&) so we can hangup
-					$ext->add('callback', $item['callback_id'], '', new ext_system((empty($amp_conf['ASTVARLIBDIR']) ? '/var/lib/asterisk' : $amp_conf['ASTVARLIBDIR']).'/bin/callback ${CALL} ${DESTINATION} ${SLEEP} &'));
+					$ext->add('callback', $item['callback_id'], '', new ext_system((empty($amp_conf['ASTVARLIBDIR']) ? '/var/lib/asterisk' : $amp_conf['ASTVARLIBDIR']).'/bin/callback ${CALL} ${DESTINATION} ${SLEEP} ${TIMEOUT} ${BASE64_ENCODE(${CALLERID})} &'));
 
 					//hangup
 					$ext->add('callback', $item['callback_id'], '', new ext_hangup(''));
@@ -136,7 +144,7 @@ function callback_add($post){
 		return false;
 	extract($post);
 	if(empty($description)) $description = ${$goto0.'0'};
-	$results = sql("INSERT INTO callback (description,callbacknum,destination,deptname,sleep) values (\"$description\",\"$callbacknum\",\"${$goto0.'0'}\",\"$deptname\",\"$sleep\")");
+	$results = sql("INSERT INTO callback (description,callbacknum,destination,deptname,sleep,timeout,callerid) values (\"$description\",\"$callbacknum\",\"${$goto0.'0'}\",\"$deptname\",\"$sleep\",\"$timeout\", '$callerid')");
 	if(method_exists($db,'insert_id')) {
 		$id = $db->insert_id();
 	} else {
@@ -150,7 +158,7 @@ function callback_edit($id,$post){
 		return false;
 	extract($post);
 	if(empty($description)) $description = ${$goto0.'0'};
-	$results = sql("UPDATE callback SET description = \"$description\", callbacknum = \"$callbacknum\", destination = \"${$goto0.'0'}\", deptname = \"$deptname\", sleep = \"$sleep\" WHERE callback_id = \"$id\"");
+	$results = sql("UPDATE callback SET description = \"$description\", callbacknum = \"$callbacknum\", destination = \"${$goto0.'0'}\", deptname = \"$deptname\", sleep = \"$sleep\", timeout = \"$timeout\", callerid = '$callerid' WHERE callback_id = \"$id\"");
 }
 
 // ensures post vars is valid
