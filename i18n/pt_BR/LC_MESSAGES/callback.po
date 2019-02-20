@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-26 00:06-0400\n"
+"POT-Creation-Date: 2019-02-20 17:49-0500\n"
 "PO-Revision-Date: 2016-12-11 04:26+0200\n"
 "Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -71,7 +71,7 @@ msgstr ""
 msgid "Delay Before Callback"
 msgstr "Espera antes da Chamada de Retorno"
 
-#: Callback.class.php:59
+#: Callback.class.php:53
 msgid "Delete"
 msgstr "Apagar"
 
@@ -125,7 +125,7 @@ msgstr ""
 msgid "Please enter a valid Description"
 msgstr "Por favor, insira uma descrição válida"
 
-#: Callback.class.php:64
+#: Callback.class.php:58
 msgid "Reset"
 msgstr "Reiniciar"
 
@@ -133,7 +133,7 @@ msgstr "Reiniciar"
 msgid "Seconds"
 msgstr "Segundos"
 
-#: Callback.class.php:69
+#: Callback.class.php:63
 msgid "Submit"
 msgstr "Enviar"
 

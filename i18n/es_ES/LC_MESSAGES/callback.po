@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo callback module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-26 00:06-0400\n"
+"POT-Creation-Date: 2019-02-20 17:49-0500\n"
 "PO-Revision-Date: 2016-01-14 22:40+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/callback/"
@@ -67,7 +67,7 @@ msgstr ""
 msgid "Delay Before Callback"
 msgstr "Espera antes de Callback"
 
-#: Callback.class.php:59
+#: Callback.class.php:53
 msgid "Delete"
 msgstr "Eliminar"
 
@@ -121,7 +121,7 @@ msgstr ""
 msgid "Please enter a valid Description"
 msgstr "Por favor, introduzca una descripción válida"
 
-#: Callback.class.php:64
+#: Callback.class.php:58
 msgid "Reset"
 msgstr "Reiniciar"
 
@@ -129,7 +129,7 @@ msgstr "Reiniciar"
 msgid "Seconds"
 msgstr "Segundos"
 
-#: Callback.class.php:69
+#: Callback.class.php:63
 msgid "Submit"
 msgstr "Enviar"
 

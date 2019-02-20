@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-26 00:06-0400\n"
+"POT-Creation-Date: 2019-02-20 17:49-0500\n"
 "PO-Revision-Date: 2015-10-16 08:53+0200\n"
 "Last-Translator: james <zhulizhong@gmail.com>\n"
 "Language-Team: Simplified Chinese <http://weblate.freepbx.org/projects/"
@@ -72,7 +72,7 @@ msgstr ""
 msgid "Delay Before Callback"
 msgstr "回拨前延时"
 
-#: Callback.class.php:59
+#: Callback.class.php:53
 msgid "Delete"
 msgstr "删除"
 
@@ -122,7 +122,7 @@ msgstr ""
 msgid "Please enter a valid Description"
 msgstr "请输入有效描述"
 
-#: Callback.class.php:64
+#: Callback.class.php:58
 msgid "Reset"
 msgstr "重新设置"
 
@@ -130,7 +130,7 @@ msgstr "重新设置"
 msgid "Seconds"
 msgstr ""
 
-#: Callback.class.php:69
+#: Callback.class.php:63
 msgid "Submit"
 msgstr "提交"
 

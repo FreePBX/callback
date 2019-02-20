@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-26 00:06-0400\n"
+"POT-Creation-Date: 2019-02-20 17:49-0500\n"
 "PO-Revision-Date: 2017-06-14 09:58+0200\n"
 "Last-Translator: Peter Trinh <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -71,7 +71,7 @@ msgstr ""
 msgid "Delay Before Callback"
 msgstr "Hoãn trước khi Gọi lại"
 
-#: Callback.class.php:59
+#: Callback.class.php:53
 msgid "Delete"
 msgstr "Xóa"
 
@@ -123,7 +123,7 @@ msgstr ""
 msgid "Please enter a valid Description"
 msgstr "Vui lòng nhập Mô tả hợp lệ"
 
-#: Callback.class.php:64
+#: Callback.class.php:58
 msgid "Reset"
 msgstr "Cài đặt lại"
 
@@ -131,7 +131,7 @@ msgstr "Cài đặt lại"
 msgid "Seconds"
 msgstr "Giây"
 
-#: Callback.class.php:69
+#: Callback.class.php:63
 msgid "Submit"
 msgstr "Gửi đi"
 
