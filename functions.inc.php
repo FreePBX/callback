@@ -34,8 +34,8 @@ function callback_getdestinfo($dest) {
 			return array();
 		} else {
 			return array('description' => sprintf(_("Callback: %s"),$thisexten['description']),
-			             'edit_url' => 'config.php?display=callback&itemid='.urlencode($exten),
-								  );
+			             'edit_url' => 'config.php?display=callback&view=form&itemid='.urlencode($exten),
+						 );
 		}
 	} else {
 		return false;
