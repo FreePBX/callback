@@ -35,8 +35,8 @@ function callback_getdestinfo($dest) {
 		} else {
 			//$type = isset($active_modules['announcement']['type'])?$active_modules['announcement']['type']:'setup';
 			return array('description' => sprintf(_("Callback: %s"),$thisexten['description']),
-			             'edit_url' => 'config.php?display=callback&itemid='.urlencode($exten),
-								  );
+			             'edit_url' => 'config.php?display=callback&view=form&itemid='.urlencode($exten),
+						 );
 		}
 	} else {
 		return false;
