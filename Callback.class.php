@@ -11,6 +11,7 @@ class Callback extends FreePBX_Helpers implements BMO {
 		$this->FreePBX = $freepbx;
 		$this->db = $freepbx->Database;
 	}
+
 	public function install() {}
 	public function uninstall() {}
 	public function doConfigPageInit($page) {
@@ -120,11 +121,11 @@ class Callback extends FreePBX_Helpers implements BMO {
 		$sql .= " ON DUPLICATE KEY UPDATE description = VALUES(description), callbacknum= VALUES(callbacknum), destination= VALUES(destination), deptname= VALUES(deptname), sleep= VALUES(sleep)";
 		$stmt = $this->db->prepare($sql);
 		return $stmt->execute([
-			':callback_id' => $id, 
-			':description' => $description, 
-			':callbacknum' => $number, 
-			':destination' => $destination, 
-			':deptname' => $department, 
+			':callback_id' => $id,
+			':description' => $description,
+			':callbacknum' => $number,
+			':destination' => $destination,
+			':deptname' => $department,
 			':sleep' => $sleep,
 		]);
 	}

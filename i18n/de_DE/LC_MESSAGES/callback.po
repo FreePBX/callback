@@ -9,15 +9,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-23 19:30-0400\n"
-"PO-Revision-Date: 2017-03-03 15:55+0200\n"
-"Last-Translator: hammer125 <auswertung@aon.at>\n"
+"POT-Creation-Date: 2019-02-20 17:49-0500\n"
+"PO-Revision-Date: 2018-02-16 20:04+0200\n"
+"Last-Translator: Nils <Nils@heckenkamp.info>\n"
 "Language-Team: German <http://weblate.freepbx.org/projects/freepbx/callback/"
 "de_DE/>\n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: de_DE\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.4\n"
 
@@ -31,7 +31,7 @@ msgstr " Bearbeiten"
 
 #: assets/js/callback.js:18
 msgid " already used, please use a different description."
-msgstr ""
+msgstr " bereits verwendet, bitte verwenden Sie eine andere Beschreibung."
 
 #: views/grid.php:16
 msgid "Actions"
@@ -58,20 +58,24 @@ msgstr "Rückrufbeschreibung"
 msgid "Callback Number"
 msgstr "Rückrufnummer"
 
-#: functions.inc.php:37 functions.inc.php:66
+#: functions.inc.php:36 functions.inc.php:65
 #, php-format
 msgid "Callback: %s"
 msgstr "Rückruf: %s"
+
+#: views/form.php:116
+msgid "Caller Id"
+msgstr ""
 
 #: views/form.php:89
 msgid "Delay Before Callback"
 msgstr "Verzögerung bis Rückruf"
 
-#: Callback.class.php:54
+#: Callback.class.php:53
 msgid "Delete"
 msgstr "Löschen"
 
-#: views/form.php:116
+#: views/form.php:167
 msgid "Destination after Callback"
 msgstr "Ziel nach Rückruf"
 
@@ -86,6 +90,16 @@ msgstr "Lfd Nummer"
 #: views/bootnav.php:3
 msgid "List Callbacks"
 msgstr "Rückrufliste"
+
+#: views/form.php:146
+msgid "Milliseconds"
+msgstr ""
+
+#: views/form.php:128
+msgid ""
+"Optional: Enter the callerid for the callback.<br>Format: <b>\"caller name\" "
+"&lt;#######&gt;</b><br>Default: Callback"
+msgstr ""
 
 #: views/form.php:104
 msgid ""
@@ -103,11 +117,15 @@ msgstr ""
 "Optional: Geben Sie an welche Nummer zurückgerufen werden soll. Lassen Sie "
 "dieses Feld frei, wird die ankommende Nummer zurückgerufen"
 
+#: views/form.php:155
+msgid "Optional: Timeout in Milliseconds.</br>Default: 15000"
+msgstr ""
+
 #: assets/js/callback.js:15
 msgid "Please enter a valid Description"
 msgstr "Geben Sie bitte eine gültige Beschreibung ein"
 
-#: Callback.class.php:59
+#: Callback.class.php:58
 msgid "Reset"
 msgstr "Zurücksetzen"
 
@@ -115,7 +133,7 @@ msgstr "Zurücksetzen"
 msgid "Seconds"
 msgstr "Sekunden"
 
-#: Callback.class.php:64
+#: Callback.class.php:63
 msgid "Submit"
 msgstr "Bestätigen"
 
@@ -123,6 +141,10 @@ msgstr "Bestätigen"
 msgid "The callback description provided is too long."
 msgstr "Die eingegebene Beschreibung ist zu lang."
 
-#: views/form.php:135
+#: views/form.php:140
+msgid "Timeout"
+msgstr ""
+
+#: views/form.php:186
 msgid "Where to send the caller once they are called back"
 msgstr "Wohin soll der Anrufer bei Rückruf geleitet werden"
