@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-26 00:02-0400\n"
-"PO-Revision-Date: 2018-08-25 12:00+0000\n"
+"PO-Revision-Date: 2018-10-08 20:10+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/callback/de/>\n"
 "Language: de_DE\n"
@@ -64,7 +64,7 @@ msgstr "Rückruf: %s"
 
 #: views/form.php:116
 msgid "Caller Id"
-msgstr ""
+msgstr "Anruferkennung"
 
 #: views/form.php:89
 msgid "Delay Before Callback"
@@ -92,13 +92,15 @@ msgstr "Rückrufliste"
 
 #: views/form.php:146
 msgid "Milliseconds"
-msgstr ""
+msgstr "Millisekunden"
 
 #: views/form.php:128
 msgid ""
 "Optional: Enter the callerid for the callback.<br>Format: <b>\"caller name\" "
 "&lt;#######&gt;</b><br>Default: Callback"
 msgstr ""
+"Optional: Geben Sie die Anruferkennung für den Rückruf an. <br />Format: <b> "
+"\"Anrufername\" &lt;######&gt;</b> <br /> Standard: Rückruf"
 
 #: views/form.php:104
 msgid ""
@@ -118,7 +120,7 @@ msgstr ""
 
 #: views/form.php:155
 msgid "Optional: Timeout in Milliseconds.</br>Default: 15000"
-msgstr ""
+msgstr "Optional: Zeitlimit in Millisekunden. <br /> Standard: 15000"
 
 #: assets/js/callback.js:15
 msgid "Please enter a valid Description"
@@ -142,7 +144,7 @@ msgstr "Die eingegebene Beschreibung ist zu lang."
 
 #: views/form.php:140
 msgid "Timeout"
-msgstr ""
+msgstr "Zeitlimit"
 
 #: views/form.php:186
 msgid "Where to send the caller once they are called back"
