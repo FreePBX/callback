@@ -116,9 +116,9 @@ class Callback extends FreePBX_Helpers implements BMO {
     	return load_view(__DIR__."/views/bootnav.php",array());
 		}
 	}
-	public function upsert($id,$description,$number,$destination,$sleep,$department){
-		$sql = "INSERT INTO callback (callback_id,description,callbacknum,destination,deptname,sleep) values (:callback_id,:description,:callbacknum,:destination,:deptname,:sleep)";
-		$sql .= " ON DUPLICATE KEY UPDATE description = VALUES(description), callbacknum= VALUES(callbacknum), destination= VALUES(destination), deptname= VALUES(deptname), sleep= VALUES(sleep)";
+	public function upsert($id,$description,$number,$destination,$sleep,$department,$timeout,$callerid){
+		$sql = "INSERT INTO callback (callback_id,description,callbacknum,destination,deptname,sleep,timeout,callerid) values (:callback_id,:description,:callbacknum,:destination,:deptname,:sleep,:timeout,:callerid)";
+		$sql .= " ON DUPLICATE KEY UPDATE description = VALUES(description), callbacknum= VALUES(callbacknum), destination= VALUES(destination), deptname= VALUES(deptname), sleep= VALUES(sleep), timeout= VALUES(timeout), callerid= VALUES(callerid)";
 		$stmt = $this->db->prepare($sql);
 		return $stmt->execute([
 			':callback_id' => $id,
@@ -127,6 +127,8 @@ class Callback extends FreePBX_Helpers implements BMO {
 			':destination' => $destination,
 			':deptname' => $department,
 			':sleep' => $sleep,
+			':timeout' => $timeout,
+			':callerid' => $callerid,
 		]);
 	}
 }
