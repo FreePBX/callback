@@ -9,6 +9,7 @@
 		data-cache="false"
 		data-toggle="table"
 		data-search="true"
+		data-escape="true" 
 		class="table">
 	<thead>
 		<tr>

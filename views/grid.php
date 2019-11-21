@@ -8,6 +8,7 @@
 		data-toggle="table"
 		data-search="true"
 		data-pagination ="true"
+		data-escape="true" 
 		class="table table-striped">
 	<thead>
 		<tr>
