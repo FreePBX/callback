@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-26 00:02-0400\n"
+"POT-Creation-Date: 2019-11-25 16:19+0530\n"
 "PO-Revision-Date: 2017-06-14 09:58+0200\n"
 "Last-Translator: Peter Trinh <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -33,7 +33,7 @@ msgstr " Hiệu chỉnh"
 msgid " already used, please use a different description."
 msgstr " Đã được sử dụng, vui lòng sử dụng mô tả khác."
 
-#: views/grid.php:16
+#: views/grid.php:17
 msgid "Actions"
 msgstr "Các thao tác"
 
@@ -46,7 +46,7 @@ msgid "Applications"
 msgstr "Các ứng dụng"
 
 #: callback.i18n.php:4 callback.i18n.php:8 page.callback.php:6
-#: views/bootnav.php:15
+#: views/bootnav.php:16
 msgid "Callback"
 msgstr "Gọi lại"
 
@@ -54,7 +54,7 @@ msgstr "Gọi lại"
 msgid "Callback Description"
 msgstr "Mô tả Gọi lại"
 
-#: views/form.php:65 views/grid.php:15
+#: views/form.php:65 views/grid.php:16
 msgid "Callback Number"
 msgstr "Số gọi lại"
 
@@ -83,7 +83,7 @@ msgstr "Điểm đến sau khi Gọi lại"
 msgid "Enter a description for this callback."
 msgstr "Nhập một mô tả cho cuộc gọi lại này."
 
-#: views/grid.php:14
+#: views/grid.php:15
 msgid "Item"
 msgstr "Thư mục"
 

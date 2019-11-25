@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-26 00:02-0400\n"
+"POT-Creation-Date: 2019-11-25 16:19+0530\n"
 "PO-Revision-Date: 2018-10-08 20:10+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/callback/de/>\n"
@@ -32,7 +32,7 @@ msgstr " Bearbeiten"
 msgid " already used, please use a different description."
 msgstr " bereits verwendet, bitte verwenden Sie eine andere Beschreibung."
 
-#: views/grid.php:16
+#: views/grid.php:17
 msgid "Actions"
 msgstr "Aktionen"
 
@@ -45,7 +45,7 @@ msgid "Applications"
 msgstr "Anwendungen"
 
 #: callback.i18n.php:4 callback.i18n.php:8 page.callback.php:6
-#: views/bootnav.php:15
+#: views/bootnav.php:16
 msgid "Callback"
 msgstr "Rückruf"
 
@@ -53,7 +53,7 @@ msgstr "Rückruf"
 msgid "Callback Description"
 msgstr "Rückrufbeschreibung"
 
-#: views/form.php:65 views/grid.php:15
+#: views/form.php:65 views/grid.php:16
 msgid "Callback Number"
 msgstr "Rückrufnummer"
 
@@ -82,7 +82,7 @@ msgstr "Ziel nach Rückruf"
 msgid "Enter a description for this callback."
 msgstr "Erstellen Sie eine Beschreibung für diesen Rückruf."
 
-#: views/grid.php:14
+#: views/grid.php:15
 msgid "Item"
 msgstr "Lfd Nummer"
 

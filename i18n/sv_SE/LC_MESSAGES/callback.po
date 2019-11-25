@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX callback\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-26 00:02-0400\n"
+"POT-Creation-Date: 2019-11-25 16:19+0530\n"
 "PO-Revision-Date: 2011-03-19 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -43,7 +43,7 @@ msgstr ""
 msgid " already used, please use a different description."
 msgstr ""
 
-#: views/grid.php:16
+#: views/grid.php:17
 msgid "Actions"
 msgstr ""
 
@@ -56,7 +56,7 @@ msgid "Applications"
 msgstr ""
 
 #: callback.i18n.php:4 callback.i18n.php:8 page.callback.php:6
-#: views/bootnav.php:15
+#: views/bootnav.php:16
 msgid "Callback"
 msgstr "Återuppringning"
 
@@ -64,7 +64,7 @@ msgstr "Återuppringning"
 msgid "Callback Description"
 msgstr ""
 
-#: views/form.php:65 views/grid.php:15
+#: views/form.php:65 views/grid.php:16
 msgid "Callback Number"
 msgstr ""
 
@@ -93,7 +93,7 @@ msgstr "Destination efter återuppringning"
 msgid "Enter a description for this callback."
 msgstr "Skriv in en kortfattad beskrivning för denna återuppringning."
 
-#: views/grid.php:14
+#: views/grid.php:15
 msgid "Item"
 msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-26 00:02-0400\n"
+"POT-Creation-Date: 2019-11-25 16:19+0530\n"
 "PO-Revision-Date: 2019-01-25 13:30+0000\n"
 "Last-Translator: Media Mousavi <mousavi.media@gmail.com>\n"
 "Language-Team: Persian <http://*/projects/freepbx/callback/fa/>\n"
@@ -32,7 +32,7 @@ msgstr " .ویرایش"
 msgid " already used, please use a different description."
 msgstr " .وجود دارد، لطفاً شرح دیگری وارد استفاده کنید."
 
-#: views/grid.php:16
+#: views/grid.php:17
 msgid "Actions"
 msgstr "عملیات"
 
@@ -45,7 +45,7 @@ msgid "Applications"
 msgstr "برنامه‌ های کاربردی"
 
 #: callback.i18n.php:4 callback.i18n.php:8 page.callback.php:6
-#: views/bootnav.php:15
+#: views/bootnav.php:16
 msgid "Callback"
 msgstr "تماس بازگشتی"
 
@@ -53,7 +53,7 @@ msgstr "تماس بازگشتی"
 msgid "Callback Description"
 msgstr "توضیحات تماس بازگشتی"
 
-#: views/form.php:65 views/grid.php:15
+#: views/form.php:65 views/grid.php:16
 msgid "Callback Number"
 msgstr "شماره تماس بازگشتی"
 
@@ -82,7 +82,7 @@ msgstr "مقصد پس از برقراری تماس بازگشتی"
 msgid "Enter a description for this callback."
 msgstr "توضیحاتی برای این تماس بازگشتی بنویسید."
 
-#: views/grid.php:14
+#: views/grid.php:15
 msgid "Item"
 msgstr "عنوان"
 

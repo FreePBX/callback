@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-26 00:02-0400\n"
+"POT-Creation-Date: 2019-11-25 16:19+0530\n"
 "PO-Revision-Date: 2015-04-24 21:48+0200\n"
 "Last-Translator: Paulo <paulop1975@gmail.com>\n"
 "Language-Team: Portuguese (Portugal) <http://weblate.freepbx.org/projects/"
@@ -33,7 +33,7 @@ msgstr ""
 msgid " already used, please use a different description."
 msgstr ""
 
-#: views/grid.php:16
+#: views/grid.php:17
 msgid "Actions"
 msgstr ""
 
@@ -46,7 +46,7 @@ msgid "Applications"
 msgstr "Aplicações"
 
 #: callback.i18n.php:4 callback.i18n.php:8 page.callback.php:6
-#: views/bootnav.php:15
+#: views/bootnav.php:16
 msgid "Callback"
 msgstr "Devolução de Chamadas"
 
@@ -54,7 +54,7 @@ msgstr "Devolução de Chamadas"
 msgid "Callback Description"
 msgstr ""
 
-#: views/form.php:65 views/grid.php:15
+#: views/form.php:65 views/grid.php:16
 msgid "Callback Number"
 msgstr ""
 
@@ -83,7 +83,7 @@ msgstr "Destino após Devolver Chamada"
 msgid "Enter a description for this callback."
 msgstr "Introduza uma descrição para esta devolução de chamadas."
 
-#: views/grid.php:14
+#: views/grid.php:15
 msgid "Item"
 msgstr ""
 
