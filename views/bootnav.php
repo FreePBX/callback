@@ -8,7 +8,8 @@
 		data-toolbar="#toolbar-cbbnav"
 		data-cache="false"
 		data-toggle="table"
-		data-search="true"
+		data-search="true" 
+		data-escape="true" 
 		class="table">
 	<thead>
 		<tr>
