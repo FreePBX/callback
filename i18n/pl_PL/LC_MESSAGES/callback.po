@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-20 17:49-0500\n"
+"POT-Creation-Date: 2019-11-25 16:25+0530\n"
 "PO-Revision-Date: 2017-03-21 23:36+0200\n"
 "Last-Translator: Michal <mboltz@tlen.pl>\n"
 "Language-Team: Polish (Polish) <http://weblate.freepbx.org/projects/freepbx/"
@@ -34,7 +34,7 @@ msgstr " Edytuj"
 msgid " already used, please use a different description."
 msgstr ""
 
-#: views/grid.php:16
+#: views/grid.php:17
 msgid "Actions"
 msgstr "Działania"
 
@@ -47,7 +47,7 @@ msgid "Applications"
 msgstr "Aplikacje"
 
 #: callback.i18n.php:4 callback.i18n.php:8 page.callback.php:6
-#: views/bootnav.php:15
+#: views/bootnav.php:16
 msgid "Callback"
 msgstr "Połączenie zwrotne"
 
@@ -55,7 +55,7 @@ msgstr "Połączenie zwrotne"
 msgid "Callback Description"
 msgstr "Opis połączenia zwrotnego"
 
-#: views/form.php:65 views/grid.php:15
+#: views/form.php:65 views/grid.php:16
 msgid "Callback Number"
 msgstr "Numer połączenia zwrotnego"
 
@@ -84,7 +84,7 @@ msgstr "Miejsce docelowe po połączeniu zwrotnym"
 msgid "Enter a description for this callback."
 msgstr "Wpisz opis dla tego połączenia zwrotnego."
 
-#: views/grid.php:14
+#: views/grid.php:15
 msgid "Item"
 msgstr "Obiekt"
 

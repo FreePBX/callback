@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-20 17:49-0500\n"
+"POT-Creation-Date: 2019-11-25 16:25+0530\n"
 "PO-Revision-Date: 2014-02-19 22:17+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/callback/ja/>\n"
@@ -60,7 +60,7 @@ msgstr ""
 msgid " already used, please use a different description."
 msgstr ""
 
-#: views/grid.php:16
+#: views/grid.php:17
 msgid "Actions"
 msgstr ""
 
@@ -73,7 +73,7 @@ msgid "Applications"
 msgstr "アプリケーション"
 
 #: callback.i18n.php:4 callback.i18n.php:8 page.callback.php:6
-#: views/bootnav.php:15
+#: views/bootnav.php:16
 msgid "Callback"
 msgstr "コールバック"
 
@@ -81,7 +81,7 @@ msgstr "コールバック"
 msgid "Callback Description"
 msgstr ""
 
-#: views/form.php:65 views/grid.php:15
+#: views/form.php:65 views/grid.php:16
 msgid "Callback Number"
 msgstr ""
 
@@ -110,7 +110,7 @@ msgstr "コールバック後の宛先"
 msgid "Enter a description for this callback."
 msgstr "このコールバックの説明を入力します。"
 
-#: views/grid.php:14
+#: views/grid.php:15
 msgid "Item"
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-25 16:19+0530\n"
+"POT-Creation-Date: 2019-11-25 16:25+0530\n"
 "PO-Revision-Date: 2016-04-15 12:30+0000\n"
 "Last-Translator: Weblate Admin <admin@postmet.com>\n"
 "Language-Team: Russian <https://weblate.postmet.com/projects/freepbx13/"
@@ -58,7 +58,7 @@ msgstr "Описание действия обратного вызова"
 msgid "Callback Number"
 msgstr "Номер обратного вызова"
 
-#: functions.inc.php:37 functions.inc.php:66
+#: functions.inc.php:36 functions.inc.php:65
 #, php-format
 msgid "Callback: %s"
 msgstr "Обратный звонок: %s"
@@ -71,7 +71,7 @@ msgstr ""
 msgid "Delay Before Callback"
 msgstr "Задержка перед обратным вызовом"
 
-#: Callback.class.php:54
+#: Callback.class.php:53
 msgid "Delete"
 msgstr "Удалить"
 
@@ -125,7 +125,7 @@ msgstr ""
 msgid "Please enter a valid Description"
 msgstr "Укажите понятное описание"
 
-#: Callback.class.php:59
+#: Callback.class.php:58
 msgid "Reset"
 msgstr "Сброс"
 
@@ -133,7 +133,7 @@ msgstr "Сброс"
 msgid "Seconds"
 msgstr "Секунды"
 
-#: Callback.class.php:64
+#: Callback.class.php:63
 msgid "Submit"
 msgstr "Подтвердить"
 
