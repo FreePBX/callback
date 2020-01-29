@@ -2,7 +2,7 @@
 	<rawname>callback</rawname>
 	<repo>extended</repo>
 	<name>Callback</name>
-	<version>15.0.8</version>
+	<version>16.0.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -16,14 +16,7 @@
 		</callback>
  	</popovers>
 	<changelog>
-		*15.0.8* FREEI-913 Fix XSS Bootstrap Datatable Issues 
-		*15.0.7* FREEPBX-20566 Restoring FreePBX 15 Backup is not restoring CallerID and Timeout values of Callback entries. 
-		*15.0.6* Related to FREEPBX-20414: removed $jobid from runRestore() 
-		*15.0.5* Fixing FREEPBX-17867 
-		*15.0.4* fixing legacy restore 
-		*15.0.3* FREEPBX-18100 Callback timeout and cid on GUI
-		*15.0.2* Packaging of ver 15.0.2
-		*15.0.1* Impliment backup 15.0
+		*16.0.1alpha* 16.0.1 alpha release
 	</changelog>
 	<database>
 		<table name="callback">
@@ -41,6 +34,6 @@
 		<version>13.0.5</version>
 	</depends>
 	<supported>
-		<version>15.0</version>
+		<version>16.0</version>
 	</supported>
 </module>
