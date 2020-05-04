@@ -10,10 +10,12 @@ class Restore Extends Base\RestoreBase{
 	}
 	public function processLegacy($pdo, $data, $tables, $unknownTables){
 		$tables = ['callback'];
-		foreach($tables as $table) {
-			$sth = $pdo->query("SELECT * FROM $table",\PDO::FETCH_ASSOC);
-			$res = $sth->fetchAll();
-			$this->addDataToTableFromArray($table, $res);
+		if(version_compare_freepbx($this->getVersion(),"11","gt")){
+			foreach($tables as $table) {
+				$sth = $pdo->query("SELECT * FROM $table",\PDO::FETCH_ASSOC);
+				$res = $sth->fetchAll();
+				$this->addDataToTableFromArray($table, $res);
+			}
 		}
 	}
 }
