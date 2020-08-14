@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-25 16:19+0530\n"
+"POT-Creation-Date: 2020-08-14 05:17+0000\n"
 "PO-Revision-Date: 2020-07-08 07:38+0000\n"
 "Last-Translator: Danilo Smaldone <dsmaldone@sangoma.com>\n"
 "Language-Team: Italian <http://*/projects/freepbx/callback/it/>\n"
@@ -32,6 +32,12 @@ msgstr " Modifica"
 msgid " already used, please use a different description."
 msgstr " già utilizzato, utilizzare una descrizione diversa."
 
+#: callback.i18n.php:8
+msgid ""
+"A callback will hang up on the caller and then call them back, directing "
+"them to the selected destination."
+msgstr ""
+
 #: views/grid.php:17
 msgid "Actions"
 msgstr "Azioni"
@@ -44,7 +50,7 @@ msgstr "Aggiungi Richiamata"
 msgid "Applications"
 msgstr "Applicazioni"
 
-#: callback.i18n.php:4 callback.i18n.php:8 page.callback.php:6
+#: callback.i18n.php:4 callback.i18n.php:10 page.callback.php:6
 #: views/bootnav.php:16
 msgid "Callback"
 msgstr "Richiamata"
