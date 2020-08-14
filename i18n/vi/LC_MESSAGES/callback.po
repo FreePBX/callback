@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-25 16:25+0530\n"
+"POT-Creation-Date: 2020-08-14 05:19+0000\n"
 "PO-Revision-Date: 2017-06-14 09:58+0200\n"
 "Last-Translator: Peter Trinh <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -33,6 +33,12 @@ msgstr " Hiệu chỉnh"
 msgid " already used, please use a different description."
 msgstr " Đã được sử dụng, vui lòng sử dụng mô tả khác."
 
+#: callback.i18n.php:8
+msgid ""
+"A callback will hang up on the caller and then call them back, directing "
+"them to the selected destination."
+msgstr ""
+
 #: views/grid.php:17
 msgid "Actions"
 msgstr "Các thao tác"
@@ -45,7 +51,7 @@ msgstr "Thêm cuộc gọi lại"
 msgid "Applications"
 msgstr "Các ứng dụng"
 
-#: callback.i18n.php:4 callback.i18n.php:8 page.callback.php:6
+#: callback.i18n.php:4 callback.i18n.php:10 page.callback.php:6
 #: views/bootnav.php:16
 msgid "Callback"
 msgstr "Gọi lại"

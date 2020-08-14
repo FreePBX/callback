@@ -2,10 +2,12 @@
 	<rawname>callback</rawname>
 	<repo>extended</repo>
 	<name>Callback</name>
-	<version>15.0.9</version>
+	<version>15.0.10</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
+	<description>A callback will hang up on the caller and then call them back, directing them to the selected destination.</description>
+  	<more-info>https://wiki.freepbx.org/display/F2/Callback+Module</more-info>
 	<category>Applications</category>
 	<menuitems>
 		<callback needsenginedb="yes">Callback</callback>
@@ -16,6 +18,7 @@
 		</callback>
  	</popovers>
 	<changelog>
+		*15.0.10* Packaging of ver 15.0.10
 		*15.0.9* FREEPBX-21398 Legacy backup restore issue 
 		*15.0.8* FREEI-913 Fix XSS Bootstrap Datatable Issues 
 		*15.0.7* FREEPBX-20566 Restoring FreePBX 15 Backup is not restoring CallerID and Timeout values of Callback entries. 
