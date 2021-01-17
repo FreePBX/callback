@@ -139,12 +139,28 @@ function callback_add($post){
 	if(!callback_chk($post))
 		return false;
 	extract($post);
-	if(empty($description)) $description = ${$goto0.'0'};
-	$results = sql("INSERT INTO callback (description,callbacknum,destination,deptname,sleep,timeout,callerid) values (\"$description\",\"$callbacknum\",\"${$goto0.'0'}\",\"$deptname\",\"$sleep\",\"$timeout\", '$callerid')");
-	if(method_exists($db,'insert_id')) {
-		$id = $db->insert_id();
-	} else {
-		$id = $amp_conf["AMPDBENGINE"] == "sqlite3" ? sqlite_last_insert_rowid($db->connection) : mysql_insert_id($db->connection);
+
+	$var[':description'] =  isset($post['description']) ? $description : '';
+	$var[':callbacknum'] =  isset($post['callbacknum']) ? $callbacknum : '';
+	$var[':goto0'] =  isset($post['goto0']) ? ${$goto0.'0'} : '';
+	$var[':deptname'] =  isset($post['deptname']) ? $deptname : '';
+	$var[':sleep'] =  isset($post['sleep']) ? $sleep : '';
+	$var[':timeout'] =  isset($post['timeout']) ? $timeout : '';
+	$var[':callerid'] =  isset($post['callerid']) ? $callerid : '';
+
+	if(empty($var[':description'])) $var[':description'] = ${$goto0.'0'};
+
+	$sql = "INSERT INTO callback (description,callbacknum,destination,deptname,sleep,timeout,callerid) values (:description,:callbacknum,:goto0,:deptname,:sleep,:timeout, :callerid)";
+
+	$dbh = \FreePBX::Database();
+	$sth = $dbh->prepare($sql);
+
+	try{
+		$ret = $sth->execute($var);
+		$id = $dbh->lastInsertId();
+	}catch(PDOException $e){
+		$id = false;
+		die_freepbx($e->getMessage());
 	}
 	return($id);
 }
