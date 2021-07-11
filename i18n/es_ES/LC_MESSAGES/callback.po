@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: FreePBX - módulo callback module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-14 05:17+0000\n"
-"PO-Revision-Date: 2016-01-14 22:40+0200\n"
-"Last-Translator: Ernesto <ecasas@sangoma.com>\n"
+"PO-Revision-Date: 2021-07-11 20:53+0000\n"
+"Last-Translator: Javier Pastor <jpastor@cerebelum.net>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/callback/"
-"es_ES/>\n"
+"es/>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.2-dev\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Poedit-Language: Spanish\n"
 "X-Poedit-Country: SPAIN\n"
 "X-Poedit-SourceCharset: utf-8\n"
@@ -27,13 +27,15 @@ msgstr " Editar"
 
 #: assets/js/callback.js:18
 msgid " already used, please use a different description."
-msgstr ""
+msgstr " ya utilizada, utilice una descripción diferente."
 
 #: callback.i18n.php:8
 msgid ""
 "A callback will hang up on the caller and then call them back, directing "
 "them to the selected destination."
 msgstr ""
+"Una callback colgará en la persona que llama y luego se les devuelva la "
+"llamada, dirigiéndolos hacia el destino seleccionado."
 
 #: views/grid.php:17
 msgid "Actions"
@@ -95,7 +97,7 @@ msgstr "Lista de rellamadas (Callbacks)"
 
 #: views/form.php:146
 msgid "Milliseconds"
-msgstr ""
+msgstr "Milisegundos"
 
 #: views/form.php:128
 msgid ""
@@ -122,6 +124,7 @@ msgstr ""
 #: views/form.php:155
 msgid "Optional: Timeout in Milliseconds.</br>Default: 15000"
 msgstr ""
+"Opcional: Tiempo de espera en Milisegundos.</br> Valor Predeterminado: 15000"
 
 #: assets/js/callback.js:15
 msgid "Please enter a valid Description"
