@@ -10,16 +10,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-14 05:17+0000\n"
-"PO-Revision-Date: 2017-12-01 23:20+0200\n"
-"Last-Translator: CATTAN Jérémie <jeremie@famillecattan.com>\n"
+"PO-Revision-Date: 2021-08-26 12:28+0000\n"
+"Last-Translator: jeremie cattan <freepbx@famillecattan.com>\n"
 "Language-Team: French <http://weblate.freepbx.org/projects/freepbx/callback/"
-"fr_FR/>\n"
+"fr/>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.4\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: page.callback.php:11
 msgid " Add"
@@ -38,6 +38,8 @@ msgid ""
 "A callback will hang up on the caller and then call them back, directing "
 "them to the selected destination."
 msgstr ""
+"Un rappel raccrochera sur l'appelant puis le rappellera, le dirigeant vers "
+"la destination sélectionnée."
 
 #: views/grid.php:17
 msgid "Actions"
@@ -71,7 +73,7 @@ msgstr "Rappel : %s"
 
 #: views/form.php:116
 msgid "Caller Id"
-msgstr ""
+msgstr "ID Appelant"
 
 #: views/form.php:89
 msgid "Delay Before Callback"
@@ -99,13 +101,15 @@ msgstr "Liste des rappels"
 
 #: views/form.php:146
 msgid "Milliseconds"
-msgstr ""
+msgstr "Millisecondes"
 
 #: views/form.php:128
 msgid ""
 "Optional: Enter the callerid for the callback.<br>Format: <b>\"caller name\" "
 "&lt;#######&gt;</b><br>Default: Callback"
 msgstr ""
+"Facultatif : saisissez l'ID de l'appelant pour le rappel.<br>Format : <b>\""
+"nom de l'appelant\" &lt;#######&gt;</b><br>Par défaut : rappel"
 
 #: views/form.php:104
 msgid ""
@@ -125,7 +129,7 @@ msgstr ""
 
 #: views/form.php:155
 msgid "Optional: Timeout in Milliseconds.</br>Default: 15000"
-msgstr ""
+msgstr "Facultatif : délai d'attente en millisecondes.</br>Par défaut : 15 000"
 
 #: assets/js/callback.js:15
 msgid "Please enter a valid Description"
@@ -149,7 +153,7 @@ msgstr "La description du rappel fournie est trop longue."
 
 #: views/form.php:140
 msgid "Timeout"
-msgstr ""
+msgstr "Délais d'attente"
 
 #: views/form.php:186
 msgid "Where to send the caller once they are called back"
