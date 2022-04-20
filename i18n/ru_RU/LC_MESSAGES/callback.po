@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: 1.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-14 05:17+0000\n"
-"PO-Revision-Date: 2021-12-08 06:05+0000\n"
+"PO-Revision-Date: 2022-04-20 09:52+0000\n"
 "Last-Translator: Dmitriy Q <krotesk@ya.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/callback/"
 "ru/>\n"
@@ -31,13 +31,15 @@ msgstr " Редактировать"
 
 #: assets/js/callback.js:18
 msgid " already used, please use a different description."
-msgstr ""
+msgstr " уже используется, пожалуйста, используйте другое описание."
 
 #: callback.i18n.php:8
 msgid ""
 "A callback will hang up on the caller and then call them back, directing "
 "them to the selected destination."
 msgstr ""
+"При обратном звонке вызов от абонента прервется, а затем система перезвонит "
+"ему, направив к выбранному месту назначения."
 
 #: views/grid.php:17
 msgid "Actions"
@@ -71,7 +73,7 @@ msgstr "Обратный звонок: %s"
 
 #: views/form.php:116
 msgid "Caller Id"
-msgstr ""
+msgstr "CallerID"
 
 #: views/form.php:89
 msgid "Delay Before Callback"
@@ -99,13 +101,15 @@ msgstr "Список обратных вызовов"
 
 #: views/form.php:146
 msgid "Milliseconds"
-msgstr ""
+msgstr "миллисекунды"
 
 #: views/form.php:128
 msgid ""
 "Optional: Enter the callerid for the callback.<br>Format: <b>\"caller name\" "
 "&lt;#######&gt;</b><br>Default: Callback"
 msgstr ""
+"Необязательно: Введите CallerID для обратного звонка.<br>Формат: <b>\"Имя "
+"абонента\" &lt;#######&gt;</b><br>По умолчанию: Обратный звонок"
 
 #: views/form.php:104
 msgid ""
@@ -125,7 +129,7 @@ msgstr ""
 
 #: views/form.php:155
 msgid "Optional: Timeout in Milliseconds.</br>Default: 15000"
-msgstr ""
+msgstr "Необязательно: Время ожидания в миллисекундах.</br>По умолчанию: 15000"
 
 #: assets/js/callback.js:15
 msgid "Please enter a valid Description"
@@ -149,7 +153,7 @@ msgstr "Описание обратного вызова слишком длин
 
 #: views/form.php:140
 msgid "Timeout"
-msgstr ""
+msgstr "Время ожидания"
 
 #: views/form.php:186
 msgid "Where to send the caller once they are called back"
