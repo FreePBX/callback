@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-14 05:19+0000\n"
+"POT-Creation-Date: 2022-05-06 11:04+0000\n"
 "PO-Revision-Date: 2014-02-19 22:17+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/callback/ja/>\n"
@@ -60,12 +60,6 @@ msgstr ""
 msgid " already used, please use a different description."
 msgstr ""
 
-#: callback.i18n.php:8
-msgid ""
-"A callback will hang up on the caller and then call them back, directing "
-"them to the selected destination."
-msgstr ""
-
 #: views/grid.php:17
 msgid "Actions"
 msgstr ""
@@ -74,12 +68,7 @@ msgstr ""
 msgid "Add Callback"
 msgstr "コールバックを追加"
 
-#: callback.i18n.php:6
-msgid "Applications"
-msgstr "アプリケーション"
-
-#: callback.i18n.php:4 callback.i18n.php:10 page.callback.php:6
-#: views/bootnav.php:16
+#: page.callback.php:6 views/bootnav.php:16
 msgid "Callback"
 msgstr "コールバック"
 
@@ -179,6 +168,9 @@ msgstr ""
 #: views/form.php:186
 msgid "Where to send the caller once they are called back"
 msgstr ""
+
+#~ msgid "Applications"
+#~ msgstr "アプリケーション"
 
 #~ msgid ""
 #~ "A callback will hang up on the caller and then call them back, directing "

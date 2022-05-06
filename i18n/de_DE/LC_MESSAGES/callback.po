@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-14 05:19+0000\n"
+"POT-Creation-Date: 2022-05-06 11:04+0000\n"
 "PO-Revision-Date: 2018-02-16 20:04+0200\n"
 "Last-Translator: Nils <Nils@heckenkamp.info>\n"
 "Language-Team: German <http://weblate.freepbx.org/projects/freepbx/callback/"
@@ -33,12 +33,6 @@ msgstr " Bearbeiten"
 msgid " already used, please use a different description."
 msgstr " bereits verwendet, bitte verwenden Sie eine andere Beschreibung."
 
-#: callback.i18n.php:8
-msgid ""
-"A callback will hang up on the caller and then call them back, directing "
-"them to the selected destination."
-msgstr ""
-
 #: views/grid.php:17
 msgid "Actions"
 msgstr "Aktionen"
@@ -47,12 +41,7 @@ msgstr "Aktionen"
 msgid "Add Callback"
 msgstr "Rückruf hinzufügen"
 
-#: callback.i18n.php:6
-msgid "Applications"
-msgstr "Anwendungen"
-
-#: callback.i18n.php:4 callback.i18n.php:10 page.callback.php:6
-#: views/bootnav.php:16
+#: page.callback.php:6 views/bootnav.php:16
 msgid "Callback"
 msgstr "Rückruf"
 
@@ -154,3 +143,6 @@ msgstr ""
 #: views/form.php:186
 msgid "Where to send the caller once they are called back"
 msgstr "Wohin soll der Anrufer bei Rückruf geleitet werden"
+
+#~ msgid "Applications"
+#~ msgstr "Anwendungen"

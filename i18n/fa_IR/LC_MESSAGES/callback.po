@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-14 05:19+0000\n"
+"POT-Creation-Date: 2022-05-06 11:04+0000\n"
 "PO-Revision-Date: 2016-04-30 16:12+0200\n"
 "Last-Translator: psdk <hyavari26@gmail.com>\n"
 "Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
@@ -33,12 +33,6 @@ msgstr " ویرایش"
 msgid " already used, please use a different description."
 msgstr ""
 
-#: callback.i18n.php:8
-msgid ""
-"A callback will hang up on the caller and then call them back, directing "
-"them to the selected destination."
-msgstr ""
-
 #: views/grid.php:17
 msgid "Actions"
 msgstr "عملیات"
@@ -47,12 +41,7 @@ msgstr "عملیات"
 msgid "Add Callback"
 msgstr "افزودن تماس بازگشتی"
 
-#: callback.i18n.php:6
-msgid "Applications"
-msgstr "برنامه‌ های کاربردی"
-
-#: callback.i18n.php:4 callback.i18n.php:10 page.callback.php:6
-#: views/bootnav.php:16
+#: page.callback.php:6 views/bootnav.php:16
 msgid "Callback"
 msgstr "تماس بازگشتی"
 
@@ -152,6 +141,9 @@ msgstr ""
 #: views/form.php:186
 msgid "Where to send the caller once they are called back"
 msgstr "وقتی تماس بازگشتی برقرار شد، تماس به کجا وصل گردد"
+
+#~ msgid "Applications"
+#~ msgstr "برنامه‌ های کاربردی"
 
 #~ msgid "Invalid Request"
 #~ msgstr "درخواست نامعتبر"

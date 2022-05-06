@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-14 05:19+0000\n"
+"POT-Creation-Date: 2022-05-06 11:04+0000\n"
 "PO-Revision-Date: 2018-07-03 12:05+0000\n"
 "Last-Translator: Chavdar Shtiliyanov <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://*/projects/freepbx/callback/bg/>\n"
@@ -33,12 +33,6 @@ msgstr " Редактирай"
 msgid " already used, please use a different description."
 msgstr " се използва, моля въведете друго описание."
 
-#: callback.i18n.php:8
-msgid ""
-"A callback will hang up on the caller and then call them back, directing "
-"them to the selected destination."
-msgstr ""
-
 #: views/grid.php:17
 msgid "Actions"
 msgstr "Действия"
@@ -47,12 +41,7 @@ msgstr "Действия"
 msgid "Add Callback"
 msgstr "Добави Обратно Обаждане"
 
-#: callback.i18n.php:6
-msgid "Applications"
-msgstr "Приложения"
-
-#: callback.i18n.php:4 callback.i18n.php:10 page.callback.php:6
-#: views/bootnav.php:16
+#: page.callback.php:6 views/bootnav.php:16
 msgid "Callback"
 msgstr "Обратно Обаждане"
 
@@ -154,6 +143,9 @@ msgstr ""
 #: views/form.php:186
 msgid "Where to send the caller once they are called back"
 msgstr "Къде да се насочи обаждането след като се обадят обратно"
+
+#~ msgid "Applications"
+#~ msgstr "Приложения"
 
 #~ msgid "Invalid Request"
 #~ msgstr "Невалидна Заявка"
