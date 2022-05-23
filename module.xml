@@ -2,7 +2,7 @@
 	<rawname>callback</rawname>
 	<repo>extended</repo>
 	<name>Callback</name>
-	<version>16.0.3</version>
+	<version>17.0.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -18,9 +18,7 @@
 		</callback>
  	</popovers>
 	<changelog>
-		*16.0.3* FREEI-4793 
-		*16.0.2* Packaging of ver 16.0.2
-		*16.0.1alpha* 16.0.1 alpha release
+		*17.0.1alpha* 17.0.1 alpha release
 	</changelog>
 	<database>
 		<table name="callback">
@@ -38,6 +36,6 @@
 		<version>13.0.5</version>
 	</depends>
 	<supported>
-		<version>16.0</version>
+		<version>17.0</version>
 	</supported>
 </module>
