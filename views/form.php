@@ -35,8 +35,8 @@ if(!empty($callback_names)){
 	<div class="element-container">
 		<div class="row">
 			<div class="col-md-12">
-				<div class="">
-					<div class="form-group row">
+				<div class="row">
+					<div class="form-group">
 						<div class="col-md-3">
 							<label class="control-label" for="description"><?php echo _("Callback Description") ?></label>
 							<i class="fa fa-question-circle fpbx-help-icon" data-for="description"></i>
@@ -59,8 +59,8 @@ if(!empty($callback_names)){
 	<div class="element-container">
 		<div class="row">
 			<div class="col-md-12">
-				<div class="">
-					<div class="form-group row">
+				<div class="row">
+					<div class="form-group">
 						<div class="col-md-3">
 							<label class="control-label" for="callbacknum"><?php echo _("Callback Number") ?></label>
 							<i class="fa fa-question-circle fpbx-help-icon" data-for="callbacknum"></i>
@@ -83,8 +83,8 @@ if(!empty($callback_names)){
 	<div class="element-container">
 		<div class="row">
 			<div class="col-md-12">
-				<div class="">
-					<div class="form-group row">
+				<div class="row">
+					<div class="form-group">
 						<div class="col-md-3">
 							<label class="control-label" for="sleep"><?php echo _("Delay Before Callback") ?></label>
 							<i class="fa fa-question-circle fpbx-help-icon" data-for="sleep"></i>
@@ -110,8 +110,8 @@ if(!empty($callback_names)){
 	<div class="element-container">
 		<div class="row">
 			<div class="col-md-12">
-				<div class="">
-					<div class="form-group row">
+				<div class="row">
+					<div class="form-group">
 						<div class="col-md-3">
 							<label class="control-label" for="callerid"><?php echo _("Caller Id") ?></label>
 							<i class="fa fa-question-circle fpbx-help-icon" data-for="callerid"></i>
@@ -134,8 +134,8 @@ if(!empty($callback_names)){
 	<div class="element-container">
 		<div class="row">
 			<div class="col-md-12">
-				<div class="">
-					<div class="form-group row">
+				<div class="row">
+					<div class="form-group">
 						<div class="col-md-3">
 							<label class="control-label" for="timeout"><?php echo _("Timeout") ?></label>
 							<i class="fa fa-question-circle fpbx-help-icon" data-for="timeout"></i>
@@ -161,8 +161,8 @@ if(!empty($callback_names)){
 	<div class="element-container">
 		<div class="row">
 			<div class="col-md-12">
-				<div class="">
-					<div class="form-group row">
+				<div class="row">
+					<div class="form-group">
 						<div class="col-md-3">
 							<label class="control-label" for="goto0"><?php echo _("Destination after Callback") ?></label>
 							<i class="fa fa-question-circle fpbx-help-icon" data-for="goto0"></i>
