@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: FreePBX - módulo callback module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-14 05:17+0000\n"
-"PO-Revision-Date: 2021-07-11 20:53+0000\n"
+"PO-Revision-Date: 2023-02-10 18:36+0000\n"
 "Last-Translator: Javier Pastor <jpastor@cerebelum.net>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/callback/"
 "es/>\n"
@@ -69,7 +69,7 @@ msgstr "Devolución de llamada: %s"
 
 #: views/form.php:116
 msgid "Caller Id"
-msgstr ""
+msgstr "Identificador de Llamadas"
 
 #: views/form.php:89
 msgid "Delay Before Callback"
@@ -104,6 +104,9 @@ msgid ""
 "Optional: Enter the callerid for the callback.<br>Format: <b>\"caller name\" "
 "&lt;#######&gt;</b><br>Default: Callback"
 msgstr ""
+"Opcional: Ingrese el identificador de llamada para la devolución de "
+"llamada.<br>Formato: <b>\"nombre de la persona que llama\" "
+"&lt;#######&gt;</b><br>Predeterminado: Devolución de llamada"
 
 #: views/form.php:104
 msgid ""
@@ -148,7 +151,7 @@ msgstr "La descripción provista para la devolución de llamada en muy larga."
 
 #: views/form.php:140
 msgid "Timeout"
-msgstr ""
+msgstr "Timeout"
 
 #: views/form.php:186
 msgid "Where to send the caller once they are called back"
