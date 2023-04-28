@@ -1,6 +1,7 @@
 <?php
 extract($request);
-if($itemid){
+$deldata = '';
+if(!empty($itemid)){
 	$thisItem = callback_get($itemid);
 	$deldata = "?display=callback&action=delete&itemid=".$itemid;
 }
@@ -28,9 +29,9 @@ if(!empty($callback_names)){
 </script>
 <form autocomplete="off" name="edit" id="edit" action="?display=callback" method="post" class="fpbx-submit" data-fpbx-delete="<?php echo $deldata?>" >
 	<input type="hidden" name="display" value="callback">
-	<input type="hidden" name="action" value="<?php echo ($itemid ? 'edit' : 'add') ?>">
+	<input type="hidden" name="action" value="<?php echo (!empty($itemid) ? 'edit' : 'add') ?>">
 	<input type="hidden" name="deptname" value="">
-	<input type="hidden" name="itemid" value="<?php echo $itemid; ?>">
+	<input type="hidden" name="itemid" value="<?php echo $itemid ?? ""; ?>">
 	<!--Callback Description-->
 	<div class="element-container">
 		<div class="row">
