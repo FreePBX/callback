@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-06 11:04+0000\n"
+"POT-Creation-Date: 2023-08-16 10:38+0000\n"
 "PO-Revision-Date: 2014-03-04 09:09+0200\n"
 "Last-Translator: Andrew <andrew.nagy@the159.com>\n"
 "Language-Team: Hebrew <http://git.freepbx.org/projects/freepbx/callback/he/"
@@ -31,6 +31,12 @@ msgstr ""
 msgid " already used, please use a different description."
 msgstr ""
 
+#: callback.i18n.php:8
+msgid ""
+"A callback will hang up on the caller and then call them back, directing "
+"them to the selected destination."
+msgstr ""
+
 #: views/grid.php:17
 msgid "Actions"
 msgstr ""
@@ -39,40 +45,46 @@ msgstr ""
 msgid "Add Callback"
 msgstr "הוסף חיוג חזרה"
 
-#: page.callback.php:6 views/bootnav.php:16
+#: callback.i18n.php:6
+#, fuzzy
+msgid "Applications"
+msgstr "יישומים"
+
+#: callback.i18n.php:4 callback.i18n.php:10 page.callback.php:6
+#: views/bootnav.php:16
 msgid "Callback"
 msgstr ""
 
-#: views/form.php:41
+#: views/form.php:42
 msgid "Callback Description"
 msgstr ""
 
-#: views/form.php:65 views/grid.php:16
+#: views/form.php:66 views/grid.php:16
 msgid "Callback Number"
 msgstr ""
 
-#: functions.inc.php:36 functions.inc.php:65
+#: functions.inc.php:36 functions.inc.php:61
 #, php-format
 msgid "Callback: %s"
 msgstr ""
 
-#: views/form.php:116
+#: views/form.php:117
 msgid "Caller Id"
 msgstr ""
 
-#: views/form.php:89
+#: views/form.php:90
 msgid "Delay Before Callback"
 msgstr ""
 
-#: Callback.class.php:53
+#: Callback.class.php:49
 msgid "Delete"
 msgstr ""
 
-#: views/form.php:167
+#: views/form.php:168
 msgid "Destination after Callback"
 msgstr "יעד לאחר חיוג חזרה"
 
-#: views/form.php:53
+#: views/form.php:54
 msgid "Enter a description for this callback."
 msgstr "הכנס תיאור עבור חיוג חזרה זה."
 
@@ -84,23 +96,23 @@ msgstr ""
 msgid "List Callbacks"
 msgstr ""
 
-#: views/form.php:146
+#: views/form.php:147
 msgid "Milliseconds"
 msgstr ""
 
-#: views/form.php:128
+#: views/form.php:129
 msgid ""
 "Optional: Enter the callerid for the callback.<br>Format: <b>\"caller name\" "
 "&lt;#######&gt;</b><br>Default: Callback"
 msgstr ""
 
-#: views/form.php:104
+#: views/form.php:105
 msgid ""
 "Optional: Enter the number of seconds the system should wait before calling "
 "back."
 msgstr "רשות: הכנס את מספר השניות שעל המערכת לחכות לפני שהיא מחייגת בחזרה."
 
-#: views/form.php:77
+#: views/form.php:78
 #, fuzzy
 msgid ""
 "Optional: Enter the number to dial for the callback.  Leave this blank to "
@@ -109,7 +121,7 @@ msgstr ""
 "רשות: הכנס את המספר שאליו יש להתקשר בחיוג חזרה. השאר שדה זה רק על מנת לחייג "
 "בפשטות למספר שהתקבל בשירות השיחה המזוהה"
 
-#: views/form.php:155
+#: views/form.php:156
 msgid "Optional: Timeout in Milliseconds.</br>Default: 15000"
 msgstr ""
 
@@ -117,15 +129,15 @@ msgstr ""
 msgid "Please enter a valid Description"
 msgstr ""
 
-#: Callback.class.php:58
+#: Callback.class.php:49
 msgid "Reset"
 msgstr ""
 
-#: views/form.php:95
+#: views/form.php:96
 msgid "Seconds"
 msgstr ""
 
-#: Callback.class.php:63
+#: Callback.class.php:49
 msgid "Submit"
 msgstr ""
 
@@ -133,17 +145,13 @@ msgstr ""
 msgid "The callback description provided is too long."
 msgstr ""
 
-#: views/form.php:140
+#: views/form.php:141
 msgid "Timeout"
 msgstr ""
 
-#: views/form.php:186
+#: views/form.php:187
 msgid "Where to send the caller once they are called back"
 msgstr ""
-
-#, fuzzy
-#~ msgid "Applications"
-#~ msgstr "יישומים"
 
 #~ msgid ""
 #~ "A callback will hang up on the caller and then call them back, directing "
