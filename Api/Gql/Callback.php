@@ -11,8 +11,7 @@ class Callback extends Base {
 
 	public function mutationCallback() {
 		if($this->checkAllWriteScope()) {
-			return function() {
-				return [
+			return fn() => [
 					'addCallback' => Relay::mutationWithClientMutationId([
 						'name' => 'addCallback',
 						'description' => 'Add a new entry to Callback',
@@ -20,9 +19,7 @@ class Callback extends Base {
 						'outputFields' => [
 							'callback' => [
 								'type' => $this->typeContainer->get('callback')->getObject(),
-								'resolve' => function ($payload) {
-									return count($payload) > 1 ? $payload : null;
-								}
+								'resolve' => fn($payload) => (is_countable($payload) ? count($payload) : 0) > 1 ? $payload : null
 							]
 						],
 						'mutateAndGetPayload' => function ($input) {
@@ -40,9 +37,7 @@ class Callback extends Base {
 						'outputFields' => [
 							'callback' => [
 								'type' => $this->typeContainer->get('callback')->getObject(),
-								'resolve' => function ($payload) {
-									return count($payload) > 1 ? $payload : null;
-								}
+								'resolve' => fn($payload) => (is_countable($payload) ? count($payload) : 0) > 1 ? $payload : null
 							]
 						],
 						'mutateAndGetPayload' => function ($input) {
@@ -68,9 +63,7 @@ class Callback extends Base {
 						'outputFields' => [
 							'deletedId' => [
 								'type' => Type::nonNull(Type::id()),
-								'resolve' => function ($payload) {
-									return $payload['id'];
-								}
+								'resolve' => fn($payload) => $payload['id']
 							]
 						],
 						'mutateAndGetPayload' => function ($input) {
@@ -83,14 +76,12 @@ class Callback extends Base {
 						}
 					])
 				];
-			};
 		}
 	}
 
 	public function queryCallback() {
 		if($this->checkAllReadScope()) {
-			return function() {
-				return [
+			return fn() => [
 					'allCallbacks' => [
 						'type' => $this->typeContainer->get('callback')->getConnectionType(),
 						'description' => '',
@@ -117,12 +108,9 @@ class Callback extends Base {
 								'description' => 'The ID',
 							]
 						],
-						'resolve' => function($root, $args) {
-							return $this->getSingleData(Relay::fromGlobalId($args['id'])['id']);
-						}
+						'resolve' => fn($root, $args) => $this->getSingleData(Relay::fromGlobalId($args['id'])['id'])
 					]
 				];
-			};
 		}
 	}
 
@@ -155,25 +143,16 @@ class Callback extends Base {
 		$user = $this->typeContainer->create('callback');
 		$user->setDescription('');
 
-		$user->addInterfaceCallback(function() {
-			return [$this->getNodeDefinition()['nodeInterface']];
-		});
+		$user->addInterfaceCallback(fn() => [$this->getNodeDefinition()['nodeInterface']]);
 
-		$user->setGetNodeCallback(function($id) {
-			return $this->getSingleData($id);
-		});
+		$user->setGetNodeCallback(fn($id) => $this->getSingleData($id));
 
-		$user->addFieldCallback(function() {
-			return [
-				'id' => Relay::globalIdField('', function($row) {
-					return isset($row['callback_id']) ? $row['callback_id'] : null;
-				}),
+		$user->addFieldCallback(fn() => [
+				'id' => Relay::globalIdField('', fn($row) => $row['callback_id'] ?? null),
 				'callback_id' => [
 					'type' => Type::nonNull(Type::string()),
 					'description' => '',
-					'resolver' => function($row) {
-						return isset($row['callback_id']) ? $row['callback_id'] : null;
-					}
+					'resolver' => fn($row) => $row['callback_id'] ?? null
 				],
 				'description' => [
 					'type' => Type::string(),
@@ -191,32 +170,23 @@ class Callback extends Base {
 					'type' => Type::int(),
 					'description' => 'Optional: Enter the number of seconds the system should wait before calling back.',
 				],
-			];
-		});
+			]);
 
-		$user->setConnectionResolveNode(function ($edge) {
-			return $edge['node'];
-		});
+		$user->setConnectionResolveNode(fn($edge) => $edge['node']);
 
-		$user->setConnectionFields(function() {
-			return [
+		$user->setConnectionFields(fn() => [
 				'totalCount' => [
 					'type' => Type::int(),
-					'resolve' => function($value) {
-						return $this->getTotal();
-					}
+					'resolve' => fn($value) => $this->getTotal()
 				],
 				'callbacks' => [
 					'type' => Type::listOf($this->typeContainer->get('callback')->getObject()),
 					'resolve' => function($root, $args) {
-						$data = array_map(function($row){
-							return $row['node'];
-						},$root['edges']);
+						$data = array_map(fn($row) => $row['node'],$root['edges']);
 						return $data;
 					}
 				]
-			];
-		});
+			]);
 	}
 
 	private function getMutationFields() {
@@ -246,11 +216,11 @@ class Callback extends Base {
 
 	private function getMutationExecuteArray($input) {
 		return [
-			":callback_id" => isset($input['id']) ? $input['id'] : '',
-			":description" => isset($input['description']) ? $input['description'] : null,
-			":callbacknum" => isset($input['callbacknum']) ? $input['callbacknum'] : null,
-			":destination" => isset($input['destination']) ? $input['destination'] : null,
-			":sleep" => isset($input['sleep']) ? $input['sleep'] : null
+			":callback_id" => $input['id'] ?? '',
+			":description" => $input['description'] ?? null,
+			":callbacknum" => $input['callbacknum'] ?? null,
+			":destination" => $input['destination'] ?? null,
+			":sleep" => $input['sleep'] ?? null
 		];
 	}
 }

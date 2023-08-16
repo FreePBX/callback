@@ -10,9 +10,9 @@ function callback_destinations() {
 
 	// return an associative array with destination and description
 	if (isset($results)) {
-		$extens = array();
+		$extens = [];
 		foreach($results as $result){
-				$extens[] = array('destination' => 'callback,'.$result['callback_id'].',1', 'description' => $result['description']);
+				$extens[] = ['destination' => 'callback,'.$result['callback_id'].',1', 'description' => $result['description']];
 		}
 		return $extens;
 	} else {
@@ -21,21 +21,19 @@ function callback_destinations() {
 }
 
 function callback_getdest($exten) {
-	return array('callback,'.$exten.',1');
+	return ['callback,'.$exten.',1'];
 }
 
 function callback_getdestinfo($dest) {
 	global $active_modules;
-	if (substr(trim($dest),0,9) == 'callback,') {
-		$exten = explode(',',$dest);
+	if (str_starts_with(trim((string) $dest), 'callback,')) {
+		$exten = explode(',',(string) $dest);
 		$exten = $exten[1];
 		$thisexten = callback_get($exten);
 		if (empty($thisexten)) {
-			return array();
+			return [];
 		} else {
-			return array('description' => sprintf(_("Callback: %s"),$thisexten['description']),
-			             'edit_url' => 'config.php?display=callback&view=form&itemid='.urlencode($exten),
-						 );
+			return ['description' => sprintf(_("Callback: %s"),$thisexten['description']), 'edit_url' => 'config.php?display=callback&view=form&itemid='.urlencode($exten)];
 		}
 	} else {
 		return false;
@@ -45,7 +43,7 @@ function callback_getdestinfo($dest) {
 function callback_check_destinations($dest=true) {
 	global $active_modules;
 
-	$destlist = array();
+	$destlist = [];
 	if (is_array($dest) && empty($dest)) {
 		return $destlist;
 	}
@@ -55,16 +53,12 @@ function callback_check_destinations($dest=true) {
 	}
 	$results = sql($sql,"getAll",DB_FETCHMODE_ASSOC);
 
-	$type = isset($active_modules['callback']['type'])?$active_modules['callback']['type']:'setup';
+	$type = $active_modules['callback']['type'] ?? 'setup';
 
 	foreach ($results as $result) {
 		$thisdest = $result['destination'];
 		$thisid   = $result['callback_id'];
-		$destlist[] = array(
-			'dest' => $thisdest,
-			'description' => sprintf(_("Callback: %s"),$result['description']),
-			'edit_url' => 'config.php?display=callback&type='.$type.'&itemid='.urlencode($thisid),
-		);
+		$destlist[] = ['dest' => $thisdest, 'description' => sprintf(_("Callback: %s"),$result['description']), 'edit_url' => 'config.php?display=callback&type='.$type.'&itemid='.urlencode((string) $thisid)];
 	}
 	return $destlist;
 }
@@ -92,7 +86,7 @@ function callback_get_config($engine) {
 					$ext->add('callback', $item['callback_id'], '', new ext_setvar("CALL",$callback_num));
 
 					//substitute commas with periods to keep asterisk dialplan variables happy
-					$callback_destination = str_replace(",",".",$item['destination']);
+					$callback_destination = str_replace(",",".",(string) $item['destination']);
 					$ext->add('callback', $item['callback_id'], '', new ext_setvar("DESTINATION",$callback_destination));
 
 					// set sleep time
@@ -104,7 +98,7 @@ function callback_get_config($engine) {
 					$ext->add('callback', $item['callback_id'], '', new ext_setvar("TIMEOUT",$timeout));
 
 					// set callerid
-					$callerid = (empty($item['callerid']) ? "Callback" : trim($item['callerid']));
+					$callerid = (empty($item['callerid']) ? "Callback" : trim((string) $item['callerid']));
 					$ext->add('callback', $item['callback_id'], '', new ext_setvar("CALLERID",$callerid));
 
 					// kick off the callback script - run in background (&) so we can hangup
@@ -135,7 +129,15 @@ function callback_del($id){
 }
 
 function callback_add($post){
-	global $db, $amp_conf;
+	$var = [];
+ $description = null;
+ $callbacknum = null;
+ $goto0 = null;
+ $deptname = null;
+ $sleep = null;
+ $timeout = null;
+ $callerid = null;
+ global $db, $amp_conf;
 	if(!callback_chk($post))
 		return false;
 	extract($post);
@@ -166,7 +168,13 @@ function callback_add($post){
 }
 
 function callback_edit($id,$post){
-	if(!callback_chk($post))
+	$goto0 = null;
+ $callbacknum = null;
+ $deptname = null;
+ $sleep = null;
+ $timeout = null;
+ $callerid = null;
+ if(!callback_chk($post))
 		return false;
 	extract($post);
 	if(empty($description)) $description = ${$goto0.'0'};

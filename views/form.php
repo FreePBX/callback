@@ -23,7 +23,7 @@ if(!empty($callback_list)){
 var callback_names = new Array();
 <?php
 if(!empty($callback_names)){
-	        echo "callback_names = " . json_encode($callback_names) . ";";
+	        echo "callback_names = " . json_encode($callback_names, JSON_THROW_ON_ERROR) . ";";
 }
 ?>
 </script>
@@ -43,7 +43,7 @@ if(!empty($callback_names)){
 							<i class="fa fa-question-circle fpbx-help-icon" data-for="description"></i>
 						</div>
 						<div class="col-md-9">
-							<input type="text" class="form-control maxlen" id="description" maxlength="50" name="description" value="<?php echo (isset($thisItem['description']) ? $thisItem['description'] : ''); ?>">
+							<input type="text" class="form-control maxlen" id="description" maxlength="50" name="description" value="<?php echo ($thisItem['description'] ?? ''); ?>">
 						</div>
 					</div>
 				</div>
@@ -67,7 +67,7 @@ if(!empty($callback_names)){
 							<i class="fa fa-question-circle fpbx-help-icon" data-for="callbacknum"></i>
 						</div>
 						<div class="col-md-9">
-							<input type="tel" class="form-control" id="callbacknum" name="callbacknum" value="<?php echo (isset($thisItem['callbacknum']) ? $thisItem['callbacknum'] : ''); ?>">
+							<input type="tel" class="form-control" id="callbacknum" name="callbacknum" value="<?php echo ($thisItem['callbacknum'] ?? ''); ?>">
 						</div>
 					</div>
 				</div>
@@ -92,7 +92,7 @@ if(!empty($callback_names)){
 						</div>
 						<div class="col-md-9">
 							<div class="input-group">
-								<input type="number" min="0" class="form-control" id="sleep" name="sleep" value="<?php echo (isset($thisItem['sleep']) ? $thisItem['sleep'] : ''); ?>">
+								<input type="number" min="0" class="form-control" id="sleep" name="sleep" value="<?php echo ($thisItem['sleep'] ?? ''); ?>">
 								<span class="input-group-addon"><?php echo _("Seconds")?></span>
 							</div>
 						</div>
@@ -118,7 +118,7 @@ if(!empty($callback_names)){
 							<i class="fa fa-question-circle fpbx-help-icon" data-for="callerid"></i>
 						</div>
 						<div class="col-md-9">
-							<input type="text" class="form-control" id="callerid" name="callerid" value="<?php echo (isset($thisItem['callerid']) ? htmlspecialchars($thisItem['callerid']) : ''); ?>">
+							<input type="text" class="form-control" id="callerid" name="callerid" value="<?php echo (isset($thisItem['callerid']) ? htmlspecialchars((string) $thisItem['callerid']) : ''); ?>">
 						</div>
 					</div>
 				</div>
@@ -143,7 +143,7 @@ if(!empty($callback_names)){
 						</div>
 						<div class="col-md-9">
 							<div class="input-group">
-								<input type="number" min="0" class="form-control" id="timeout" name="timeout" value="<?php echo (isset($thisItem['timeout']) ? $thisItem['timeout'] : ''); ?>">
+								<input type="number" min="0" class="form-control" id="timeout" name="timeout" value="<?php echo ($thisItem['timeout'] ?? ''); ?>">
 								<span class="input-group-addon"><?php echo _("Milliseconds")?></span>
 							</div>
 						</div>

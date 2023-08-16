@@ -40,34 +40,18 @@ class Callback extends FreePBX_Helpers implements BMO {
 		if(is_array($results)){
 			return $results;
 		}
-		return array();
+		return [];
 	}
 	public function getActionBar($request) {
-		$buttons = array();
+		$buttons = [];
 		switch($request['display']) {
 			case 'callback':
-				$buttons = array(
-					'delete' => array(
-						'name' => 'delete',
-						'id' => 'delete',
-						'value' => _('Delete')
-					),
-					'reset' => array(
-						'name' => 'reset',
-						'id' => 'reset',
-						'value' => _('Reset')
-					),
-					'submit' => array(
-						'name' => 'submit',
-						'id' => 'submit',
-						'value' => _('Submit')
-					)
-				);
+				$buttons = ['delete' => ['name' => 'delete', 'id' => 'delete', 'value' => _('Delete')], 'reset' => ['name' => 'reset', 'id' => 'reset', 'value' => _('Reset')], 'submit' => ['name' => 'submit', 'id' => 'submit', 'value' => _('Submit')]];
 				if (empty($request['itemid'])) {
 					unset($buttons['delete']);
 				}
 				if($request['view'] != "form"){
-					$buttons = array();
+					$buttons = [];
 				}
 			break;
 		}
@@ -76,44 +60,28 @@ class Callback extends FreePBX_Helpers implements BMO {
 	public function chownFreePBX(){
 		$webroot = \FreePBX::Config()->get('AMPWEBROOT');
 		$modulebindir = $webroot . '/admin/modules/callback/bin/';
-		$files = array();
-		$files[] = array('type' => 'file',
-						'path' => $modulebindir.'callback',
-						'perms' => 0755);
+		$files = [];
+		$files[] = ['type' => 'file', 'path' => $modulebindir.'callback', 'perms' => 0755];
 		return $files;
 	}
 	public function ajaxRequest($req, &$setting) {
-			 switch ($req) {
-					 case 'getJSON':
-							 return true;
-					 break;
-					 default:
-							 return false;
-					 break;
-			 }
+			 return match ($req) {
+        'getJSON' => true,
+        default => false,
+    };
 	 }
 	 public function ajaxHandler(){
-		switch ($_REQUEST['command']) {
-			case 'getJSON':
-				switch ($_REQUEST['jdata']) {
-					case 'grid':
-						return array_values($this->listCallbacks());
-					break;
-
-					default:
-						return false;
-					break;
-				}
-			break;
-
-			default:
-				return false;
-			break;
-		}
+		return match ($_REQUEST['command']) {
+      'getJSON' => match ($_REQUEST['jdata']) {
+          'grid' => array_values($this->listCallbacks()),
+          default => false,
+      },
+      default => false,
+  };
 	}
 	public function getRightNav($request) {
 		if($request['view'] == 'form'){
-    	return load_view(__DIR__."/views/bootnav.php",array());
+    	return load_view(__DIR__."/views/bootnav.php",[]);
 		}
 	}
 	public function upsert($id,$description,$number,$destination,$sleep,$department,$timeout,$callerid){
