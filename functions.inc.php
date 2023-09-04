@@ -134,8 +134,8 @@ function callback_add($post){
  $callbacknum = null;
  $goto0 = null;
  $deptname = null;
- $sleep = null;
- $timeout = null;
+ $sleep = 0;
+ $timeout = 0;
  $callerid = null;
  global $db, $amp_conf;
 	if(!callback_chk($post))
@@ -146,8 +146,8 @@ function callback_add($post){
 	$var[':callbacknum'] =  isset($post['callbacknum']) ? $callbacknum : '';
 	$var[':goto0'] =  isset($post['goto0']) ? ${$goto0.'0'} : '';
 	$var[':deptname'] =  isset($post['deptname']) ? $deptname : '';
-	$var[':sleep'] =  isset($post['sleep']) ? $sleep : '';
-	$var[':timeout'] =  isset($post['timeout']) ? $timeout : '';
+	$var[':sleep'] =  (isset($post['sleep']) && is_numeric($post['sleep'])) ? $sleep : 0;
+	$var[':timeout'] =  (isset($post['timeout']) && is_numeric($post['timeout'])) ? $timeout : 0;
 	$var[':callerid'] =  isset($post['callerid']) ? $callerid : '';
 
 	if(empty($var[':description'])) $var[':description'] = ${$goto0.'0'};
