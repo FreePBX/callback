@@ -178,7 +178,7 @@ function callback_edit($id,$post){
 		return false;
 	extract($post);
 	if(empty($description)) $description = ${$goto0.'0'};
-	$results = sql("UPDATE callback SET description = \"$description\", callbacknum = \"$callbacknum\", destination = \"${$goto0.'0'}\", deptname = \"$deptname\", sleep = \"$sleep\", timeout = \"$timeout\", callerid = '$callerid' WHERE callback_id = \"$id\"");
+	$results = sql("UPDATE callback SET description = \"$description\", callbacknum = \"$callbacknum\", destination = \"{${$goto0.'0'}}\", deptname = \"$deptname\", sleep = \"$sleep\", timeout = \"$timeout\", callerid = '$callerid' WHERE callback_id = \"$id\"");
 }
 
 // ensures post vars is valid
