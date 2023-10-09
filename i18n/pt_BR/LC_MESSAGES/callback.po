@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-16 10:38+0000\n"
+"POT-Creation-Date: 2023-10-09 11:11+0000\n"
 "PO-Revision-Date: 2016-12-11 04:26+0200\n"
 "Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -33,12 +33,6 @@ msgstr " Editar"
 msgid " already used, please use a different description."
 msgstr ""
 
-#: callback.i18n.php:8
-msgid ""
-"A callback will hang up on the caller and then call them back, directing "
-"them to the selected destination."
-msgstr ""
-
 #: views/grid.php:17
 msgid "Actions"
 msgstr "Ações"
@@ -47,12 +41,7 @@ msgstr "Ações"
 msgid "Add Callback"
 msgstr "Adicionar Chamada de Retorno"
 
-#: callback.i18n.php:6
-msgid "Applications"
-msgstr "Aplicações"
-
-#: callback.i18n.php:4 callback.i18n.php:10 page.callback.php:6
-#: views/bootnav.php:16
+#: page.callback.php:6 views/bootnav.php:16
 msgid "Callback"
 msgstr "Chamada de Retorno"
 
@@ -155,3 +144,6 @@ msgstr ""
 msgid "Where to send the caller once they are called back"
 msgstr ""
 "Para onde enviar o usuário chamador quando ele receber a chamada de retorno"
+
+#~ msgid "Applications"
+#~ msgstr "Aplicações"
