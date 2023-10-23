@@ -10,17 +10,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-14 05:17+0000\n"
-"PO-Revision-Date: 2017-03-21 23:36+0200\n"
-"Last-Translator: Michal <mboltz@tlen.pl>\n"
-"Language-Team: Polish (Polish) <http://weblate.freepbx.org/projects/freepbx/"
-"callback/pl_PL/>\n"
+"PO-Revision-Date: 2023-10-23 15:25+0000\n"
+"Last-Translator: Szymon Wysokinski <szymon.wysokinski@sqspolska.pl>\n"
+"Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/callback/"
+"pl/>\n"
 "Language: pl_PL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.4\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: page.callback.php:11
 msgid " Add"
@@ -32,13 +32,15 @@ msgstr " Edytuj"
 
 #: assets/js/callback.js:18
 msgid " already used, please use a different description."
-msgstr ""
+msgstr " opis jest już używany, proszę użyć innego opisu."
 
 #: callback.i18n.php:8
 msgid ""
 "A callback will hang up on the caller and then call them back, directing "
 "them to the selected destination."
 msgstr ""
+"Funkcja callback rozłączy dzwoniącego, następnie do niego oddzwoni, kierując "
+"go do wybranego miejsca docelowego."
 
 #: views/grid.php:17
 msgid "Actions"
@@ -72,7 +74,7 @@ msgstr "Połączenie zwrotne: %s"
 
 #: views/form.php:116
 msgid "Caller Id"
-msgstr ""
+msgstr "Caller ID dzwoniącego"
 
 #: views/form.php:89
 msgid "Delay Before Callback"
@@ -100,13 +102,16 @@ msgstr "Lista połączeń zwrotnych"
 
 #: views/form.php:146
 msgid "Milliseconds"
-msgstr ""
+msgstr "Milisekundy"
 
 #: views/form.php:128
 msgid ""
 "Optional: Enter the callerid for the callback.<br>Format: <b>\"caller name\" "
 "&lt;#######&gt;</b><br>Default: Callback"
 msgstr ""
+"Opcjonalnie: wprowadź identyfikator caller id rozmówcy dla "
+"oddzwonienia.<br>Format: <b>\"nazwa dzwoniącego” "
+"&lt;#######&gt;</b><br>Domyślnie: oddzwonienie"
 
 #: views/form.php:104
 msgid ""
@@ -126,7 +131,7 @@ msgstr ""
 
 #: views/form.php:155
 msgid "Optional: Timeout in Milliseconds.</br>Default: 15000"
-msgstr ""
+msgstr "Opcjonalnie: Limit czasu w milisekundach.</br>Domyślnie: 15000"
 
 #: assets/js/callback.js:15
 msgid "Please enter a valid Description"
@@ -150,8 +155,8 @@ msgstr "Podany opis połączeń zwrotnych jest zbyt długi."
 
 #: views/form.php:140
 msgid "Timeout"
-msgstr ""
+msgstr "Koniec czasu"
 
 #: views/form.php:186
 msgid "Where to send the caller once they are called back"
-msgstr ""
+msgstr "Gdzie wysłać osobę dzwoniącą po oddzwonieniu"
