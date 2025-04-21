@@ -7,7 +7,7 @@
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<description>A callback will hang up on the caller and then call them back, directing them to the selected destination.</description>
-  	<more-info>https://wiki.freepbx.org/display/F2/Callback+Module</more-info>
+  	<more-info>https://sangomakb.atlassian.net/wiki/spaces/PG/pages/22741056/PBX+GUI+-+Callback+Module</more-info>
 	<category>Applications</category>
 	<menuitems>
 		<callback needsenginedb="yes">Callback</callback>
