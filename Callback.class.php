@@ -4,9 +4,12 @@ use BMO;
 use FreePBX_Helpers;
 use PDO;
 class Callback extends FreePBX_Helpers implements BMO {
+	private $FreePBX;
+	private $db;
+
 	public function __construct($freepbx = null) {
 		if ($freepbx == null) {
-			throw new Exception("Not given a FreePBX Object");
+			throw new \Exception("Not given a FreePBX Object");
 		}
 		$this->FreePBX = $freepbx;
 		$this->db = $freepbx->Database;
@@ -50,7 +53,7 @@ class Callback extends FreePBX_Helpers implements BMO {
 				if (empty($request['itemid'])) {
 					unset($buttons['delete']);
 				}
-				if($request['view'] != "form"){
+				if (($request['view'] ?? '') != "form") {
 					$buttons = [];
 				}
 			break;
@@ -80,8 +83,8 @@ class Callback extends FreePBX_Helpers implements BMO {
   };
 	}
 	public function getRightNav($request) {
-		if($request['view'] == 'form'){
-    	return load_view(__DIR__."/views/bootnav.php",[]);
+		if (($request['view'] ?? '') == 'form') {
+			return load_view(__DIR__."/views/bootnav.php",[]);
 		}
 	}
 	public function upsert($id,$description,$number,$destination,$sleep,$department,$timeout,$callerid){

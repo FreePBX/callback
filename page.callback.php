@@ -14,7 +14,7 @@ if(isset($_GET['view']) && $_GET['view'] == 'form'){
 
 ?>
 <div class="container-fluid">
-	<h1><?php $heading?></h1>
+	<h1><?php echo $heading?></h1>
 	<div class = "display full-border">
 		<div class="row">
 			<div class="col-sm-12">
