@@ -169,16 +169,18 @@ function callback_add($post){
 
 function callback_edit($id,$post){
 	$goto0 = null;
- $callbacknum = null;
- $deptname = null;
- $sleep = null;
- $timeout = null;
- $callerid = null;
- if(!callback_chk($post))
+	$description = null;
+	$callbacknum = null;
+	$deptname = null;
+	$sleep = null;
+	$timeout = null;
+	$callerid = null;
+	if(!callback_chk($post))
 		return false;
 	extract($post);
-	if(empty($description)) $description = ${$goto0.'0'};
-	$results = sql("UPDATE callback SET description = \"$description\", callbacknum = \"$callbacknum\", destination = \"{${$goto0.'0'}}\", deptname = \"$deptname\", sleep = \"$sleep\", timeout = \"$timeout\", callerid = '$callerid' WHERE callback_id = \"$id\"");
+	$destination = ${$goto0.'0'};
+	if(empty($description)) $description = $destination;
+	$results = sql("UPDATE callback SET description = \"$description\", callbacknum = \"$callbacknum\", destination = \"$destination\", deptname = \"$deptname\", sleep = \"$sleep\", timeout = \"$timeout\", callerid = '$callerid' WHERE callback_id = \"$id\"");
 }
 
 // ensures post vars is valid

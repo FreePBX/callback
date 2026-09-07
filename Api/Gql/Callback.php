@@ -42,7 +42,7 @@ class Callback extends Base {
 						],
 						'mutateAndGetPayload' => function ($input) {
 							$item = $this->getSingleData($input['id']);
-							if(empty($tiem)) {
+							if (empty($item)) {
 								return null;
 							}
 							$sql = "UPDATE callback SET `callback_id` = :id,`description` = :description,`callbacknum` = :callbacknum,`destination` = :destination,`sleep` = :sleep WHERE `callback_id` = :id";
@@ -115,7 +115,7 @@ class Callback extends Base {
 	}
 
 	private function getTotal() {
-		$sql = "SELECT count(*) as count FROM callback";;
+		$sql = "SELECT count(*) as count FROM callback";
 		$sth = $this->freepbx->Database->prepare($sql);
 		$sth->execute();
 		return $sth->fetchColumn();
@@ -216,7 +216,7 @@ class Callback extends Base {
 
 	private function getMutationExecuteArray($input) {
 		return [
-			":callback_id" => $input['id'] ?? '',
+			":id" => $input['id'] ?? '',
 			":description" => $input['description'] ?? null,
 			":callbacknum" => $input['callbacknum'] ?? null,
 			":destination" => $input['destination'] ?? null,

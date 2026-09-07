@@ -16,9 +16,9 @@ if ($argc < 3) {
 
 $callback_number = $argv[1];
 $callback_destination = $argv[2];
-$pause_seconds = isset($argv[3]) ? $argv[3] : 0;
-$callback_timeout = $argv[4];
-$callback_callerid = base64_decode($argv[5]);
+$pause_seconds = $argv[3] ?? 0;
+$callback_timeout = $argv[4] ?? null;
+$callback_callerid = base64_decode($argv[5] ?? '');
 
 // bootstrap the connection to get astman up
 //
